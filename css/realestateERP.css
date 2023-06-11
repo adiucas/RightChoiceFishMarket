@@ -15,7 +15,7 @@ body {
   padding-top: 170px;
   padding-bottom: 50px; }
   .carousel-inner .carousel-item .primTitle {
-    font-family: "Gantari", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: #ffffff;
     font-size: 65px;
@@ -24,7 +24,7 @@ body {
     .carousel-inner .carousel-item .primTitle img {
       max-width: 400px; }
   .carousel-inner .carousel-item .secTitle {
-    font-family: "M PLUS 2", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #ffffff;
     font-size: 20px;
     line-height: 1.2;
