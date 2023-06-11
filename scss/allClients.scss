@@ -1,0 +1,126 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+body{
+	background: grad();
+}
+
+.gradBg{
+	min-height: calc(100vh - 200px);
+}
+
+/*==============================
+=            banner            =
+==============================*/
+
+.slider{
+	margin-top: -120px;
+}
+
+.carousel-inner{
+	@include flex(row,null,center);
+	height: unset;
+	padding-top: 150px;
+	padding-bottom: 30px;
+
+	.carousel-item{
+		.primTitle{
+			@include head("900");
+			color: #ffffff;
+			font-size: 65px;
+			line-height: 1;
+			color: #ffffff;
+		}
+
+		.secTitle{
+			@include para();
+			color: #ffffff;
+			font-size: 20px;
+			margin-top: 15px;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: 250px;
+	}
+}
+
+/*=====  End of banner  ======*/
+
+/*===================================
+=            our clients            =
+===================================*/
+
+.ourClient{
+	position: relative;
+	background: $lpCol;
+	
+	.contentBg{
+		padding: 1rem 2rem 1.5rem 2rem;
+		background: #f2f2f2;
+		border: 1px solid #dddddd;
+		border-radius: 1.5rem;
+		position: relative;
+
+		.clientLogos{
+			.filter{
+				text-align: center;
+
+				button{
+					&:not(:last-child){
+						margin-right: 15px;
+					}
+				}
+			}
+
+			.grid{
+				.grid-item{
+					display: flex;
+					height:100px;
+				}
+				.clientLogoWrapper{
+					@include flex(row,center,center);
+					background: $lpCol;
+					box-shadow: 0 10px 20px rgba($primCol,15%);
+					min-height: 100px;
+					border-radius: 15px;
+					outline: 1px solid transparent;
+					transition: 0.3s all;
+					padding:30px;
+					width: 100%;
+
+					img{
+						max-width:100%;
+						max-height: 50px;
+					}
+
+					span{
+						@include flex(row,center,center);
+						font-family: $headFF;
+						font-weight: bold;
+						height: 50px;
+						color: $primCol;
+						font-size: 18px;
+						line-height: 1.1;
+					}
+
+					&:hover{
+						transform: scale(0.9);
+						outline: 1px solid $primCol;
+					}
+				}
+			}
+		}
+
+	}
+}
+/*=====  End of our clients  ======*/
+
+.UcasScrollSpy{
+	.parent-pills{
+		&:before{
+			height:calc(100% - 30px);
+		}
+	}
+}
+

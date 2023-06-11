@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
+
+/*==============================
+=            banner            =
+==============================*/
+.slider {
+  margin-top: -120px; }
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: unset;
+  padding-top: 170px;
+  padding-bottom: 50px; }
+  .carousel-inner .carousel-item .primTitle {
+    font-family: "Gantari", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1;
+    color: #ffffff; }
+    .carousel-inner .carousel-item .primTitle img {
+      max-width: 400px; }
+  .carousel-inner .carousel-item .secTitle {
+    font-family: "M PLUS 2", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 5px; }
+  .carousel-inner img {
+    max-width: 100%; }
+
+/*=====  End of banner  ======*/
+/*================================
+=            brochure            =
+================================*/
+.modal-open {
+  padding-right: unset !important; }
+
+#brochureModal {
+  padding-right: unset !important; }
+  #brochureModal iframe {
+    width: 100%;
+    height: 100%; }
+  #brochureModal .modal-content {
+    width: calc(100vw - 30px);
+    height: calc(100vh - 65px); }
+  #brochureModal .btn-close {
+    position: absolute;
+    right: -30px;
+    color: #ffffff;
+    filter: invert(1); }
+
+/*=====  End of brochure  ======*/
+/*===================================
+=            real estate erp            =
+===================================*/
+.realEstateErp {
+  position: relative;
+  background: #eeeeee; }
+  .realEstateErp .col-lg-4 {
+    display: flex;
+    flex-direction: row; }
+  .realEstateErp .secHead {
+    margin-bottom: 30px; }
+  .realEstateErp .cardWrapper {
+    background: #F3F9F4;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(8, 160, 57, 0.15);
+    width: 100%; }
+    .realEstateErp .cardWrapper .head {
+      width: 100%;
+      color: #08A039;
+      border-radius: 30px;
+      margin-bottom: 10px; }
+      .realEstateErp .cardWrapper .head:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: rgba(8, 160, 57, 0.25);
+        margin-top: 3px; }
+    .realEstateErp .cardWrapper span {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin: 5px 0; }
+      .realEstateErp .cardWrapper span:before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        font-weight: normal;
+        margin-right: 5px;
+        color: #08A039; }
+    .realEstateErp .cardWrapper img {
+      margin-top: 5px;
+      height: 480px; }
+    .realEstateErp .cardWrapper:not(:last-child) {
+      margin-bottom: 30px; }
+
+/*=====  End of management info  ======*/
+.UcasScrollSpy .parent-pills:before {
+  top: 30px;
+  height: calc(100% - 50px); }
+
+/*# sourceMappingURL=realestateERP.css.map */
