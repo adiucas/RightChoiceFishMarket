@@ -47,12 +47,61 @@
         }
     }
 
+    .deal-products {
+        max-height: 362px;
+        overflow-y: auto;
+        padding-right: 15px;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+            cursor: pointer;
+        }
+
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: $lpCol;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            opacity: 0.5;
+            background: $primCol;
+        }
+
+        .card-title {
+            color: $primCol;
+        }
+
+        .card-text {
+            .offer-price {
+                color: $secCol;
+                font-weight: bold;
+                font-size: 20px;
+                margin-right: 5px;
+            }
+
+            .regular-price {
+                text-decoration: line-through;
+                color: rgba(#000, 50%);
+            }
+        }
+    }
+
     .accordion {
         margin-top: 15px;
 
         &#categories {
+            .accordion-button {
+                span {
+                    line-height: 0;
+                }
+            }
+
             .accordion-body {
-                background: $lpCol;
+                background: #fff;
                 padding: unset;
                 overflow: hidden;
             }
@@ -73,6 +122,70 @@
                 &:hover {
                     color: darken($primCol, 10%);
                     background: rgba($primCol, 15%);
+                }
+            }
+        }
+    }
+}
+
+.featured-products {
+    .product {
+
+        .wrapper {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid rgba($primCol, 25%);
+            overflow: hidden;
+
+            .image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .desc {
+                padding: 24px;
+
+                .price-stock {
+                    @include flex(row, space-between, center);
+
+                    .price {
+                        color: $primCol;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    .stock {
+                        padding: 5px 10px;
+                        border-radius: 100px;
+                        color: #fff;
+
+                        &.stock-in {
+                            background: var(--bs-success);
+                        }
+
+                        &.stock-out {
+                            background: var(--bs-danger);
+                        }
+                    }
+                }
+            }
+
+            .product-name {
+                border-top: 1px solid rgba($primCol, 25%);
+                margin-top: 5px;
+                padding-top: 5px;
+            }
+
+            .club-point {
+                @include flex(row, space-between);
+                background: rgba($secCol, 25%);
+                border-radius: 100px;
+                padding: 2.5px 15px;
+                margin-top: 12px;
+
+                .point-data {
+                    font-weight: bold;
                 }
             }
         }

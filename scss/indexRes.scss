@@ -1,2 +1,10 @@
 @import 'templates/variables';
 @import 'templates/mixins';
+
+@media(min-width:992px) {
+    .featured-products {
+        .product {
+            width: 20%;
+        }
+    }
+}
