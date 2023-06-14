@@ -24,9 +24,11 @@
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 	<!-- css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/indexRes.css">
@@ -36,48 +38,105 @@
 	<!--============================
 	=            header            =
 	=============================-->
-	<header class="top-header container-fluid" data-include="topHeader"></header>
-	<header data-include="header" class="sticky-top middle-header"></header>
+	<header class="top-header container-xxl" data-include="topHeader"></header>
+	<header data-include="header" class="sticky-top bottom-header"></header>
+	<header data-include="navigationMenu" class="navigation-menu"></header>
+	<section data-include="mobileNav" class="mobile-nav"></section>
 
 	<!-- ----------------------------------------- -->
 	<!--                   body                    -->
 	<!-- ----------------------------------------- -->
-	<div class="container">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis nisi eligendi autem enim
-		necessitatibus deserunt asperiores quis laboriosam voluptates temporibus id doloremque, vel soluta ex error
-		impedit fugiat animi dolorum? Quia et doloribus eaque reprehenderit dolor porro aliquid natus obcaecati.
-		Molestiae tempora, natus non distinctio id nesciunt perferendis tenetur reiciendis vitae sed perspiciatis ad est
-		illum unde possimus quod laborum delectus blanditiis? Magni nulla natus sapiente veniam eveniet eligendi ad quia
-		distinctio odio iure. Blanditiis cumque explicabo inventore deserunt asperiores quisquam culpa velit, labore
-		repellat, dicta commodi. Ullam voluptas consequuntur neque fugiat sed quisquam molestiae, nulla harum ipsa error
-		molestias cum ex, possimus amet odit, voluptates itaque voluptatem facilis explicabo magni iure tempore. Tempora
-		eius nam ipsam dolorum numquam sint accusamus culpa, adipisci maiores molestias nulla sunt voluptatibus iusto
-		perspiciatis laudantium aliquam consequatur. Rerum tenetur laudantium adipisci sequi omnis? Magnam eveniet at
-		neque accusamus temporibus commodi dignissimos aliquid sed minus, provident omnis et nobis explicabo veritatis,
-		soluta dolorem quisquam voluptatum tempora autem iusto esse quibusdam id non. Maiores, repellendus officiis
-		aliquid voluptatem quidem hic accusantium laborum tempora asperiores nobis minus at, molestiae beatae dolor quae
-		sunt, quisquam ut dolores qui aut corporis ipsa tempore. Odio, molestias eum distinctio molestiae voluptate
-		cumque rem sint doloribus expedita veritatis soluta labore totam aut quidem debitis neque rerum, quibusdam cum
-		enim ad eius ipsam, recusandae ab? Quisquam impedit voluptates recusandae. Aspernatur, rem iure tenetur
-		voluptates perferendis officiis consequatur iste saepe. Cumque distinctio architecto rerum quis nisi ex facilis
-		doloremque, officiis dolorum odio, aspernatur tenetur! Minus hic culpa, doloremque dicta, pariatur consequuntur
-		ipsum dolor vitae quaerat odit cupiditate suscipit enim commodi et tenetur sequi voluptatibus. Quas voluptas
-		ipsam a veniam quasi omnis ea eos saepe amet assumenda, excepturi adipisci, quidem harum molestiae, minus
-		aliquam. Cumque numquam voluptatibus exercitationem provident saepe velit. Animi dicta in similique quis
-		quibusdam ad ullam nesciunt optio repellendus eius blanditiis accusantium, autem nobis consequatur quasi
-		repellat? Harum optio cum veritatis est culpa error deleniti, temporibus nobis ut a, ipsa eos porro iste? Qui
-		dolorem quas beatae! Deleniti doloremque voluptate nam enim voluptates molestias eveniet, earum repellat
-		veritatis alias illo, culpa iure tempore quas, ducimus consequuntur omnis dolore pariatur perspiciatis in eius
-		vitae. Deserunt, dolorem perspiciatis rerum praesentium reprehenderit enim? Facere ratione adipisci veniam
-		eaque? Minus, autem labore cum consectetur suscipit corporis? Tenetur, esse rerum ipsum praesentium est, tempore
-		magni fugiat, veniam placeat ipsa temporibus corporis magnam. Necessitatibus natus pariatur nemo amet,
-		reiciendis blanditiis quaerat tempore libero illum architecto, recusandae praesentium fugit repudiandae eligendi
-		modi tenetur quod, atque non! Optio molestias odio debitis nesciunt exercitationem minima aut animi. Quas
-		aliquam doloribus corporis, aliquid fugiat fuga, praesentium, a laudantium quos unde saepe nesciunt temporibus
-		minus suscipit voluptatem nisi accusamus eligendi iste sit quia. Adipisci veniam sequi reprehenderit recusandae,
-		facilis dignissimos quia impedit veritatis expedita a sit rem aspernatur velit fugiat natus sapiente. Quo, quod.
-		Suscipit, neque quidem nam unde nobis nostrum repellat architecto iusto tenetur ipsum aspernatur corporis magnam
-		ipsa aut ab quod, molestiae ipsam cumque ea libero consequatur dolore ex eum.
+	<div class="container-xxl mt-3">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="cust-card">
+					<div class="title">
+						<div class="d-flex align-items-center">
+							<span>categories</span>
+							<!-- <div class="icon">
+								<i class="fa-solid fa-certificate">
+									<i class="fa-solid fa-percent"></i>
+								</i>
+							</div> -->
+						</div>
+					</div>
+					<div class="accordion categories" id="categories">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="shortcutHeading">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#shortcutCollapse" aria-expanded="true"
+									aria-controls="shortcutCollapse">
+									<i class="bi bi-bookmark me-2"></i>
+									<span>Shortcuts</span>
+								</button>
+							</h2>
+							<div id="shortcutCollapse" class="accordion-collapse collapse show"
+								aria-labelledby="shortcutHeading" data-bs-parent="#shortcuts">
+								<div class="accordion-body">
+									<a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-cart2"></i>
+										<span>Buy New Services</span>
+									</a>
+									<a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-globe"></i>
+										<span>Register a New Domain</span>
+									</a>
+									<a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-box-arrow-right"></i>
+										<span>Logout</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div id="caroIndi" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#caroIndi" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#caroIndi" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#caroIndi" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://picsum.photos/id/10/1000/450" class="d-block w-100" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://picsum.photos/id/11/1000/450" class="d-block w-100" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://picsum.photos/id/16/1000/450" class="d-block w-100" alt="">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#caroIndi" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#caroIndi" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div class="col-lg-3 d-flex">
+				<div class="cust-card">
+					<div class="title">
+						<div class="d-flex align-items-center">
+							<span>today's deal</span>
+							<div class="icon">
+								<i class="fa-solid fa-certificate">
+									<i class="fa-solid fa-percent"></i>
+								</i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--============================
 	=            footer            =

@@ -1,0 +1,97 @@
+/* -------------------------------------------- */
+/*                  top header                  */
+/* -------------------------------------------- */
+
+@media(max-width:992px) {
+    .top-header {
+        display: none;
+    }
+}
+
+/* -------------------------------------------- */
+/*                 bottom header                */
+/* -------------------------------------------- */
+
+@media(max-width:992px) {
+    .bottom-header {
+        .main-header {
+            @include flex(row, space-between, center);
+            padding: 5px 0;
+
+            .logo {
+                margin-right: 15px;
+            }
+
+            .search-input {
+                width: unset;
+
+                .form-control {
+                    font-size: 14px;
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+
+                .btn-primary {
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+
+            .comp-wish-cart {
+                display: none;
+            }
+
+            .btn-search-mobile {
+                width: 45px;
+                height: 45px;
+                border-radius: 45px;
+
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+
+    .navigation-menu {
+        .navbar-nav {
+            padding-left: .75rem;
+            padding-right: .75rem;
+        }
+    }
+}
+
+/* -------------------------------------------- */
+/*           multi level nav menu css           */
+/* -------------------------------------------- */
+
+@media (min-width: 768px) {
+    .dropdown-menu .dropdown .dropdown-menu {
+        margin: 0;
+        border-width: 1px;
+    }
+
+    .dropdown-menu>li a:hover,
+    .dropdown-menu>li.show {
+        background: $primCol;
+        color: white;
+    }
+
+    .dropdown-menu>li.show>a {
+        color: white;
+    }
+}
+
+/* -------------------------------------------- */
+/*                mobile nav menu               */
+/* -------------------------------------------- */
+
+@media(min-width:992px) {
+    .mobile-nav {
+        display: none;
+    }
+}
