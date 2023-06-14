@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    font-size: 24px; }
+    font-size: 16px; }
     .cust-card .title:after {
       content: "";
       display: block;
@@ -36,7 +36,7 @@
       .cust-card .title .icon .fa-certificate .fa-percent {
         position: absolute;
         color: #fff;
-        font-size: 12px; }
+        font-size: 8px; }
   .cust-card .deal-products {
     max-height: 362px;
     overflow-y: auto;

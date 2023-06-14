@@ -14,7 +14,7 @@
 
     .title {
         @include flex(col, center, start);
-        font-size: 24px;
+        font-size: 16px;
 
         &:after {
             content: "";
@@ -41,7 +41,7 @@
                 .fa-percent {
                     position: absolute;
                     color: #fff;
-                    font-size: 12px;
+                    font-size: 8px;
                 }
             }
         }
