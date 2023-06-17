@@ -7,7 +7,7 @@
 
 html {
   overflow-x: hidden;
-  font-size: .875em; }
+  font-size: .812em; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -505,6 +505,9 @@ p {
       background: rgba(231, 66, 44, 0.25);
       margin: 0 auto; }
 
+@media (max-width: 992px) {
+  body {
+    padding-bottom: 60px; } }
 /*=====  End of content  ======*/
 /*===============================
 =            footer            =
@@ -512,7 +515,100 @@ p {
 .footer {
   background: #1D70B7;
   padding-top: 12px; }
+  .footer .footer-logo {
+    width: 100%; }
+  .footer .contact-info {
+    margin-top: 15px;
+    color: #fff; }
+    .footer .contact-info .info-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .footer .contact-info .info-wrapper:not(:last-child) {
+        margin-bottom: 12px; }
+      .footer .contact-info .info-wrapper .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        border-radius: 100px;
+        margin-right: 10px; }
+  .footer .mapWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+    .footer .mapWrapper iframe {
+      width: 100%; }
+  .footer .quick-link {
+    color: #fff; }
+    .footer .quick-link .label {
+      font-weight: bold;
+      font-size: 1.25rem; }
+      .footer .quick-link .label:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(227, 240, 251, 0.5);
+        margin-top: 2.5px; }
+    .footer .quick-link .links li {
+      margin: 5px 0; }
+  .footer .cust-border {
+    border: 1px solid rgba(227, 240, 251, 0.25); }
+  .footer .followUs {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .footer .followUs a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #e3f0fb;
+      border-radius: 30px;
+      background: #e3f0fb;
+      color: #1D70B7;
+      font-size: 15px;
+      transition: 0.3s all; }
+      .footer .followUs a:not(:last-child) {
+        margin-right: 10px; }
+      .footer .followUs a:hover {
+        background: transparent;
+        color: #e3f0fb;
+        transform: scale(0.9); }
+  .footer .payment-platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center; }
+    .footer .payment-platforms img {
+      max-width: 100%;
+      height: 30px; }
 
+@media (max-width: 992px) {
+  .footer .quick-link .label {
+    text-align: center; }
+  .footer .quick-link .links {
+    text-align: center; }
+  .footer .followUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .footer .payment-platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
 /*=====  End of footer  ======*/
 
 /*# sourceMappingURL=common.css.map */

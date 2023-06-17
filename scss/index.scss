@@ -1,10 +1,40 @@
 @import 'templates/variables';
 @import 'templates/mixins';
 
+/* -------------------------------------------- */
+/*                   flash ad                   */
+/* -------------------------------------------- */
+.flash-ad {
+    padding: 0 !important;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------- */
+/*                    banner                    */
+/* -------------------------------------------- */
 .carousel-inner {
     border-radius: 15px;
     overflow: hidden;
 }
+
+.banner-vid {
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 0;
+
+    video {
+        border-radius: 15px;
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------- */
+/*           categories & todays deal           */
+/* -------------------------------------------- */
 
 .cust-card {
     background: $lpCol;
@@ -48,7 +78,6 @@
     }
 
     .deal-products {
-        max-height: 362px;
         overflow-y: auto;
         padding-right: 15px;
 
@@ -72,14 +101,16 @@
         }
 
         .card-title {
+            font-weight: bold;
             color: $primCol;
+            font-size: .875rem;
         }
 
         .card-text {
             .offer-price {
                 color: $secCol;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 1rem;
                 margin-right: 5px;
             }
 
@@ -92,6 +123,27 @@
 
     .accordion {
         margin-top: 15px;
+        overflow-y: auto;
+        padding-right: 15px;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+            cursor: pointer;
+        }
+
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: $lpCol;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            opacity: 0.5;
+            background: $primCol;
+        }
 
         &#categories {
             .accordion-button {
@@ -128,6 +180,9 @@
     }
 }
 
+/* -------------------------------------------- */
+/*               featured product               */
+/* -------------------------------------------- */
 .featured-products {
     .product {
 
@@ -136,10 +191,63 @@
             border-radius: 12px;
             border: 1px solid rgba($primCol, 25%);
             overflow: hidden;
+            cursor: pointer;
 
             .image {
+                position: relative;
+
                 img {
                     width: 100%;
+                }
+
+                .comp-wish-cart {
+                    @include flex(col, null, end);
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    transform: translateX(50px);
+                    transition: 0.3s all;
+                    ;
+
+                    .icon-text {
+                        @include flex(row, null, center);
+                        background: $lpCol;
+                        border-radius: 100px;
+                        overflow: hidden;
+                        color: $primCol;
+                        max-width: 30px;
+                        height: 30px;
+                        padding: 5px 9px;
+                        cursor: pointer;
+                        transition: 0.3s all;
+
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+
+                        i {
+                            // transform: translateX(8px);
+                        }
+
+                        span {
+                            visibility: hidden;
+                            white-space: nowrap;
+                        }
+
+                        &:hover {
+                            background: $primCol;
+                            color: #fff;
+                            max-width: 150px;
+
+                            i {
+                                // transform: translateX(8px);
+                            }
+
+                            span {
+                                visibility: visible;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -169,23 +277,29 @@
                         }
                     }
                 }
+
+                .product-name {
+                    border-top: 1px solid rgba($primCol, 25%);
+                    margin-top: 5px;
+                    padding-top: 5px;
+                }
+
+                .club-point {
+                    @include flex(row, space-between);
+                    background: rgba($secCol, 25%);
+                    border-radius: 100px;
+                    padding: 2.5px 15px;
+                    margin-top: 12px;
+
+                    .point-data {
+                        font-weight: bold;
+                    }
+                }
             }
 
-            .product-name {
-                border-top: 1px solid rgba($primCol, 25%);
-                margin-top: 5px;
-                padding-top: 5px;
-            }
-
-            .club-point {
-                @include flex(row, space-between);
-                background: rgba($secCol, 25%);
-                border-radius: 100px;
-                padding: 2.5px 15px;
-                margin-top: 12px;
-
-                .point-data {
-                    font-weight: bold;
+            &:hover {
+                .comp-wish-cart {
+                    transform: translateX(0);
                 }
             }
         }

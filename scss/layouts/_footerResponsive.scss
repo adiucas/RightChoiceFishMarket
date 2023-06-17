@@ -1,0 +1,21 @@
+@media(max-width:992px) {
+    .footer {
+        .quick-link {
+            .label {
+                text-align: center;
+            }
+
+            .links {
+                text-align: center;
+            }
+        }
+
+        .followUs {
+            @include flex(row, center, center);
+        }
+
+        .payment-platforms {
+            @include flex(row, center, center);
+        }
+    }
+}
