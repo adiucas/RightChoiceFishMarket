@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAII,kBAAO;EACH,UAAU,EAAE,IAAI;EAEhB,yBAAO;IACH,WAAW,EAAE,IAAI;IACjB,cAAc,EAAE,UAAU;IAC1B,KAAK,ECVP,OAAO;EDaT,8BAAY;IACR,WAAW,EAAE,MAAM;EAGvB,sBAAI;IACA,KAAK,EAAE,IAAI",
+"sources": ["../scss/compare.scss","../scss/templates/_variables.scss"],
+"names": [],
+"file": "compare.css"
+}

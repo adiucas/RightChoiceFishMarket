@@ -175,16 +175,17 @@
 			<!--                  banner                   -->
 			<!-- ----------------------------------------- -->
 			<div class="col-lg-6">
-				<div class="banner-vid" id="banner-vid">
+				<div class="cust-card flash-ad" id="flash-ad">
+					<img src="https://picsum.photos/1000/150" alt="">
+				</div>
+				<div class="banner-vid mt-3" id="banner-vid">
 					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 						<source
 							src="https://rr5---sn-q0c7rn7d.googlevideo.com/videoplayback?expire=1687088990&ei=_pqOZIb1LsPlxgL946z4Ag&ip=91.90.124.28&id=o-ACRSCAwFXCEiTN0GWyR_cjDrCeX5tfpa7A_wsKT7QohJ&itag=248&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313&source=youtube&requiressl=yes&mh=2w&mm=31%2C26&mn=sn-q0c7rn7d%2Csn-4g5lznes&ms=au%2Conr&mv=m&mvi=5&pl=24&initcwndbps=553750&spc=qEK7ByyDLEoc2-8gmzoWoKuQ6JSISkZgjzGwUU3jTw&vprv=1&svpuc=1&mime=video%2Fwebm&ns=FXwFPGhotcJBfr7XwmpOBfMN&gir=yes&clen=12629505829&dur=42897.433&lmt=1679295575141816&mt=1687067108&fvip=3&keepalive=yes&fexp=24007246%2C24362685&beids=24350017&c=WEB&txp=7319224&n=jQWlk2yt7p6Awg&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIhAJ0ihxSo4N13NCwPjz7GNPy48RGovr8fwAQ-eExuIPbmAiAfuIrucapl73g1p6dHpiPysg0xjgmR7xi_EJB6VWXF4g%3D%3D&sig=AOq0QJ8wRQIhAPopf0YPi-D6eM1qIaB7d8WBrL1ja58SpnOpYyDqE_19AiAmMETCN1FgleIksKRQhhBQWhfyPgyFLd7boPMnH-yspA%3D%3D"
 							type="video/mp4">
 					</video>
 				</div>
-				<div class="cust-card flash-ad mt-3" id="flash-ad">
-					<img src="https://picsum.photos/1000/100" alt="">
-				</div>
+
 				<!-- <div id="caroIndi" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#caroIndi" data-bs-slide-to="0" class="active"
@@ -732,7 +733,7 @@
 	var bannerHeight = document.getElementById("banner-vid").clientHeight;
 	var flashHeight = document.getElementById("flash-ad").clientHeight;
 
-	finalHeight = bannerHeight + flashHeight + 30;
+	finalHeight = bannerHeight + flashHeight + 60;
 
 	$("#categories").css("max-height", finalHeight);
 	$("#dealProducts").css("max-height", finalHeight);

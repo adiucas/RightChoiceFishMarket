@@ -157,18 +157,63 @@ p {
       display: flex;
       flex-direction: row;
       margin-left: 15px; }
-      .bottom-header .main-header .comp-wish-cart .compare button,
+      .bottom-header .main-header .comp-wish-cart .noti button,
       .bottom-header .main-header .comp-wish-cart .wish button,
       .bottom-header .main-header .comp-wish-cart .cart button {
         display: flex;
         flex-direction: row;
         align-items: center;
         border-radius: 100px; }
-        .bottom-header .main-header .comp-wish-cart .compare button .badge,
+        .bottom-header .main-header .comp-wish-cart .noti button .badge,
         .bottom-header .main-header .comp-wish-cart .wish button .badge,
         .bottom-header .main-header .comp-wish-cart .cart button .badge {
           top: 0;
-          border-radius: 100px; }
+          border-radius: 100px;
+          background: #E7422C; }
+      .bottom-header .main-header .comp-wish-cart .noti i {
+        line-height: 1.5; }
+      .bottom-header .main-header .comp-wish-cart .noti .btn {
+        border-radius: 100px; }
+    .bottom-header .main-header .login-reg {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 15px; }
+      .bottom-header .main-header .login-reg .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        flex-shrink: 0;
+        width: 31.9px;
+        height: 31.9px; }
+    .bottom-header .main-header .hotline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: #E7422C;
+      padding: 5px;
+      border-radius: 100px;
+      margin-left: 15px; }
+      .bottom-header .main-header .hotline .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        color: #E7422C;
+        background: #e3f0fb; }
+        .bottom-header .main-header .hotline .icon i {
+          font-size: 20px; }
+      .bottom-header .main-header .hotline .text {
+        color: #fff;
+        margin-left: 10px;
+        margin-right: 15px; }
+        .bottom-header .main-header .hotline .text .hotline-number {
+          font-size: 20px; }
     .bottom-header .main-header .navbar-toggler {
       width: 45px;
       height: 45px;
@@ -348,6 +393,12 @@ p {
 /*===============================
 =            content            =
 ===============================*/
+@font-face {
+  font-family: "mmmsRegular";
+  src: url("../fonts/mms-bangla-regular.ttf"); }
+@font-face {
+  font-family: "mmmsBold";
+  src: url("../fonts/mms-bangla-bold.ttf"); }
 .btn-primary {
   color: #fff;
   background-color: #1D70B7;
@@ -504,6 +555,9 @@ p {
       height: 2px;
       background: rgba(231, 66, 44, 0.25);
       margin: 0 auto; }
+
+.table {
+  border-color: #1D70B7; }
 
 @media (max-width: 992px) {
   body {
