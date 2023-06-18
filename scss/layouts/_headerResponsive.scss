@@ -1,14 +1,4 @@
 /* -------------------------------------------- */
-/*                  top header                  */
-/* -------------------------------------------- */
-
-@media(max-width:992px) {
-    .top-header {
-        display: none;
-    }
-}
-
-/* -------------------------------------------- */
 /*                 bottom header                */
 /* -------------------------------------------- */
 
@@ -23,7 +13,6 @@
             }
 
             .search-input {
-                width: unset;
 
                 .form-control {
                     font-size: 14px;
@@ -41,6 +30,10 @@
                 }
             }
 
+            .navbar-toggler {
+                margin-left: 15px;
+            }
+
             .comp-wish-cart {
                 display: none;
             }
@@ -52,6 +45,36 @@
 
                 &:focus {
                     box-shadow: unset;
+                }
+            }
+        }
+
+        .hotline-mobile {
+            background: $secCol;
+
+            .hotline {
+                @include flex(row, center, center);
+                padding: 5px 0;
+            }
+
+            .icon {
+                @include flex(row, center, center);
+                width: 20px;
+                height: 20px;
+                background: $lpCol;
+                border-radius: 30px;
+                color: $secCol;
+            }
+
+            .text {
+                @include flex(row, null, center);
+                margin-left: 10px;
+                color: #fff;
+                font-size: 13px;
+
+                .hotline-number {
+                    margin-left: 5px;
+                    font-weight: bold;
                 }
             }
         }
@@ -92,6 +115,10 @@
 
 @media(min-width:992px) {
     .mobile-nav {
+        display: none;
+    }
+
+    .hotline-mobile {
         display: none;
     }
 }

@@ -298,12 +298,6 @@ p {
   left: auto; }
 
 /* -------------------------------------------- */
-/*                  top header                  */
-/* -------------------------------------------- */
-@media (max-width: 992px) {
-  .top-header {
-    display: none; } }
-/* -------------------------------------------- */
 /*                 bottom header                */
 /* -------------------------------------------- */
 @media (max-width: 992px) {
@@ -315,14 +309,14 @@ p {
     padding: 5px 0; }
     .bottom-header .main-header .logo {
       margin-right: 15px; }
-    .bottom-header .main-header .search-input {
-      width: unset; }
-      .bottom-header .main-header .search-input .form-control {
-        font-size: 14px; }
-        .bottom-header .main-header .search-input .form-control:focus {
-          box-shadow: unset; }
-      .bottom-header .main-header .search-input .btn-primary:focus {
+    .bottom-header .main-header .search-input .form-control {
+      font-size: 14px; }
+      .bottom-header .main-header .search-input .form-control:focus {
         box-shadow: unset; }
+    .bottom-header .main-header .search-input .btn-primary:focus {
+      box-shadow: unset; }
+    .bottom-header .main-header .navbar-toggler {
+      margin-left: 15px; }
     .bottom-header .main-header .comp-wish-cart {
       display: none; }
     .bottom-header .main-header .btn-search-mobile {
@@ -331,6 +325,34 @@ p {
       border-radius: 45px; }
       .bottom-header .main-header .btn-search-mobile:focus {
         box-shadow: unset; }
+  .bottom-header .hotline-mobile {
+    background: #E7422C; }
+    .bottom-header .hotline-mobile .hotline {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0; }
+    .bottom-header .hotline-mobile .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background: #e3f0fb;
+      border-radius: 30px;
+      color: #E7422C; }
+    .bottom-header .hotline-mobile .text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10px;
+      color: #fff;
+      font-size: 13px; }
+      .bottom-header .hotline-mobile .text .hotline-number {
+        margin-left: 5px;
+        font-weight: bold; }
 
   .navigation-menu .navbar-nav {
     padding-left: .75rem;
@@ -355,6 +377,9 @@ p {
 /* -------------------------------------------- */
 @media (min-width: 992px) {
   .mobile-nav {
+    display: none; }
+
+  .hotline-mobile {
     display: none; } }
 /* -------------------------------------------- */
 /*                mobile nav menu               */
