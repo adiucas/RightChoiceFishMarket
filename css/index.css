@@ -27,15 +27,18 @@
 /* -------------------------------------------- */
 .cust-card {
   background: #e3f0fb;
-  padding: 15px 20px;
+  padding: 15px 12px;
   width: 100%;
   border-radius: 15px; }
+  .cust-card.category-wrapper .title {
+    padding: unset; }
   .cust-card .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 0 12px; }
     .cust-card .title:after {
       content: "";
       display: block;
@@ -61,8 +64,11 @@
         color: #fff;
         font-size: 8px; }
   .cust-card .deal-products {
+    display: flex;
+    flex-direction: row;
     overflow-y: auto;
     padding-right: 15px;
+    flex-wrap: wrap;
     /* width */
     /* Track */
     /* Handle */ }
@@ -75,6 +81,9 @@
       border-radius: 10px;
       opacity: 0.5;
       background: #1D70B7; }
+    .cust-card .deal-products .card {
+      width: calc(50% - 20px);
+      margin: .75rem; }
     .cust-card .deal-products .card-title {
       font-weight: bold;
       color: #1D70B7;
@@ -88,7 +97,7 @@
       text-decoration: line-through;
       color: rgba(0, 0, 0, 0.5); }
   .cust-card .accordion {
-    margin-top: 15px;
+    margin-top: 12px;
     overflow-y: auto;
     padding-right: 15px;
     /* width */
