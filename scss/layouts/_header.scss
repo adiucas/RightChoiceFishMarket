@@ -133,6 +133,7 @@
                 border-radius: 50px;
                 color: $secCol;
                 background: $lpCol;
+                flex-shrink: 0;
 
                 i {
                     font-size: 20px;
@@ -140,9 +141,15 @@
             }
 
             .text {
+                @include flex(row, start, center);
                 color: #fff;
                 margin-left: 10px;
                 margin-right: 15px;
+                flex-wrap: wrap;
+
+                .call-us {
+                    margin-bottom: -5px;
+                }
 
                 .hotline-number {
                     font-size: 20px;

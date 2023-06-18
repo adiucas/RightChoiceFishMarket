@@ -33,6 +33,13 @@
     }
 }
 
+.btn-change-banner {
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    z-index: 1;
+}
+
 /* -------------------------------------------- */
 /*           categories & todays deal           */
 /* -------------------------------------------- */
@@ -91,6 +98,7 @@
         padding-right: 15px;
         flex-wrap: wrap;
         font-family: "mmsRegular" !important;
+        max-height: 410px;
 
         /* width */
         &::-webkit-scrollbar {
@@ -141,6 +149,7 @@
         margin-top: 12px;
         overflow-y: auto;
         padding-right: 15px;
+        max-height: 410px;
 
         /* width */
         &::-webkit-scrollbar {

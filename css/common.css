@@ -205,13 +205,21 @@ p {
         height: 45px;
         border-radius: 50px;
         color: #E7422C;
-        background: #e3f0fb; }
+        background: #e3f0fb;
+        flex-shrink: 0; }
         .bottom-header .main-header .hotline .icon i {
           font-size: 20px; }
       .bottom-header .main-header .hotline .text {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
         color: #fff;
         margin-left: 10px;
-        margin-right: 15px; }
+        margin-right: 15px;
+        flex-wrap: wrap; }
+        .bottom-header .main-header .hotline .text .call-us {
+          margin-bottom: -5px; }
         .bottom-header .main-header .hotline .text .hotline-number {
           font-size: 20px; }
     .bottom-header .main-header .navbar-toggler {

@@ -38,7 +38,6 @@
 	<!--============================
 	=            header            =
 	=============================-->
-	<header class="top-header container-xxl" data-include="topHeader"></header>
 	<header data-include="header" class="sticky-top bottom-header"></header>
 	<header data-include="navigationMenu" class="navigation-menu"></header>
 	<section data-include="mobileNav" class="mobile-nav"></section>
@@ -174,7 +173,7 @@
 			<!-- ----------------------------------------- -->
 			<!--                  banner                   -->
 			<!-- ----------------------------------------- -->
-			<div class="col-lg-6">
+			<div class="col-lg-6 position-relative">
 				<div class="cust-card flash-ad" id="flash-ad">
 					<img src="https://picsum.photos/1000/150" alt="">
 				</div>
@@ -185,8 +184,7 @@
 							type="video/mp4">
 					</video>
 				</div>
-
-				<!-- <div id="caroIndi" class="carousel slide" data-bs-ride="carousel">
+				<div id="caroIndi" class="carousel slide mt-3 d-none" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#caroIndi" data-bs-slide-to="0" class="active"
 							aria-current="true" aria-label="Slide 1"></button>
@@ -214,7 +212,10 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
-				</div> -->
+				</div>
+				<button class="btn btn-primary btn-change-banner" onclick="changeBanner()">
+					<i class="fa-solid fa-arrows-rotate"></i>
+				</button>
 			</div>
 			<!-- ----------------------------------------- -->
 			<!--                popular products                -->
@@ -730,6 +731,10 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+	function changeBanner() {
+		$(".banner-vid").toggleClass("d-none");
+		$(".carousel").toggleClass("d-none");
+	}
 	var bannerHeight = document.getElementById("banner-vid").clientHeight;
 	var flashHeight = document.getElementById("flash-ad").clientHeight;
 
