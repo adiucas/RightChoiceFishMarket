@@ -9,6 +9,10 @@
     overflow: hidden;
     border-radius: unset !important;
 
+    .carousel-inner {
+        border-radius: 0;
+    }
+
     img {
         width: 100%;
     }
@@ -329,11 +333,21 @@
         }
     }
 
-    .fp-slider {
-        .tns-controls {
-            position: relative;
 
-            [data-controls="prev"] {}
+    .tns-controls {
+        position: relative;
+
+        button[data-controls="prev"] {
+            position: absolute;
+            top: 100px;
+            z-index: 1;
+        }
+
+        button[data-controls="next"] {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            z-index: 1;
         }
     }
 }

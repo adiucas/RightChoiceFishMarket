@@ -208,14 +208,23 @@
 			<!-- ----------------------------------------- -->
 			<div class="col-lg-6 position-relative">
 				<div class="cust-card flash-ad" id="flash-ad">
-					<img src="images/demo-flash.jpg" alt="">
+					<div id="flashIndi" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/flash/1.jpg" class="d-block w-100" alt="">
+							</div>
+							<div class="carousel-item">
+								<img src="images/flash/2.jpg" class="d-block w-100" alt="">
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="banner-vid mt-3" id="banner-vid">
+				<div class="banner-vid mt-3 d-none" id="banner-vid">
 					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 						<source src="" type="video/mp4">
 					</video>
 				</div>
-				<div id="caroIndi" class="carousel slide mt-3 d-none" data-bs-ride="carousel">
+				<div id="caroIndi" class="carousel slide mt-3" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#caroIndi" data-bs-slide-to="0" class="active"
 							aria-current="true" aria-label="Slide 1"></button>
@@ -820,15 +829,15 @@
 
 	function changeBanner() {
 		$(".banner-vid").toggleClass("d-none");
-		$(".carousel").toggleClass("d-none");
+		$("#caroIndi").toggleClass("d-none");
 	}
-	var bannerHeight = document.getElementById("banner-vid").clientHeight;
-	var flashHeight = document.getElementById("flash-ad").clientHeight;
+	// var bannerHeight = document.getElementById("banner-vid").clientHeight;
+	// var flashHeight = document.getElementById("flash-ad").clientHeight;
 
-	finalHeight = bannerHeight + flashHeight + 75;
+	// finalHeight = bannerHeight + flashHeight + 75;
 
-	$("#categories").css("max-height", finalHeight);
-	$("#dealProducts").css("max-height", finalHeight);
+	// $("#categories").css("max-height", finalHeight);
+	// $("#dealProducts").css("max-height", finalHeight);
 </script>
 
 </html>
