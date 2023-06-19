@@ -57,7 +57,7 @@
     }
 
     .title {
-        @include flex(col, center, start);
+        @include flex(col, center, center);
         font-size: 16px;
         padding: 0 12px;
 
