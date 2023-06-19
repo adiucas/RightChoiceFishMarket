@@ -223,5 +223,7 @@
         font-weight: bold; }
   .featured-products .product .wrapper:hover .comp-wish-cart {
     transform: translateX(0); }
+.featured-products .fp-slider .tns-controls {
+  position: relative; }
 
 /*# sourceMappingURL=index.css.map */

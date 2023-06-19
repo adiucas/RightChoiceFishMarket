@@ -109,9 +109,7 @@
     }
 }
 
-/* -------------------------------------------- */
-/*                mobile nav menu               */
-/* -------------------------------------------- */
+/* -------------------- end ------------------- */
 
 @media(min-width:992px) {
     .mobile-nav {
@@ -119,6 +117,14 @@
     }
 
     .hotline-mobile {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobileNavMenu {
         display: none;
     }
 }

@@ -210,7 +210,6 @@
 /* -------------------------------------------- */
 .featured-products {
     .product {
-
         .wrapper {
             background: #ffffff;
             border-radius: 12px;
@@ -327,6 +326,14 @@
                     transform: translateX(0);
                 }
             }
+        }
+    }
+
+    .fp-slider {
+        .tns-controls {
+            position: relative;
+
+            [data-controls="prev"] {}
         }
     }
 }

@@ -105,29 +105,7 @@ p {
 =            header            =
 ==============================*/
 /* -------------------------------------------- */
-/*                  top header                  */
-/* -------------------------------------------- */
-.top-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
-  .top-header .left {
-    display: flex;
-    flex-direction: row; }
-    .top-header .left .phone i,
-    .top-header .left .mail i {
-      color: #1D70B7; }
-  .top-header .right a i {
-    color: #1D70B7; }
-  .top-header .right a:hover span {
-    color: #1D70B7; }
-
-/* -------------------------------------------- */
-/*                 bottom header                */
+/*                 header                */
 /* -------------------------------------------- */
 .bottom-header {
   background: #e3f0fb;
@@ -275,6 +253,46 @@ p {
     background: #1D70B7;
     color: #fff; }
 
+.mobile-menu {
+  background: #1D70B7; }
+  .mobile-menu .navbar-nav {
+    flex-direction: row; }
+    .mobile-menu .navbar-nav .nav-item {
+      margin: 0 10px; }
+    .mobile-menu .navbar-nav .nav-link {
+      color: #fff; }
+
+.mobileNavMenu {
+  border-top: 1px solid rgba(227, 240, 251, 0.25); }
+
+#categoryModal .modal-title {
+  color: #1D70B7; }
+#categoryModal .modal-body {
+  padding: unset; }
+  #categoryModal .modal-body .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #categoryModal .modal-body .wrapper .single-category {
+      flex-basis: 50%;
+      padding: 12px; }
+      #categoryModal .modal-body .wrapper .single-category .title {
+        color: #1D70B7;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center; }
+        #categoryModal .modal-body .wrapper .single-category .title:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: rgba(29, 112, 183, 0.25);
+          margin-top: 2.5px; }
+      #categoryModal .modal-body .wrapper .single-category ul {
+        text-align: center; }
+        #categoryModal .modal-body .wrapper .single-category ul li {
+          margin: 5px 0; }
+
 /* -------------------------------------------- */
 /*              multi level navbar              */
 /* -------------------------------------------- */
@@ -372,14 +390,18 @@ p {
 
   .dropdown-menu > li.show > a {
     color: white; } }
-/* -------------------------------------------- */
-/*                mobile nav menu               */
-/* -------------------------------------------- */
+/* -------------------- end ------------------- */
 @media (min-width: 992px) {
   .mobile-nav {
     display: none; }
 
   .hotline-mobile {
+    display: none; }
+
+  .mobile-menu {
+    display: none; }
+
+  .mobileNavMenu {
     display: none; } }
 /* -------------------------------------------- */
 /*                mobile nav menu               */
