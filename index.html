@@ -378,7 +378,7 @@
 				Featured Products
 			</div>
 			<div class="container-fluid">
-				<div class="row fp-slider">
+				<div class="fp-slider">
 					<div class="col-lg-3 my-3 product">
 						<div class="wrapper">
 							<div class="image">
@@ -824,7 +824,22 @@
 	var fpSlider = tns({
 		container: '.fp-slider',
 		items: 5,
-		nav: false
+		nav: false,
+		controlsText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+		responsive: {
+			0: {
+				"items": 1,
+			},
+			576: {
+				"items": 2,
+			},
+			768: {
+				"items": 3,
+			},
+			1100: {
+				"items": 5,
+			}
+		}
 	});
 
 	function changeBanner() {
