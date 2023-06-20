@@ -1,6 +1,30 @@
 @import 'templates/variables';
 @import 'templates/mixins';
 
+
+@media(max-width:992px) {
+
+    /* -------------------------------------------- */
+    /*               featured product               */
+    /* -------------------------------------------- */
+    .content-container {
+        padding: unset;
+    }
+
+    .featured-products .tns-controls button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .featured-products .product .wrapper .desc {
+        padding: 12px;
+    }
+
+    .featured-products .product .wrapper .desc .price-stock .price {
+        font-size: 15px;
+    }
+}
+
 @media(min-width:992px) {
     .featured-products {
         .product {

@@ -595,7 +595,8 @@ p {
 .content-container {
   background: #e3f0fb;
   border-radius: 15px;
-  padding: .75rem; }
+  padding: .75rem;
+  }
   .content-container .sec-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;

@@ -335,20 +335,22 @@
         }
     }
 
-    .fp-slider {
+    .tn-slider {
         @include flex(row);
     }
 
     .tns-controls {
         position: relative;
+        display: flex !important;
 
         button {
             outline: none;
             border: 1px solid $primCol;
             background: $lpCol;
-            width: 30px;
-            height: 30px;
-            border-radius: 30px;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            box-shadow: 0 5px 10px $primCol;
 
             &:hover {
                 background: $primCol;
@@ -366,13 +368,14 @@
         button[data-controls="prev"] {
             position: absolute;
             top: 200px;
+            left: -5px;
             z-index: 1;
         }
 
         button[data-controls="next"] {
             position: absolute;
             top: 200px;
-            right: 0;
+            right: -5px;
             z-index: 1;
         }
     }
