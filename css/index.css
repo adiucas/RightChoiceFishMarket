@@ -98,7 +98,8 @@
     .cust-card .deal-products .card-title {
       font-weight: bold;
       color: #1D70B7;
-      font-size: .875rem; }
+      font-size: .875rem;
+      font-family: "mmsRegular", sans-serif; }
     .cust-card .deal-products .card-text .offer-price {
       color: #E7422C;
       font-weight: bold;
@@ -125,6 +126,7 @@
       opacity: 0.5;
       background: #1D70B7; }
     .cust-card .accordion#categories .accordion-button span {
+      font-family: "mmsRegular", sans-serif;
       line-height: 0; }
     .cust-card .accordion#categories .accordion-body {
       background: #fff;
@@ -201,21 +203,13 @@
         align-items: center; }
         .featured-products .product .wrapper .desc .price-stock .price {
           color: #1D70B7;
-          font-size: 15px;
-          font-weight: bold;
-          }
-        .featured-products .product .wrapper .desc .price-stock .stock {
-          padding: 5px 10px;
-          border-radius: 100px;
-          color: #fff; }
-          .featured-products .product .wrapper .desc .price-stock .stock.stock-in {
-            background: var(--bs-success); }
-          .featured-products .product .wrapper .desc .price-stock .stock.stock-out {
-            background: var(--bs-danger); }
+          font-size: 18px;
+          font-weight: bold; }
       .featured-products .product .wrapper .desc .product-name {
         border-top: 1px solid rgba(29, 112, 183, 0.25);
         margin-top: 5px;
-        padding-top: 5px; }
+        padding-top: 5px;
+        font-family: "mmsRegular", sans-serif; }
       .featured-products .product .wrapper .desc .club-point {
         display: flex;
         flex-direction: row;

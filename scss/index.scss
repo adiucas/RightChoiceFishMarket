@@ -132,6 +132,7 @@
             font-weight: bold;
             color: $primCol;
             font-size: .875rem;
+            font-family: "mmsRegular", sans-serif;
         }
 
         .card-text {
@@ -177,6 +178,7 @@
         &#categories {
             .accordion-button {
                 span {
+                    font-family: "mmsRegular", sans-serif;
                     line-height: 0;
                 }
             }
@@ -292,26 +294,13 @@
                         font-size: 18px;
                         font-weight: bold;
                     }
-
-                    .stock {
-                        padding: 5px 10px;
-                        border-radius: 100px;
-                        color: #fff;
-
-                        &.stock-in {
-                            background: var(--bs-success);
-                        }
-
-                        &.stock-out {
-                            background: var(--bs-danger);
-                        }
-                    }
                 }
 
                 .product-name {
                     border-top: 1px solid rgba($primCol, 25%);
                     margin-top: 5px;
                     padding-top: 5px;
+                    font-family: "mmsRegular", sans-serif;
                 }
 
                 .club-point {

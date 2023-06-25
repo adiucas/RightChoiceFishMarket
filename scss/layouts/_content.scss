@@ -218,4 +218,47 @@
 	border-color: $primCol;
 }
 
+.jq-star {
+	&:not(:last-child) {
+		margin-right: 3px;
+	}
+}
+
+.jq-star-svg {
+	padding-left: unset;
+}
+
+.stock {
+	padding: 5px 10px;
+	border-radius: 100px;
+	color: #fff;
+
+	&.stock-in {
+		background: var(--bs-success);
+	}
+
+	&.stock-out {
+		background: var(--bs-danger);
+	}
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background: rgba($primCol, 25%);
+	border-radius: 10px;
+}
+
+.form-check {
+	min-height: unset;
+	margin-bottom: unset;
+	padding-left: unset;
+}
+
+.form-check,
+.form-check-input,
+.form-check-label {
+	cursor: pointer;
+}
+
 @import "contentResponsive";

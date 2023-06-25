@@ -595,8 +595,7 @@ p {
 .content-container {
   background: #e3f0fb;
   border-radius: 15px;
-  padding: .75rem;
-  }
+  padding: .75rem; }
   .content-container .sec-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -614,6 +613,37 @@ p {
 
 .table {
   border-color: #1D70B7; }
+
+.jq-star:not(:last-child) {
+  margin-right: 3px; }
+
+.jq-star-svg {
+  padding-left: unset; }
+
+.stock {
+  padding: 5px 10px;
+  border-radius: 100px;
+  color: #fff; }
+  .stock.stock-in {
+    background: var(--bs-success); }
+  .stock.stock-out {
+    background: var(--bs-danger); }
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(29, 112, 183, 0.25);
+  border-radius: 10px; }
+
+.form-check {
+  min-height: unset;
+  margin-bottom: unset;
+  padding-left: unset; }
+
+.form-check,
+.form-check-input,
+.form-check-label {
+  cursor: pointer; }
 
 @media (max-width: 992px) {
   body {
