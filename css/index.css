@@ -79,7 +79,6 @@
     padding-right: 15px;
     flex-wrap: wrap;
     font-family: "mmsRegular" !important;
-    max-height: 410px;
     /* width */
     /* Track */
     /* Handle */ }
@@ -111,8 +110,6 @@
   .cust-card .accordion {
     margin-top: 12px;
     overflow-y: auto;
-    padding-right: 15px;
-    max-height: 410px;
     /* width */
     /* Track */
     /* Handle */ }
@@ -145,6 +142,13 @@
       .cust-card .accordion#categories .shortcutMenu:hover {
         color: #16558b;
         background: rgba(29, 112, 183, 0.15); }
+  .cust-card .left-ad {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 15px; }
+    .cust-card .left-ad img {
+      width: 100%; }
 
 /* -------------------------------------------- */
 /*               featured product               */

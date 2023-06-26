@@ -102,7 +102,6 @@
         padding-right: 15px;
         flex-wrap: wrap;
         font-family: "mmsRegular" !important;
-        max-height: 410px;
 
         /* width */
         &::-webkit-scrollbar {
@@ -153,8 +152,6 @@
     .accordion {
         margin-top: 12px;
         overflow-y: auto;
-        padding-right: 15px;
-        max-height: 410px;
 
         /* width */
         &::-webkit-scrollbar {
@@ -207,6 +204,17 @@
                     background: rgba($primCol, 15%);
                 }
             }
+        }
+    }
+
+    .left-ad {
+        background: #fff;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-top: 15px;
+
+        img {
+            width: 100%;
         }
     }
 }
