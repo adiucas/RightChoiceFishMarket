@@ -32,8 +32,7 @@
   /* -------------------------------------------- */
   .pop-product .product-wrapper {
     display: flex;
-    flex-direction: row;
-    } }
+    flex-direction: row; } }
 @media (min-width: 992px) {
   .content-container .product-wrapper .product-image {
     width: 450px;

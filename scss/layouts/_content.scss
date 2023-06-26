@@ -261,4 +261,64 @@
 	cursor: pointer;
 }
 
+.sidebar {
+	padding: 12px;
+
+	.image-name {
+		@include flex(col, null, center);
+
+		.img-wrapper {
+			overflow: hidden;
+			width: 70px;
+			height: 70px;
+			border-radius: 100px;
+			border: 2px solid rgba($color: $primCol, $alpha: 50%);
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.name {
+			color: $primCol;
+			font-size: 16px;
+			font-weight: bold;
+			margin-top: 5px;
+		}
+	}
+
+	.divider {
+		width: unset;
+		margin: 0 -22px;
+	}
+
+	.menu-wrapper {
+		.menu {
+			@include flex(row, null, center);
+			padding: 5px 15px;
+			border: 1px solid $primCol;
+			border-radius: 2rem;
+			color: $primCol;
+			margin-top: 12px;
+			font-size: 14px;
+			transition: 0.3s all;
+
+			&:hover {
+				background-color: $primCol;
+				color: #fff;
+			}
+
+			i {
+				margin-right: 5px;
+			}
+
+			&.dashboard {
+				border-color: $secCol;
+				background: $secCol;
+				color: #fff;
+			}
+		}
+	}
+}
+
 @import "contentResponsive";

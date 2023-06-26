@@ -1,0 +1,9 @@
+.sidebar-container {
+  display: block;
+  }
+  .sidebar-container .sidebar .menu-wrapper .menu.dashboard {
+    border-color: #E7422C;
+    background: #E7422C;
+    color: #fff; }
+
+/*# sourceMappingURL=Dashboard.css.map */

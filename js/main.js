@@ -21,4 +21,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-
+function toggleSidebar() {
+  $("#sidebar").toggleClass("expanded");
+  $("body").toggleClass("overlay-active")
+}

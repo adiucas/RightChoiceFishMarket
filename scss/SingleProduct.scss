@@ -167,10 +167,11 @@
             overflow: hidden;
             border-radius: .5rem;
             flex-shrink: 0;
-            border: 1px solid rgba($primCol, 25%);
 
             img {
-                max-height: 75px;
+                max-width: 75px;
+                border-radius: .5rem;
+                border: 1px solid rgba($primCol, 25%);
             }
         }
 

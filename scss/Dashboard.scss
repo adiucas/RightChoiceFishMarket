@@ -1,0 +1,18 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.sidebar-container {
+    display: block;
+
+    .sidebar {
+        .menu-wrapper {
+            .menu {
+                &.dashboard {
+                    border-color: $secCol;
+                    background: $secCol;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
