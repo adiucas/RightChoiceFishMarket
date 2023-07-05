@@ -182,7 +182,8 @@
   transition: 0.3s all;
   background: #1D70B7;
   width: 100%;
-  max-height: 200px; }
+  max-height: 200px;
+  cursor: pointer; }
   .featured-category .sf-category .fish-image {
     width: 100px;
     height: 100px;
