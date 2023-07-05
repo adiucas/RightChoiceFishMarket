@@ -1,9 +1,18 @@
 .sidebar-container {
-  display: block;
-  }
+  display: block; }
   .sidebar-container .sidebar .menu-wrapper .menu.dashboard {
     border-color: #E7422C;
     background: #E7422C;
     color: #fff; }
+
+.dashboard-content .cust-card {
+  width: 100%;
+  background: linear-gradient(135deg, #1D70B7 0%, #E7422C 100%);
+  border-radius: 1rem;
+  padding: 15px;
+  color: #fff; }
+  .dashboard-content .cust-card .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
 
 /*# sourceMappingURL=Dashboard.css.map */

@@ -9,6 +9,16 @@
     border-radius: 0; }
   .flash-ad img {
     width: 100%; }
+  .flash-ad .carousel-control-next,
+  .flash-ad .carousel-control-prev {
+    background-color: #1D70B7;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .flash-ad .carousel-control-next:hover,
+    .flash-ad .carousel-control-prev:hover {
+      opacity: 1; }
 
 /* -------------------------------------------- */
 /*                    banner                    */
@@ -143,12 +153,52 @@
         color: #16558b;
         background: rgba(29, 112, 183, 0.15); }
   .cust-card .left-ad {
+    position: relative;
     background: #fff;
     overflow: hidden;
     border-radius: 15px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    border: 1px solid rgba(29, 112, 183, 0.25); }
     .cust-card .left-ad img {
       width: 100%; }
+    .cust-card .left-ad .hot-deal {
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      width: 150px; }
+
+/* -------------------------------------------- */
+/*               featured category              */
+/* -------------------------------------------- */
+.featured-category .sf-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(29, 112, 183, 0.25);
+  position: relative;
+  transition: 0.3s all;
+  background: #1D70B7; }
+  .featured-category .sf-category img {
+    height: 100%;
+    transition: 0.3s all; }
+  .featured-category .sf-category .category-name {
+    font-family: "mmsRegular", sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    position: absolute;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #fff; }
+  .featured-category .sf-category:hover {
+    box-shadow: 0 10px 25px #e7422c; }
+    .featured-category .sf-category:hover img {
+      transform: scale(1.2);
+      opacity: 0.5; }
+.featured-category .col-lg-3 {
+  display: flex;
+  margin: 15px 0; }
 
 /* -------------------------------------------- */
 /*               featured product               */

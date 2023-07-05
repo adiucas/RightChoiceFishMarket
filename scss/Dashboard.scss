@@ -16,3 +16,17 @@
         }
     }
 }
+
+.dashboard-content {
+    .cust-card {
+        width: 100%;
+        background: grad();
+        border-radius: 1rem;
+        padding: 15px;
+        color: #fff;
+
+        .number {
+            @include head()
+        }
+    }
+}

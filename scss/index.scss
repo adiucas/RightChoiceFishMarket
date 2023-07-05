@@ -16,6 +16,19 @@
     img {
         width: 100%;
     }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        background-color: $primCol;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 /* -------------------------------------------- */
@@ -208,14 +221,66 @@
     }
 
     .left-ad {
+        position: relative;
         background: #fff;
         overflow: hidden;
         border-radius: 15px;
         margin-top: 15px;
+        border: 1px solid rgba($color: $primCol, $alpha: 25%);
 
         img {
             width: 100%;
         }
+
+        .hot-deal {
+            position: absolute;
+            top: 10px;
+            left: -5px;
+            width: 150px;
+        }
+    }
+}
+
+/* -------------------------------------------- */
+/*               featured category              */
+/* -------------------------------------------- */
+.featured-category {
+    .sf-category {
+        @include flex(row, center, center);
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1px solid rgba($color: $primCol, $alpha: 25%);
+        position: relative;
+        transition: 0.3s all;
+        background: $primCol;
+
+        img {
+            height: 100%;
+            transition: 0.3s all;
+        }
+
+        .category-name {
+            font-family: "mmsRegular", sans-serif;
+            font-weight: bold;
+            font-size: 42px;
+            position: absolute;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: #fff;
+        }
+
+        &:hover {
+            box-shadow: 0 10px 25px rgba($color: $secCol, $alpha: 1.0);
+
+            img {
+                transform: scale(1.2);
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .col-lg-3 {
+        display: flex;
+        margin: 15px 0;
     }
 }
 
