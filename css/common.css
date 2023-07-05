@@ -688,6 +688,28 @@ p {
       background: #E7422C;
       color: #fff; }
 
+.messenger-floating-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #1D70B7;
+  margin: 15px;
+  font-size: 25px;
+  opacity: 0.5;
+  transition: 0.3s all; }
+  .messenger-floating-icon:hover {
+    opacity: 1;
+    color: #fff;
+    background: #E7422C; }
+
 @media (max-width: 992px) {
   body {
     padding-bottom: 60px; }
