@@ -1,0 +1,32 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.sidebar-container {
+    display: block;
+
+    .sidebar {
+        .menu-wrapper {
+            .menu {
+                &.purchase-history {
+                    border-color: $secCol;
+                    background: $secCol;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.table {
+
+    .thead,
+    .tbody {
+        .tr {
+
+            .th,
+            .td {
+                flex-basis: (100%/4);
+            }
+        }
+    }
+}

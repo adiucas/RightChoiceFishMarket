@@ -11,8 +11,35 @@
   border-radius: 1rem;
   padding: 15px;
   color: #fff; }
+  .dashboard-content .cust-card .divider {
+    background: rgba(227, 240, 251, 0.25);
+    margin-top: 10px;
+    margin-bottom: 5px; }
   .dashboard-content .cust-card .number {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 2rem; }
+  .dashboard-content .cust-card .support-text {
+    font-size: 1rem; }
+.dashboard-content .default-shipping-address {
+  width: max-content;
+  color: #1D70B7; }
+  .dashboard-content .default-shipping-address .title {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .75rem .75rem 0; }
+    .dashboard-content .default-shipping-address .title:after {
+      content: "";
+      width: 100%;
+      background: rgba(29, 112, 183, 0.25);
+      height: 1px;
+      display: block;
+      margin-top: 2.5px; }
+  .dashboard-content .default-shipping-address .body {
+    padding: 0 .75rem .75rem; }
+    .dashboard-content .default-shipping-address .body ul {
+      margin-bottom: 0; }
+      .dashboard-content .default-shipping-address .body ul li {
+        margin: 5px 0; }
 
 /*# sourceMappingURL=Dashboard.css.map */

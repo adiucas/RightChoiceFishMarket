@@ -1,0 +1,14 @@
+.sidebar-container {
+  display: block; }
+  .sidebar-container .sidebar .menu-wrapper .menu.purchase-history {
+    border-color: #E7422C;
+    background: #E7422C;
+    color: #fff; }
+
+.table .thead .tr .th,
+.table .thead .tr .td,
+.table .tbody .tr .th,
+.table .tbody .tr .td {
+  flex-basis: 25%; }
+
+/*# sourceMappingURL=PurchaseHistory.css.map */

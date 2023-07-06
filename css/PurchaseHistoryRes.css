@@ -1,0 +1,13 @@
+@media (max-width: 992px) {
+  .table .thead .tr,
+  .table .tbody .tr {
+    flex-wrap: wrap; }
+    .table .thead .tr .th,
+    .table .thead .tr .td,
+    .table .tbody .tr .th,
+    .table .tbody .tr .td {
+      text-align: center;
+      margin: unset;
+      flex-basis: 50%; } }
+
+/*# sourceMappingURL=PurchaseHistoryRes.css.map */

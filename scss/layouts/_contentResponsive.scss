@@ -40,10 +40,51 @@
             transform: translateX(0);
         }
     }
+
+    .messenger-floating-icon {
+        margin: 15px 15px 70px;
+        opacity: 1;
+    }
+
+    .table {
+        .thead {
+            display: none;
+        }
+
+        .tbody {
+            display: block;
+
+            &:after {
+                display: none;
+            }
+
+            .tr {
+
+                .td {
+                    @include flex(col, center, center);
+
+                    .th-sm {
+                        @include head();
+                        color: $primCol;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 992px) {
     .sidebar-container {
         display: none;
+    }
+
+    .table {
+        .tbody {
+            .tr {
+                .th-sm {
+                    display: none;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,21 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media(max-width:992px) {
+    .table {
+
+        .thead,
+        .tbody {
+            .tr {
+                flex-wrap: wrap;
+
+                .th,
+                .td {
+                    text-align: center;
+                    margin: unset;
+                    flex-basis: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,kBAAmB;EACf,OAAO,EAAE,KAAK;EAKF,gEAAmB;IACf,YAAY,ECTvB,OAAO;IDUI,UAAU,ECVrB,OAAO;IDWI,KAAK,EAAE,IAAI;;AAanB;;;qBACI;EACA,UAAU,EAAE,GAAQ",
+"sources": ["../scss/PurchaseHistory.scss","../scss/templates/_variables.scss"],
+"names": [],
+"file": "PurchaseHistory.css"
+}

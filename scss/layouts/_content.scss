@@ -261,6 +261,9 @@
 	cursor: pointer;
 }
 
+/* -------------------------------------------- */
+/*                mobile sidebar                */
+/* -------------------------------------------- */
 .sidebar {
 	padding: 12px;
 
@@ -311,16 +314,13 @@
 			i {
 				margin-right: 5px;
 			}
-
-			&.dashboard {
-				border-color: $secCol;
-				background: $secCol;
-				color: #fff;
-			}
 		}
 	}
 }
 
+/* -------------------------------------------- */
+/*                messenger icon                */
+/* -------------------------------------------- */
 .messenger-floating-icon {
 	@include flex(row, center, center);
 	color: #fff;
@@ -340,6 +340,78 @@
 		opacity: 1;
 		color: #fff;
 		background: $secCol;
+	}
+}
+
+/* -------------------------------------------- */
+/*               responsive table               */
+/* -------------------------------------------- */
+
+.table>:not(caption)>*>* {
+	padding: unset;
+	background-color: unset;
+	border-bottom-width: unset;
+	box-shadow: unset;
+}
+
+.table>:not(:first-child) {
+	border-top: unset;
+}
+
+.table {
+	margin-bottom: 0;
+	padding: 0.75rem .75rem 0;
+
+	.thead {
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 2px;
+			border-radius: 2px;
+			background-color: rgba($color: $primCol, $alpha: 1.0);
+			margin-top: 5px;
+		}
+
+		.tr {
+			@include flex(row, null, center);
+
+			.th {
+				@include head();
+				color: $primCol;
+				text-transform: capitalize;
+				font-size: 1rem;
+				margin: 0 .75rem;
+			}
+		}
+	}
+
+	.tbody {
+		@extend .thead;
+
+		&:after {
+			display: none;
+		}
+
+		.tr {
+			padding: 0.75rem 0;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid rgba($color: $primCol, $alpha: .25);
+			}
+
+			&:hover {
+				background: rgba($color: $primCol, $alpha: .15);
+				cursor: pointer;
+			}
+
+			.td {
+				@extend .th;
+				color: rgba($color: #000000, $alpha: .75);
+				font-weight: 400;
+				font-family: $paraFF;
+			}
+		}
 	}
 }
 

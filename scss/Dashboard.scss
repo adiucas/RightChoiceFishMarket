@@ -25,8 +25,51 @@
         padding: 15px;
         color: #fff;
 
+        .divider {
+            background: rgba($color: $lpCol, $alpha: 0.25);
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
         .number {
-            @include head()
+            @include head();
+            font-size: 2rem;
+        }
+
+        .support-text {
+            font-size: 1rem;
+        }
+    }
+
+    .default-shipping-address {
+        width: max-content;
+        color: $primCol;
+
+        .title {
+            font-weight: bold;
+            font-size: 1rem;
+            padding: .75rem .75rem 0;
+
+            &:after {
+                content: "";
+                width: 100%;
+                background: rgba($color: $primCol, $alpha: .25);
+                height: 1px;
+                display: block;
+                margin-top: 2.5px;
+            }
+        }
+
+        .body {
+            padding: 0 .75rem .75rem;
+
+            ul {
+                margin-bottom: 0;
+
+                li {
+                    margin: 5px 0;
+                }
+            }
         }
     }
 }
