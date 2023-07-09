@@ -1,0 +1,44 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media(max-width:992px) {
+    .history-balance-recharge {
+        @include flex(col);
+        flex-direction: column-reverse;
+
+        .text-primary {
+            margin-top: 5px;
+        }
+
+        .balace-recharge {
+            @include flex(col);
+
+            .current-balance {
+                margin-right: unset;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .recharge-wallet {
+                @extend .current-balance;
+            }
+        }
+    }
+
+    .table {
+
+        .thead,
+        .tbody {
+            .tr {
+                flex-wrap: wrap;
+
+                .th,
+                .td {
+                    text-align: center;
+                    margin: unset;
+                    flex-basis: 50%;
+                }
+            }
+        }
+    }
+}

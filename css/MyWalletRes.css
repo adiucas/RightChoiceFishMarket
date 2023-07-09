@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+  .history-balance-recharge {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse; }
+    .history-balance-recharge .text-primary {
+      margin-top: 5px; }
+    .history-balance-recharge .balace-recharge {
+      display: flex;
+      flex-direction: column; }
+      .history-balance-recharge .balace-recharge .current-balance, .history-balance-recharge .balace-recharge .recharge-wallet {
+        margin-right: unset;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+
+  .table .thead .tr,
+  .table .tbody .tr {
+    flex-wrap: wrap; }
+    .table .thead .tr .th,
+    .table .thead .tr .td,
+    .table .tbody .tr .th,
+    .table .tbody .tr .td {
+      text-align: center;
+      margin: unset;
+      flex-basis: 50%; } }
+
+/*# sourceMappingURL=MyWalletRes.css.map */
