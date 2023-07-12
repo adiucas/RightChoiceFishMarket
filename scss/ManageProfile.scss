@@ -1,0 +1,129 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+
+body,
+.modal {
+    padding-right: 0 !important;
+}
+
+.sidebar-container {
+    display: block;
+
+    .sidebar {
+        .menu-wrapper {
+            .menu {
+                &.manege-profile {
+                    border-color: $secCol;
+                    background: $secCol;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.manage-profile-content {
+    .content-container {
+        .text-primary {
+            color: $primCol !important;
+
+            &.title {
+                text-transform: capitalize;
+                padding: .75rem .75rem 0;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    background: rgba($color: $primCol, $alpha: .25);
+                    width: 100%;
+                    height: 1px;
+                }
+            }
+        }
+
+        .info-inputs {
+            padding: .75rem;
+
+            label {
+                text-transform: capitalize;
+            }
+
+            input::placeholder {
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .addresses {
+        .title-btn {
+            @include flex(row, space-between, center);
+            padding: .75rem .75rem 0;
+
+            .title {
+                padding: unset;
+
+                &::after {
+                    display: none !important;
+                }
+            }
+
+            .btn {
+                border-radius: 100px;
+            }
+
+            .modal-body {
+                .btn {
+                    width: max-content;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .divider {
+            width: unset;
+            margin: .25rem .75rem;
+        }
+
+        .address-cards {
+            padding: .75rem;
+
+            .address-card {
+                @include flex(row, space-between);
+                border: 2px solid rgba($color: $primCol, $alpha: 0.25);
+                padding: .75rem;
+                border-radius: 1rem;
+
+                table {
+                    tr {
+                        td {
+                            &:first-child {
+                                color: $primCol;
+                                font-weight: bold;
+                                text-transform: capitalize;
+                                padding-right: 10px;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+
+                .action-default {
+                    @include flex(col, space-between, flex-end);
+
+                    .dropdown-toggle {
+                        padding: unset;
+                        width: 20px;
+                        height: 20px;
+                        font-size: .875rem;
+                    }
+
+                    .badge {
+                        background: $secCol;
+                    }
+                }
+            }
+        }
+    }
+
+}

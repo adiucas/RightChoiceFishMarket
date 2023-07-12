@@ -1,0 +1,48 @@
+body,
+.modal {
+  padding-right: 0 !important; }
+
+.sidebar-container {
+  display: block; }
+  .sidebar-container .sidebar .menu-wrapper .menu.suppoert-ticket {
+    border-color: #E7422C;
+    background: #E7422C;
+    color: #fff; }
+
+.history-balance-recharge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .history-balance-recharge .text-primary {
+    color: #1D70B7 !important; }
+  .history-balance-recharge .balace-recharge .current-balance, .history-balance-recharge .balace-recharge .recharge-wallet {
+    outline: none;
+    border: none;
+    background: #1D70B7;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 1px solid #1D70B7;
+    border-radius: 100px;
+    margin-right: 10px; }
+  .history-balance-recharge .balace-recharge .recharge-wallet {
+    margin-right: unset;
+    font-weight: normal;
+    background: transparent;
+    color: #1D70B7;
+    transition: 0.3s all; }
+    .history-balance-recharge .balace-recharge .recharge-wallet:hover {
+      border-color: #E7422C;
+      background: #E7422C;
+      color: #fff; }
+
+.table .thead .tr .th,
+.table .thead .tr .td,
+.table .tbody .tr .th,
+.table .tbody .tr .td {
+  flex-basis: 100%; }
+
+/*# sourceMappingURL=SupportTicket.css.map */

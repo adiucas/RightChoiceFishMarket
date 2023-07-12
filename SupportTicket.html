@@ -4,15 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Wallet | Right Choice Fish Market</title>
+	<title>Support Tickets | Right Choice Fish Market</title>
 
-	<meta name="title" content="My Wallet | Right Choice Fish Market">
+	<meta name="title" content="Support Tickets | Right Choice Fish Market">
 	<meta name="description" content="">
 
 	<!-- opengraph -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
-	<meta property="og:title" content="My Wallet | Right Choice Fish Market">
+	<meta property="og:title" content="Support Tickets | Right Choice Fish Market">
 	<meta property="og:description" content="">
 	<meta property="og:image" content="">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
@@ -30,8 +30,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/MyWallet.css">
-	<link rel="stylesheet" href="css/MyWalletRes.css">
+	<link rel="stylesheet" href="css/SupportTicket.css">
+	<link rel="stylesheet" href="css/SupportTicketRes.css">
 </head>
 
 <body>
@@ -53,15 +53,11 @@
 				<div class="content-container mt-2">
 					<div class="table">
 						<div class="history-balance-recharge">
-							<h4 class="text-primary">Wallet Recharge History</h4>
+							<h4 class="text-primary">Support Tickets</h4>
 							<div class="balace-recharge">
-								<button class="current-balance disabled">
-									current balance: 5000৳
-								</button>
-								<button class="recharge-wallet" data-bs-toggle="modal"
-									data-bs-target="#WalletRechargeModal">
+								<button class="recharge-wallet" data-bs-toggle="modal" data-bs-target="#SupportTicket">
 									<i class="fa-solid fa-circle-plus me-2"></i>
-									Recharge Wallet
+									Create a Ticket
 								</button>
 							</div>
 						</div>
@@ -69,8 +65,8 @@
 						<div class="thead">
 							<div class="tr">
 								<div class="th">#</div>
-								<div class="th">Amount</div>
-								<div class="th">Approval</div>
+								<div class="th">subject</div>
+								<div class="th">status</div>
 							</div>
 						</div>
 						<div class="tbody">
@@ -80,12 +76,26 @@
 									<span>01</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">amount</span>
+									<span class="th-sm">subject</span>
 									<span>1545৳</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">approval</span>
-									<span>Approved</span>
+									<span class="th-sm">status</span>
+									<span class="badge bg-primary">active</span>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="td">
+									<span class="th-sm">serial</span>
+									<span>01</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">subject</span>
+									<span>1545৳</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">status</span>
+									<span class="badge bg-success">solved</span>
 								</div>
 							</div>
 						</div>
@@ -97,18 +107,24 @@
 	<!-- ----------------------------------------- -->
 	<!--           Wallet Recharge Modal           -->
 	<!-- ----------------------------------------- -->
-	<div class="modal fade" id="WalletRechargeModal" tabindex="-1" aria-labelledby="WalletRechargeModalLabel"
-		aria-hidden="true">
+	<div class="modal fade" id="SupportTicket" tabindex="-1" aria-labelledby="SupportTicketLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="WalletRechargeModalLabel">Payment Information</h5>
+					<h5 class="modal-title" id="SupportTicketLabel">Create Ticket</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestias deleniti fugit cum nobis
-					perferendis facilis cumque magni nihil vel, sunt animi quam tempore. Corporis reiciendis tempora
-					minima amet ratione?
+					<div class="d-grid gap-3">
+						<input type="text" class="form-control" placeholder="Subject">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Provide Detailed Description"
+							class="form-control"></textarea>
+						<div class="input-group mb-3">
+							<label class="input-group-text" for="SupportTicketPhoto">Photo</label>
+							<input type="file" class="form-control" id="SupportTicketPhoto">
+						</div>
+						<button class="btn btn-primary">Submit Ticket</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -124,29 +140,5 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	document.querySelectorAll('.tn-slider').forEach(slider => {
-		tns({
-			container: slider,
-			items: 5,
-			nav: false,
-			controlsText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
-			responsive: {
-				0: {
-					"items": 2,
-				},
-				576: {
-					"items": 3,
-				},
-				768: {
-					"items": 4,
-				},
-				1100: {
-					"items": 5,
-				}
-			}
-		});
-	});
-</script>
 
 </html>

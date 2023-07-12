@@ -1,0 +1,30 @@
+.login {
+  min-height: calc(100vh - 461px); }
+  .login .title {
+    color: #1D70B7;
+    padding: 0.75rem .75rem 0; }
+  .login .inputs {
+    padding: .75rem; }
+    .login .inputs .form-control {
+      border-radius: 100px;
+      font-size: .875rem;
+      padding: 10px 20px; }
+    .login .inputs .remeber-forgot {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .login .inputs .remeber-forgot .form-check {
+        margin-left: 20px; }
+        .login .inputs .remeber-forgot .form-check .form-check-input {
+          border-radius: 30px; }
+        .login .inputs .remeber-forgot .form-check .form-check-input:checked {
+          background-color: #1D70B7;
+          border-color: #1D70B7; }
+  .login .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .75rem; }
+
+/*# sourceMappingURL=Login.css.map */

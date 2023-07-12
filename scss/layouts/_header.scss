@@ -171,6 +171,10 @@
     }
 }
 
+.modal-backdrop {
+    z-index: 3;
+}
+
 .navigation-menu {
     background: $primCol;
     position: sticky;

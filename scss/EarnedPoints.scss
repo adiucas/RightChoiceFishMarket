@@ -1,0 +1,60 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+body,
+.modal {
+    padding-right: 0 !important;
+}
+
+.sidebar-container {
+    display: block;
+
+    .sidebar {
+        .menu-wrapper {
+            .menu {
+                &.earned-point {
+                    border-color: $secCol;
+                    background: $secCol;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.history-balance-recharge {
+    @include flex(row, space-between, center);
+
+    .text-primary {
+        color: $primCol !important;
+    }
+
+    .balace-recharge {
+        .current-balance {
+            outline: none;
+            border: none;
+            background: $primCol;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 1rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            border: 1px solid $primCol;
+            border-radius: 100px;
+        }
+    }
+}
+
+.table {
+
+    .thead,
+    .tbody {
+        .tr {
+
+            .th,
+            .td {
+                flex-basis: (100%/1);
+            }
+        }
+    }
+}

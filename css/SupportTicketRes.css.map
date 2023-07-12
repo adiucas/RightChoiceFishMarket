@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,yBAAwB;EACpB,yBAA0B;ICK5B,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;IDJhB,cAAc,EAAE,cAAc;IAE9B,uCAAc;MACV,UAAU,EAAE,GAAG;IAGnB,0CAAiB;MCHvB,OAAO,EAAE,IAAI;MACb,cAAc,EAAE,MAAM;MDKZ,wHAAiB;QACb,YAAY,EAAE,KAAK;QACnB,UAAU,EAAE,GAAG;QACf,aAAa,EAAE,GAAG;;EAatB;mBAAI;IACA,SAAS,EAAE,IAAI;IAEf;;;yBACI;MACA,UAAU,EAAE,MAAM;MAClB,MAAM,EAAE,KAAK;MACb,UAAU,EAAE,GAAG",
+"sources": ["../scss/SupportTicketRes.scss","../scss/templates/_mixins.scss"],
+"names": [],
+"file": "SupportTicketRes.css"
+}

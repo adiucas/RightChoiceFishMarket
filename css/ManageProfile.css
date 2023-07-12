@@ -1,0 +1,75 @@
+body,
+.modal {
+  padding-right: 0 !important; }
+
+.sidebar-container {
+  display: block; }
+  .sidebar-container .sidebar .menu-wrapper .menu.manege-profile {
+    border-color: #E7422C;
+    background: #E7422C;
+    color: #fff; }
+
+.manage-profile-content .content-container .text-primary {
+  color: #1D70B7 !important; }
+  .manage-profile-content .content-container .text-primary.title {
+    text-transform: capitalize;
+    padding: .75rem .75rem 0; }
+    .manage-profile-content .content-container .text-primary.title::after {
+      content: "";
+      display: block;
+      background: rgba(29, 112, 183, 0.25);
+      width: 100%;
+      height: 1px; }
+.manage-profile-content .content-container .info-inputs {
+  padding: .75rem; }
+  .manage-profile-content .content-container .info-inputs label {
+    text-transform: capitalize; }
+  .manage-profile-content .content-container .info-inputs input::placeholder {
+    text-transform: capitalize; }
+.manage-profile-content .addresses .title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem .75rem 0; }
+  .manage-profile-content .addresses .title-btn .title {
+    padding: unset; }
+    .manage-profile-content .addresses .title-btn .title::after {
+      display: none !important; }
+  .manage-profile-content .addresses .title-btn .btn {
+    border-radius: 100px; }
+  .manage-profile-content .addresses .title-btn .modal-body .btn {
+    width: max-content;
+    margin: 0 auto; }
+.manage-profile-content .addresses .divider {
+  width: unset;
+  margin: .25rem .75rem; }
+.manage-profile-content .addresses .address-cards {
+  padding: .75rem; }
+  .manage-profile-content .addresses .address-cards .address-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid rgba(29, 112, 183, 0.25);
+    padding: .75rem;
+    border-radius: 1rem; }
+    .manage-profile-content .addresses .address-cards .address-card table tr td:first-child {
+      color: #1D70B7;
+      font-weight: bold;
+      text-transform: capitalize;
+      padding-right: 10px;
+      vertical-align: top; }
+    .manage-profile-content .addresses .address-cards .address-card .action-default {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .manage-profile-content .addresses .address-cards .address-card .action-default .dropdown-toggle {
+        padding: unset;
+        width: 20px;
+        height: 20px;
+        font-size: .875rem; }
+      .manage-profile-content .addresses .address-cards .address-card .action-default .badge {
+        background: #E7422C; }
+
+/*# sourceMappingURL=ManageProfile.css.map */

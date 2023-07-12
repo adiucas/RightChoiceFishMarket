@@ -225,6 +225,9 @@ p {
       .bottom-header .main-header .navbar-toggler[aria-expanded="true"] .navbar-toggler-custom-icon .bar-3 {
         transform: rotate(-45deg); }
 
+.modal-backdrop {
+  z-index: 3; }
+
 .navigation-menu {
   background: #1D70B7;
   position: sticky;
@@ -458,7 +461,8 @@ p {
   color: #fff;
   background-color: #1D70B7;
   border-color: #1D70B7;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-radius: 100px; }
 
 .btn-primary:hover {
   color: #fff;
@@ -902,8 +906,7 @@ p {
     align-items: center; }
     .footer .payment-platforms img {
       max-width: 100%;
-      height: 30px;
-      }
+      height: 30px; }
 
 @media (max-width: 992px) {
   .footer .quick-link .label {

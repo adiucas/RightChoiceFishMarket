@@ -4,15 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Wallet | Right Choice Fish Market</title>
+	<title>Earned Points | Right Choice Fish Market</title>
 
-	<meta name="title" content="My Wallet | Right Choice Fish Market">
+	<meta name="title" content="Earned Points | Right Choice Fish Market">
 	<meta name="description" content="">
 
 	<!-- opengraph -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
-	<meta property="og:title" content="My Wallet | Right Choice Fish Market">
+	<meta property="og:title" content="Earned Points | Right Choice Fish Market">
 	<meta property="og:description" content="">
 	<meta property="og:image" content="">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
@@ -30,8 +30,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/MyWallet.css">
-	<link rel="stylesheet" href="css/MyWalletRes.css">
+	<link rel="stylesheet" href="css/EarnedPoints.css">
+	<link rel="stylesheet" href="css/EarnedPointsRes.css">
 </head>
 
 <body>
@@ -39,7 +39,39 @@
 	=            header            =
 	=============================-->
 	<header data-include="header" class="sticky-top bottom-header"></header>
+	<header data-include="navigationMenu" class="navigation-menu"></header>
 	<section data-include="mobileNav" class="mobile-nav"></section>
+	<!-- Category Modal for Mobile -->
+	<div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="categoryModalLabel">Categories</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="wrapper">
+						<div class="single-category">
+							<div class="title">মাছ</div>
+							<ul class="list-unstyled">
+								<li><a href="">হাওড়</a></li>
+								<li><a href="">নদী</a></li>
+								<li><a href="">সমুদ্র</a></li>
+								<li><a href="">চাষ</a></li>
+							</ul>
+						</div>
+						<div class="single-category">
+							<div class="title">ফল ও সবজি</div>
+							<ul class="list-unstyled">
+								<li><a href="">শাকসবজি</a></li>
+								<li><a href="">ফলমূল</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- ----------------------------------------- -->
 	<!--                 dashboard                 -->
@@ -53,15 +85,10 @@
 				<div class="content-container mt-2">
 					<div class="table">
 						<div class="history-balance-recharge">
-							<h4 class="text-primary">Wallet Recharge History</h4>
+							<h4 class="text-primary">Earned Points</h4>
 							<div class="balace-recharge">
 								<button class="current-balance disabled">
-									current balance: 5000৳
-								</button>
-								<button class="recharge-wallet" data-bs-toggle="modal"
-									data-bs-target="#WalletRechargeModal">
-									<i class="fa-solid fa-circle-plus me-2"></i>
-									Recharge Wallet
+									100 Points = 1৳ Wallet Money
 								</button>
 							</div>
 						</div>
@@ -69,8 +96,11 @@
 						<div class="thead">
 							<div class="tr">
 								<div class="th">#</div>
-								<div class="th">Amount</div>
-								<div class="th">Approval</div>
+								<div class="th">order code</div>
+								<div class="th">points</div>
+								<div class="th">converted</div>
+								<div class="th">date</div>
+								<div class="th">action</div>
 							</div>
 						</div>
 						<div class="tbody">
@@ -80,12 +110,50 @@
 									<span>01</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">amount</span>
-									<span>1545৳</span>
+									<span class="th-sm">order code</span>
+									<span>454489456</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">approval</span>
-									<span>Approved</span>
+									<span class="th-sm">points</span>
+									<span>500pts</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">converted</span>
+									<span>no</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">date</span>
+									<span>10/07/2023</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">action</span>
+									<button class="btn btn-primary">convert now</button>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="td">
+									<span class="th-sm">serial</span>
+									<span>01</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">order code</span>
+									<span>454489456</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">points</span>
+									<span>500pts</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">converted</span>
+									<span>no</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">date</span>
+									<span>10/07/2023</span>
+								</div>
+								<div class="td">
+									<span class="th-sm">action</span>
+									<button class="btn btn-primary">convert now</button>
 								</div>
 							</div>
 						</div>

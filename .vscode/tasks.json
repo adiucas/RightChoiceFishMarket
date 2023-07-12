@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "sass --watch scss:css --no-cache",
             "windows": {
-                "command": "sass --watch scss:css --no-cache"
+                "command": "sass --watch scss:css"
             },
             "presentation": {
                 "reveal": "always",

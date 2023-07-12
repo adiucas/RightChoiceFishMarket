@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Profile | Right Choice Fish Market</title>
+
+    <meta name="title" content="Manage Profile | Right Choice Fish Market">
+    <meta name="description" content="">
+
+    <!-- opengraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Manage Profile | Right Choice Fish Market">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ManageProfile.css">
+</head>
+
+<body>
+    <!--============================
+	=            header            =
+	=============================-->
+    <header data-include="header" class="sticky-top bottom-header"></header>
+    <header data-include="navigationMenu" class="navigation-menu"></header>
+    <section data-include="mobileNav" class="mobile-nav"></section>
+
+
+    <!-- ----------------------------------------- -->
+    <!--                 dashboard                 -->
+    <!-- ----------------------------------------- -->
+    <div class="container-xxl mt-2">
+        <div class="row">
+            <div class="col-lg-2 mt-2">
+                <div class="content-container sidebar-container" data-include="sidebar" id="sidebar"></div>
+            </div>
+            <div class="col-lg-10 manage-profile-content">
+                <div class="content-container mt-2">
+                    <h4 class="text-primary title">basic info</h4>
+                    <div class="info-inputs">
+                        <div class="row">
+                            <div class="form-group my-2 col-lg-4">
+                                <label>your name</label>
+                                <input type="text" class="form-control" placeholder="your name">
+                            </div>
+                            <div class="form-group my-2 col-lg-4">
+                                <label>date of birth</label>
+                                <input type="date" class="form-control" value="2023-07-10">
+                            </div>
+                            <div class="form-group my-2 col-lg-4">
+                                <label>your phone</label>
+                                <input type="text" class="form-control" placeholder="your phone">
+                            </div>
+                            <div class="form-group my-2 col-lg-6">
+                                <label>your password</label>
+                                <input type="text" class="form-control" placeholder="your password">
+                            </div>
+                            <div class="form-group my-2 col-lg-6">
+                                <label>confirm password</label>
+                                <input type="text" class="form-control" placeholder="confirm password">
+                            </div>
+                            <div class="form-group mt-4 col-lg-12 text-center">
+                                <button class="btn btn-primary">update profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container addresses mt-4">
+                    <div class="title-btn">
+                        <h4 class="text-primary title">address</h4>
+                        <button class="btn btn-outline-primary text-capitalize" data-bs-toggle="modal"
+                            data-bs-target="#AddNewAddress"><i class="bi bi-plus-circle me-1"></i>
+                            add new address</button>
+                        <!-- ----------------------------------------- -->
+                        <!--             new address modal             -->
+                        <!-- ----------------------------------------- -->
+                        <div class="modal fade" id="AddNewAddress" tabindex="-1" aria-labelledby="AddNewAddressLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="AddNewAddressLabel">Add New Address</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="d-grid gap-3">
+                                            <div>
+                                                <label class="mb-1">
+                                                    Address
+                                                </label>
+                                                <input type="text" class="form-control" placeholder="Address">
+                                            </div>
+                                            <div>
+                                                <label class="mb-1">Country</label>
+                                                <input type="text" value="Bangladesh" placeholder="Country"
+                                                    class="form-control">
+                                            </div>
+                                            <div>
+                                                <label class="mb-1">City</label>
+                                                <select class="form-control">
+                                                    <option class="first-option">Please Select</option>
+                                                    <option>inside Dhaka</option>
+                                                    <option>outside Dhaka</option>
+                                                    <option>Sub Area</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label class="mb-1">Phone</label>
+                                                <input type="text" class="form-control" placeholder="Phone">
+                                            </div>
+                                            <button class="btn btn-primary">Save now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="address-cards">
+                        <div class="row row-cols-1 row-cols-lg-4 gy-3">
+                            <div class="col">
+                                <div class="address-card">
+                                    <table>
+                                        <tr>
+                                            <td>address:</td>
+                                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eum, velit.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>City:</td>
+                                            <td>Inside Dhaka</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Country:</td>
+                                            <td>Bangladesh</td>
+                                        </tr>
+                                        <tr>
+                                            <td>phone:</td>
+                                            <td>01625423992</td>
+                                        </tr>
+                                    </table>
+                                    <div class="action-default">
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="addressAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="addressAction">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                        <span class="badge">Default</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="address-card">
+                                    <table>
+                                        <tr>
+                                            <td>address:</td>
+                                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eum, velit.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>City:</td>
+                                            <td>Inside Dhaka</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Country:</td>
+                                            <td>Bangladesh</td>
+                                        </tr>
+                                        <tr>
+                                            <td>phone:</td>
+                                            <td>01625423992</td>
+                                        </tr>
+                                    </table>
+                                    <div class="action-default">
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="addressAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="addressAction">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Make this Default</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container mt-4">
+                    <h4 class="text-primary title">change email</h4>
+                    <div class="info-inputs">
+                        <div class="row">
+                            <div class="form-group my-2 col-lg-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your Email"
+                                        aria-label="Your Email" aria-describedby="changeemailbtn">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        id="changeemailbtn">Verify</button>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4 col-lg-12 text-center">
+                                <button class="btn btn-primary">update email</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============================
+	=            footer            =
+	=============================-->
+    <div data-include="footer"></div>
+</body>
+<!-- scripts -->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
