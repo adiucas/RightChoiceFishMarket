@@ -1,0 +1,27 @@
+.notifications {
+  min-height: calc(100vh - 430px); }
+  .notifications .sec-title {
+    padding: .75rem .75rem 0; }
+    .notifications .sec-title::after {
+      width: 100%; }
+  .notifications .content {
+    padding: .75rem; }
+    .notifications .content .notification {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: .75rem;
+      border: 1px solid rgba(29, 112, 183, 0.25);
+      border-radius: .5rem; }
+      .notifications .content .notification .text {
+        margin-right: 15px; }
+      .notifications .content .notification .date-time {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        .notifications .content .notification .date-time .time {
+          color: #1D70B7;
+          font-weight: bold; }
+
+/*# sourceMappingURL=Notifications.css.map */

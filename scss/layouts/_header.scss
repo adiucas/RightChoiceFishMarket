@@ -24,6 +24,7 @@
             .form-control {
                 font-size: 14px;
                 border-radius: 100px;
+                padding: 5px 20px;
 
                 &:focus {
                     box-shadow: unset;
@@ -67,6 +68,78 @@
 
                 .btn {
                     border-radius: 100px;
+                }
+            }
+
+            .cart {
+                position: relative;
+
+                .cart-details {
+                    position: absolute;
+                    background: #fff;
+                    z-index: 3;
+                    right: 0;
+                    margin-top: 10px;
+                    border-radius: .75rem;
+                    padding: .75rem 2*.75rem;
+                    box-shadow: 0px 10px 15px rgba(#000, 50%);
+                    width: max-content;
+                    display: none;
+                    transition: 0.3s all;
+
+                    &.show {
+                        display: block;
+                    }
+
+                    .title {
+                        color: $secCol;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                    }
+
+                    .products {
+                        .product {
+                            @include flex(row, $sb, center);
+                            padding: .75rem;
+                            background: $lpCol;
+                            border-radius: .75rem;
+                            margin: .75rem 0;
+
+                            .image-name-price {
+                                @include flex(row, null, center);
+
+                                .image {
+                                    overflow: hidden;
+                                    border-radius: .5rem;
+                                    flex-shrink: 0;
+
+                                    img {
+                                        width: 100%;
+                                        max-width: 70px;
+                                    }
+                                }
+
+                                .name-price {
+                                    flex-shrink: 0;
+                                    margin-left: 10px;
+
+                                    .name {
+                                        font-weight: bold;
+                                        color: $primCol;
+                                        font-family: "mmsBold", sans-serif;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+
+                            .remove-icon {
+                                font-size: 1.5rem;
+                                color: red;
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
                 }
             }
         }

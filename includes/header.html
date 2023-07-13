@@ -11,9 +11,9 @@
 </div>
 <div class="container-xxl">
     <div class="main-header">
-        <div class="logo">
+        <a href="index.html" class="logo">
             <img src="images/logo.svg" alt="">
-        </div>
+        </a>
         <div class="search-input">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="I am shopping for..."
@@ -53,21 +53,42 @@
                 </button>
             </div>
             <div class="cart">
-                <button type="button" class="btn btn-outline-primary position-relative">
+                <button type="button" class="btn btn-outline-primary position-relative" onclick="showCart()">
                     <i class="bi bi-cart2"></i>
                     <span class="ms-2">Cart</span>
                     <span class="badge ms-3">
                         0
                     </span>
                 </button>
+                <div class="cart-details" id="cartDetails">
+                    <div class="title">cart items</div>
+                    <div class="divider"></div>
+                    <div class="products">
+                        <div class="product">
+                            <div class="image-name-price">
+                                <div class="image">
+                                    <img src="images/products/air.jpg">
+                                </div>
+                                <div class="name-price">
+                                    <div class="name">নদীর আইড়-Ayer</div>
+                                    <div class="qty-price">1x990৳</div>
+                                </div>
+                            </div>
+                            <a href="#" class="remove-icon" data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Remove from Cart List">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="login-reg d-none d-lg-flex">
-            <a href="" type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="left"
-                title="Login">
+            <a href="login.html" type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip"
+                data-bs-placement="left" title="Login">
                 <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </a>
-            <a href="" type="button" class="btn btn-outline-primary ms-3" data-bs-toggle="tooltip"
+            <a href="register.html" type="button" class="btn btn-outline-primary ms-3" data-bs-toggle="tooltip"
                 data-bs-placement="left" title="Register">
                 <i class="fa-solid fa-user-plus"></i>
             </a>
@@ -263,6 +284,10 @@
     }
 
     new bootnavbar();
+
+    function showCart() {
+        $("#cartDetails").toggleClass("show");
+    }
 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

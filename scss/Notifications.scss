@@ -1,0 +1,38 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.notifications {
+    min-height: calc(100vh - 430px);
+
+    .sec-title {
+        padding: .75rem .75rem 0;
+
+        &::after {
+            width: 100%;
+        }
+    }
+
+    .content {
+        padding: .75rem;
+
+        .notification {
+            @include flex(row, $sb, center);
+            padding: .75rem;
+            border: 1px solid rgba($color: $primCol, $alpha: .25);
+            border-radius: .5rem;
+
+            .text {
+                margin-right: 15px;
+            }
+
+            .date-time {
+                @include flex(col, null, flex-end);
+
+                .time {
+                    color: $primCol;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
