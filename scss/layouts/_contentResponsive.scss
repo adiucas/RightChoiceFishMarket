@@ -71,6 +71,25 @@
             }
         }
     }
+
+    /* -------------------------------------------- */
+    /*                 cart progress                */
+    /* -------------------------------------------- */
+    @media(max-width:992px) {
+        .cart-steps {
+            .icon-name {
+                .label {
+                    display: none;
+                }
+
+                &:not(:first-child) {
+                    &::before {
+                        left: -100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 992px) {

@@ -1,0 +1,129 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+@import 'MyCartRes';
+
+.cart-steps {
+    .icon-name {
+        &.my-cart {
+            opacity: 1;
+            color: $secCol;
+        }
+    }
+}
+
+.product-list {
+    .table {
+
+        .thead,
+        .tbody {
+            .product {
+                flex-basis: 150%;
+            }
+        }
+    }
+
+    .table {
+        .tbody {
+
+            .product {
+                .image-name {
+                    @include flex(row, null, center);
+
+                    .image {
+                        overflow: hidden;
+                        border-radius: .5rem;
+                        flex-shrink: 0;
+
+                        img {
+                            width: 100%;
+                            max-width: 70px;
+                        }
+                    }
+
+                    .name-qty {
+                        margin-left: 10px;
+
+                        .name {
+                            font-weight: bold;
+                            color: $primCol;
+                            font-family: "mmsBold", sans-serif;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .price {
+                // font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            .quantity {
+                .input-group {
+                    max-width: 115px;
+                }
+
+                .btn {
+                    &:nth-child(1) {
+                        border-radius: 100px 0 0 100px;
+                    }
+
+                    &:nth-child(3) {
+                        border-radius: 0 100px 100px 0;
+                    }
+
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+
+                .form-control {
+                    text-align: center;
+                    width: 50px;
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+
+            .remove {
+                .btn {
+                    @include flex(row, center, center);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100px;
+                    font-size: .875rem;
+                    padding: unset;
+                }
+            }
+        }
+
+        .subtotal {
+            .label-amount {
+                margin-top: 5px;
+                padding: 0 .75rem;
+                @include flex(row, $sb, center);
+
+                .label {
+                    font-size: 1rem;
+                }
+
+                .amount {
+                    @include head();
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .buttons {
+            @include flex(row, $sb, center);
+            margin-top: 15px;
+            margin-bottom: .75rem;
+        }
+    }
+
+
+
+}

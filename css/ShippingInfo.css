@@ -1,0 +1,128 @@
+@media (max-width: 992px) {
+  .table .thead .tr,
+  .table .tbody .tr {
+    flex-wrap: wrap; }
+    .table .thead .tr .th,
+    .table .thead .tr .td,
+    .table .tbody .tr .th,
+    .table .tbody .tr .td {
+      text-align: center;
+      margin: unset;
+      flex-basis: 50%;
+      margin: 5px 0; }
+    .table .thead .tr .product,
+    .table .tbody .tr .product {
+      flex-basis: 100%;
+      text-align: left; }
+    .table .thead .tr .date,
+    .table .tbody .tr .date {
+      order: 1; }
+    .table .thead .tr .quantity,
+    .table .tbody .tr .quantity {
+      order: 1; }
+    .table .thead .tr .remove,
+    .table .tbody .tr .remove {
+      flex-basis: 100%;
+      order: 1; } }
+.cart-steps .icon-name.my-cart {
+  opacity: 1;
+  color: #1D70B7; }
+.cart-steps .icon-name.shipping-info {
+  opacity: 1; }
+  .cart-steps .icon-name.shipping-info div {
+    color: #E7422C; }
+
+.addresses .text-primary {
+  color: #1D70B7 !important;
+  text-transform: capitalize; }
+.addresses .title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem .75rem 0; }
+  .addresses .title-btn .title {
+    padding: unset; }
+    .addresses .title-btn .title::after {
+      display: none !important; }
+  .addresses .title-btn .btn {
+    border-radius: 100px; }
+  .addresses .title-btn .modal-body .btn {
+    width: max-content;
+    margin: 0 auto; }
+.addresses .divider {
+  width: unset;
+  margin: .25rem .75rem; }
+.addresses .address-cards {
+  padding: .75rem; }
+  .addresses .address-cards .address-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid rgba(29, 112, 183, 0.25);
+    padding: .75rem;
+    border-radius: 1rem; }
+    .addresses .address-cards .address-card .check-icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      flex-shrink: 0;
+      margin-right: 15px;
+      border: 1px solid rgba(29, 112, 183, 0.25);
+      color: #1D70B7;
+      transition: 0.3s all; }
+      .addresses .address-cards .address-card .check-icon i {
+        opacity: 0;
+        font-size: 0;
+        transition: 0.3s all; }
+    .addresses .address-cards .address-card table tr td:first-child {
+      color: #1D70B7;
+      font-weight: bold;
+      text-transform: capitalize;
+      padding-right: 10px;
+      vertical-align: top; }
+    .addresses .address-cards .address-card .action {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .addresses .address-cards .address-card .action .dropdown-toggle {
+        padding: unset;
+        width: 20px;
+        height: 20px;
+        font-size: .875rem; }
+      .addresses .address-cards .address-card .action .badge {
+        background: #E7422C; }
+    .addresses .address-cards .address-card.add-new-address {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: #1D70B7;
+      font-size: 1.5rem;
+      cursor: pointer; }
+      .addresses .address-cards .address-card.add-new-address i {
+        font-size: 2rem; }
+  .addresses .address-cards .form-check-input {
+    display: none; }
+    .addresses .address-cards .form-check-input:checked + .address-card {
+      border: 2px solid #1d70b7; }
+      .addresses .address-cards .form-check-input:checked + .address-card .check-icon {
+        border: 1px solid #1d70b7; }
+        .addresses .address-cards .form-check-input:checked + .address-card .check-icon i {
+          opacity: 1;
+          font-size: 18px; }
+  .addresses .address-cards .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px; }
+
+/*# sourceMappingURL=ShippingInfo.css.map */

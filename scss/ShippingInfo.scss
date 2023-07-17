@@ -1,0 +1,151 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+@import 'MyCartRes';
+
+.cart-steps {
+    .icon-name {
+        &.my-cart {
+            opacity: 1;
+            color: $primCol;
+        }
+
+        &.shipping-info {
+            opacity: 1;
+
+            div {
+                color: $secCol;
+            }
+        }
+    }
+}
+
+.addresses {
+    .text-primary {
+        color: $primCol !important;
+        text-transform: capitalize;
+    }
+
+    .title-btn {
+        @include flex(row, space-between, center);
+        padding: .75rem .75rem 0;
+
+        .title {
+            padding: unset;
+
+            &::after {
+                display: none !important;
+            }
+        }
+
+        .btn {
+            border-radius: 100px;
+        }
+
+        .modal-body {
+            .btn {
+                width: max-content;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .divider {
+        width: unset;
+        margin: .25rem .75rem;
+    }
+
+    .address-cards {
+        padding: .75rem;
+
+        .address-card {
+            @include flex(row, space-between);
+            border: 2px solid rgba($color: $primCol, $alpha: 0.25);
+            padding: .75rem;
+            border-radius: 1rem;
+
+            .check-icon {
+                @include flex(row, center, center);
+                background: #fff;
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                flex-shrink: 0;
+                margin-right: 15px;
+                border: 1px solid rgba($color: $primCol, $alpha: .25);
+                color: $primCol;
+                transition: 0.3s all;
+
+                i {
+                    opacity: 0;
+                    font-size: 0;
+                    transition: 0.3s all;
+                }
+            }
+
+            table {
+                tr {
+                    td {
+                        &:first-child {
+                            color: $primCol;
+                            font-weight: bold;
+                            text-transform: capitalize;
+                            padding-right: 10px;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+
+            .action {
+                @include flex(col, space-between, flex-end);
+
+                .dropdown-toggle {
+                    padding: unset;
+                    width: 20px;
+                    height: 20px;
+                    font-size: .875rem;
+                }
+
+                .badge {
+                    background: $secCol;
+                }
+            }
+
+            &.add-new-address {
+                @include flex(col, center, center);
+                width: 100%;
+                color: $primCol;
+                font-size: 1.5rem;
+                cursor: pointer;
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .form-check-input {
+            display: none;
+
+            &:checked {
+                +.address-card {
+                    border: 2px solid rgba($color: $primCol, $alpha: 1);
+
+                    .check-icon {
+                        border: 1px solid rgba($color: $primCol, $alpha: 1);
+
+                        i {
+                            opacity: 1;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            @include flex(row, $sb, center);
+            margin-top: 15px;
+        }
+    }
+}

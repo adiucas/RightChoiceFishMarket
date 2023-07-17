@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Cart | Right Choice Fish Market</title>
+
+	<meta name="title" content="My Cart | Right Choice Fish Market">
+	<meta name="description" content="">
+
+	<!-- opengraph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="My Cart | Right Choice Fish Market">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/MyCart.css">
+	<link rel="stylesheet" href="css/MyCartRes.css">
+</head>
+
+<body>
+	<!--============================
+	=            header            =
+	=============================-->
+	<header data-include="header" class="sticky-top bottom-header"></header>
+	<header data-include="navigationMenu" class="navigation-menu"></header>
+	<section data-include="mobileNav" class="mobile-nav"></section>
+
+	<!-- ----------------------------------------- -->
+	<!--                  My Cart                  -->
+	<!-- ----------------------------------------- -->
+	<section data-include="CartProgress"></section>
+
+	<section class="container-xxl mt-4 product-list">
+		<div class="content-container">
+			<div class="table">
+				<div class="thead">
+					<div class="tr">
+						<div class="th product">Product</div>
+						<div class="th price">Price</div>
+						<div class="th quantity">Quantity</div>
+						<div class="th total">TOTAL</div>
+						<div class="th date">date</div>
+						<div class="th remove">Remove</div>
+					</div>
+				</div>
+				<div class="tbody">
+					<div class="tr">
+						<div class="td product">
+							<div class="image-name">
+								<div class="image">
+									<img src="images/products/air.jpg">
+								</div>
+								<div class="name-qty">
+									<div class="name">নদীর আইড়-Ayer</div>
+									<div class="qty">1kg+-Whole Fish Untouched</div>
+								</div>
+							</div>
+						</div>
+						<div class="td price">
+							<span class="th-sm">Price</span>
+							<span>990৳</span>
+						</div>
+						<div class="td quantity">
+							<span class="th-sm">Quantity</span>
+							<div class="input-group">
+								<button class="btn btn-primary" type="button" id="button-addon1"><i
+										class="fa-solid fa-minus"></i></button>
+								<input type="text" class="form-control" placeholder=""
+									aria-label="Example text with button addon" aria-describedby="button-addon1"
+									value="1">
+								<button class="btn btn-primary" type="button" id="button-addon1"><i
+										class="fa-solid fa-plus"></i></button>
+							</div>
+						</div>
+						<div class="td total">
+							<span class="th-sm">TOTAL</span>
+							<span>990৳</span>
+						</div>
+						<div class="td date">
+							<span class="th-sm">date</span>
+							<span>10/07/2023</span>
+						</div>
+						<div class="td remove">
+							<span class="th-sm">Remove</span>
+							<button class="btn btn-outline-primary"><i class="fa-solid fa-xmark"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="subtotal">
+					<div class="divider"></div>
+					<div class="label-amount">
+						<div class="label">Subtotal</div>
+						<div class="amount">3,170৳</div>
+					</div>
+				</div>
+				<div class="buttons">
+					<button class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left me-2"></i>Return to
+						Shop</button>
+					<button class="btn btn-primary">Continue to Shipping</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--============================
+	=            footer            =
+	=============================-->
+	<div data-include="footer"></div>
+</body>
+<!-- scripts -->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

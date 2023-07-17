@@ -1,0 +1,41 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+
+@media(max-width:992px) {
+    .table {
+
+        .thead,
+        .tbody {
+            .tr {
+                flex-wrap: wrap;
+
+                .th,
+                .td {
+                    text-align: center;
+                    margin: unset;
+                    flex-basis: 50%;
+                    margin: 5px 0;
+                }
+
+                .product {
+                    flex-basis: 100%;
+                    text-align: left;
+                }
+
+                .date {
+                    order: 1;
+                }
+
+                .quantity {
+                    order: 1;
+                }
+
+                .remove {
+                    flex-basis: 100%;
+                    order: 1;
+                }
+            }
+        }
+    }
+}

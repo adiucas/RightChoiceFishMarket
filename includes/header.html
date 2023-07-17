@@ -52,7 +52,7 @@
                     </span>
                 </button>
             </div>
-            <div class="cart">
+            <div class="cart" id="cart">
                 <button type="button" class="btn btn-outline-primary position-relative" onclick="showCart()">
                     <i class="bi bi-cart2"></i>
                     <span class="ms-2">Cart</span>
@@ -341,6 +341,13 @@
     function showCart() {
         $("#cartDetails").toggleClass("show");
     }
+
+
+    document.addEventListener('click', function (e) {
+        if (!document.getElementById('cartDetails').contains(e.target) && !document.getElementById('cart').contains(e.target)) {
+            $("#cartDetails").removeClass("show");
+        }
+    });
 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

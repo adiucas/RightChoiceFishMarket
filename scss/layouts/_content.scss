@@ -45,6 +45,7 @@
 .btn-outline-primary {
 	color: $primCol;
 	border-color: $primCol;
+	border-radius: 100px;
 }
 
 .btn-outline-primary:hover {
@@ -412,6 +413,53 @@
 				color: rgba($color: #000000, $alpha: .75);
 				font-weight: 400;
 				font-family: $paraFF;
+			}
+		}
+	}
+
+	.thead,
+	.tbody {
+		.tr {
+
+			.th,
+			.td {
+				flex-basis: (100%/1);
+			}
+		}
+	}
+}
+
+/* -------------------------------------------- */
+/*                 cart progress                */
+/* -------------------------------------------- */
+.cart-steps {
+	@include flex(row, $sb, center);
+	padding: 2*.75rem;
+	max-width: 768px;
+	margin: 0 auto;
+
+	.icon-name {
+		text-align: center;
+		position: relative;
+		opacity: 0.5;
+
+		i {
+			font-size: 2rem;
+		}
+
+		.label {
+			font-weight: bold;
+		}
+
+		&:not(:first-child) {
+			&::before {
+				position: absolute;
+				content: "\f054";
+				font-family: $fw;
+				font-weight: bold;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -50%;
 			}
 		}
 	}
