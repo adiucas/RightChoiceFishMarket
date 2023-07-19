@@ -1,0 +1,75 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.cart-steps {
+    .icon-name {
+
+        &.my-cart,
+        &.shipping-info,
+        &.delivery-info,
+        &.payment-info {
+            opacity: 1;
+            color: $primCol;
+        }
+
+        &.confirmation {
+            opacity: 1;
+
+            div {
+                color: $secCol;
+            }
+        }
+    }
+}
+
+.confirmation {
+    .thank-you {
+        @include flex(col, center, center);
+        padding: .75rem;
+
+        i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: $primCol;
+        }
+
+        h3 {
+            color: $primCol;
+        }
+
+        div {
+            margin-top: 10px;
+            font-size: 1.25rem;
+        }
+
+        p {
+            color: rgba($color: #000000, $alpha: 0.75)
+        }
+    }
+
+    .order-summary-data {
+        padding: .75rem;
+
+        .wrapper {
+            .d-flex {
+                div {
+                    flex-basis: 100%;
+                    padding: .5rem 0;
+                    font-size: 1rem;
+
+                    &.label {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: rgba($color: $primCol, $alpha: .25);
+            }
+        }
+    }
+}

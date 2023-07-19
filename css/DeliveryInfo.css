@@ -1,0 +1,79 @@
+.cart-steps .icon-name.my-cart, .cart-steps .icon-name.shipping-info {
+  opacity: 1;
+  color: #1D70B7; }
+.cart-steps .icon-name.delivery-info {
+  opacity: 1; }
+  .cart-steps .icon-name.delivery-info div {
+    color: #E7422C; }
+
+.product-list .table .thead .product,
+.product-list .table .tbody .product {
+  flex-basis: 150%; }
+.product-list .table .tbody .product .image-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .product-list .table .tbody .product .image-name .image {
+    overflow: hidden;
+    border-radius: .5rem;
+    flex-shrink: 0; }
+    .product-list .table .tbody .product .image-name .image img {
+      width: 100%;
+      max-width: 70px; }
+  .product-list .table .tbody .product .image-name .name-qty {
+    margin-left: 10px; }
+    .product-list .table .tbody .product .image-name .name-qty .name {
+      font-weight: bold;
+      color: #1D70B7;
+      font-family: "mmsBold", sans-serif;
+      font-size: 1rem; }
+.product-list .table .delivery-type .label-check {
+  margin-top: 5px;
+  padding: 0 .75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .product-list .table .delivery-type .label-check .label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1D70B7;
+    margin-right: 10px; }
+  .product-list .table .delivery-type .label-check .check-icon label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    padding: 5px 10px;
+    transition: 0.3s all; }
+  .product-list .table .delivery-type .label-check .check-icon .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #1D70B7;
+    font-size: 0;
+    transition: 0.3s all; }
+  .product-list .table .delivery-type .label-check .check-icon .form-check-input {
+    display: none; }
+    .product-list .table .delivery-type .label-check .check-icon .form-check-input:checked + label {
+      border: 1px solid #1d70b7; }
+      .product-list .table .delivery-type .label-check .check-icon .form-check-input:checked + label .icon {
+        border: unset;
+        font-size: 12px; }
+.product-list .table .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: .75rem; }
+
+/*# sourceMappingURL=DeliveryInfo.css.map */

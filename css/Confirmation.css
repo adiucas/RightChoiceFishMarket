@@ -1,0 +1,41 @@
+.cart-steps .icon-name.my-cart, .cart-steps .icon-name.shipping-info, .cart-steps .icon-name.delivery-info, .cart-steps .icon-name.payment-info {
+  opacity: 1;
+  color: #1D70B7; }
+.cart-steps .icon-name.confirmation {
+  opacity: 1; }
+  .cart-steps .icon-name.confirmation div {
+    color: #E7422C; }
+
+.confirmation .thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .75rem; }
+  .confirmation .thank-you i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1D70B7; }
+  .confirmation .thank-you h3 {
+    color: #1D70B7; }
+  .confirmation .thank-you div {
+    margin-top: 10px;
+    font-size: 1.25rem; }
+  .confirmation .thank-you p {
+    color: rgba(0, 0, 0, 0.75); }
+.confirmation .order-summary-data {
+  padding: .75rem; }
+  .confirmation .order-summary-data .wrapper .d-flex div {
+    flex-basis: 100%;
+    padding: .5rem 0;
+    font-size: 1rem; }
+    .confirmation .order-summary-data .wrapper .d-flex div.label {
+      font-weight: bold; }
+  .confirmation .order-summary-data .wrapper::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgba(29, 112, 183, 0.25); }
+
+/*# sourceMappingURL=Confirmation.css.map */

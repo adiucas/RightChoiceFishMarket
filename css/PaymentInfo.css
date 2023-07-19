@@ -1,0 +1,151 @@
+.cart-steps .icon-name.my-cart, .cart-steps .icon-name.shipping-info, .cart-steps .icon-name.delivery-info {
+  opacity: 1;
+  color: #1D70B7; }
+.cart-steps .icon-name.payment-info {
+  opacity: 1; }
+  .cart-steps .icon-name.payment-info div {
+    color: #E7422C; }
+
+.payment-info .sec-title {
+  text-align: left;
+  color: #1D70B7;
+  padding: .75rem .75rem 0; }
+  .payment-info .sec-title:after {
+    width: 100%;
+    background: rgba(29, 112, 183, 0.25); }
+.payment-info .payment-options {
+  display: flex;
+  flex-direction: row;
+  padding: .75rem 0; }
+  .payment-info .payment-options .payment-option {
+    cursor: pointer;
+    padding: 0 .75rem; }
+    .payment-info .payment-options .payment-option .icon-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(29, 112, 183, 0.25);
+      padding: .75rem;
+      border-radius: .75rem; }
+      .payment-info .payment-options .payment-option .icon-text .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgba(29, 112, 183, 0.25);
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 25px; }
+      .payment-info .payment-options .payment-option .icon-text span {
+        font-size: 1.25rem;
+        text-transform: capitalize; }
+    .payment-info .payment-options .payment-option .form-check-input {
+      display: none; }
+      .payment-info .payment-options .payment-option .form-check-input:checked + .icon-text {
+        border-color: #1d70b7; }
+        .payment-info .payment-options .payment-option .form-check-input:checked + .icon-text .icon {
+          background-color: #1D70B7; }
+        .payment-info .payment-options .payment-option .form-check-input:checked + .icon-text span {
+          color: #1D70B7; }
+.payment-info .summary .sec-title .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
+  .payment-info .summary .sec-title .wrapper span {
+    font-family: unset; }
+  .payment-info .summary .sec-title .wrapper .bg-primary {
+    background-color: #1D70B7 !important; }
+.payment-info .summary .content {
+  padding: .75rem; }
+  .payment-info .summary .content .total-club-point {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.75);
+    color: #E7422C; }
+    .payment-info .summary .content .total-club-point .amount {
+      font-weight: bold; }
+  .payment-info .summary .content .product-total {
+    margin-top: 10px; }
+    .payment-info .summary .content .product-total .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 1rem; }
+    .payment-info .summary .content .product-total .data .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5rem 0; }
+      .payment-info .summary .content .product-total .data .wrapper .name {
+        padding-right: 12px; }
+    .payment-info .summary .content .product-total .data:not(:last-child):after {
+      content: "";
+      display: block;
+      background: rgba(29, 112, 183, 0.25);
+      height: 1px; }
+  .payment-info .summary .content .sub-shipping-total .wrapper {
+    font-weight: bold;
+    font-size: 1rem; }
+    .payment-info .summary .content .sub-shipping-total .wrapper div {
+      padding: .5rem 0; }
+    .payment-info .summary .content .sub-shipping-total .wrapper:not(:last-child):after {
+      content: "";
+      display: block;
+      background: rgba(29, 112, 183, 0.25);
+      height: 1px; }
+  .payment-info .summary .content .coupon .form-control {
+    box-shadow: unset !important;
+    border-radius: 100px 0 0 100px;
+    padding: .75rem 1.5rem; }
+  .payment-info .summary .content .coupon .btn {
+    box-shadow: unset !important; }
+  .payment-info .summary .content .available-coupons {
+    margin-top: 1rem;
+    padding: .75rem;
+    border: 1px solid rgba(29, 112, 183, 0.25);
+    border-radius: .75rem; }
+    .payment-info .summary .content .available-coupons .title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1rem;
+      color: #1D70B7; }
+      .payment-info .summary .content .available-coupons .title::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: rgba(29, 112, 183, 0.25); }
+    .payment-info .summary .content .available-coupons .coupon {
+      background: #1D70B7;
+      padding: .75rem;
+      text-align: center;
+      color: #e3f0fb;
+      border-radius: .25rem; }
+.payment-info .complete-order {
+  margin-top: 1rem;
+  padding: 1.5rem; }
+  .payment-info .complete-order .form-check {
+    margin-left: 1.5rem; }
+  .payment-info .complete-order .form-check-input {
+    border-radius: 100px; }
+  .payment-info .complete-order a {
+    color: #1D70B7; }
+  .payment-info .complete-order .btn {
+    margin: 1rem auto 0;
+    display: block; }
+
+/*# sourceMappingURL=PaymentInfo.css.map */

@@ -1,6 +1,5 @@
 @import 'templates/variables';
 @import 'templates/mixins';
-@import 'MyCartRes';
 
 .cart-steps {
     .icon-name {
@@ -123,7 +122,4 @@
             margin-bottom: .75rem;
         }
     }
-
-
-
 }
