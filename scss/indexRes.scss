@@ -5,6 +5,14 @@
 @media(max-width:992px) {
 
     /* -------------------------------------------- */
+    /*               popular products               */
+    /* -------------------------------------------- */
+    .cust-card .popular-products .card {
+        flex-basis: calc(50% - 20px);
+        margin-bottom: unset;
+    }
+
+    /* -------------------------------------------- */
     /*               featured product               */
     /* -------------------------------------------- */
     .content-container {
@@ -22,6 +30,26 @@
 
     .featured-products .product .wrapper .desc .price-stock .price {
         font-size: 15px;
+    }
+}
+
+@media(max-width:576px) {
+
+    /* -------------------------------------------- */
+    /*               popular products               */
+    /* -------------------------------------------- */
+    .cust-card {
+        .popular-products {
+            max-height: 300px;
+        }
+    }
+
+    /* -------------------------------------------- */
+    /*               popular products               */
+    /* -------------------------------------------- */
+    .cust-card .popular-products .card {
+        flex-basis: 100%;
+        margin-bottom: unset;
     }
 }
 

@@ -5,6 +5,7 @@
     background: $lpCol;
     position: sticky;
     top: 0;
+    z-index: 3;
 
     .main-header {
         @include flex(row, null, center);
@@ -298,7 +299,7 @@
 }
 
 .navigation-menu {
-    background: $primCol;
+    background: linear-gradient(90deg, $primCol 0%, #35a8e0 50%, $primCol 100%);
     position: sticky;
     top: 80px;
     z-index: 2;
@@ -344,7 +345,7 @@
 
 
 .mobile-menu {
-    background: $primCol;
+    background: linear-gradient(90deg, $primCol 0%, #35a8e0 50%, $primCol 100%);
 
     .navbar-nav {
         flex-direction: row;

@@ -23,5 +23,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 function toggleSidebar() {
   $("#sidebar").toggleClass("expanded");
-  $("body").toggleClass("overlay-active")
+  $("body").toggleClass("overlay-active");
 }
+
+document.addEventListener('click', function (e) {
+  if (!document.getElementById('sidebar').contains(e.target) && !document.getElementById('sidebarToggler').contains(e.target)) {
+    $("#sidebar").removeClass("expanded");
+    $("body").removeClass("overlay-active");
+  }
+});

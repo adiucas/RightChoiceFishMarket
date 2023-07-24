@@ -42,7 +42,7 @@
   z-index: 1; }
 
 /* -------------------------------------------- */
-/*           categories & todays deal           */
+/*           categories & popular products           */
 /* -------------------------------------------- */
 .cust-card {
   background: #e3f0fb;
@@ -82,39 +82,44 @@
         position: absolute;
         color: #fff;
         font-size: 8px; }
-  .cust-card .deal-products {
+  .cust-card .popular-products {
     display: flex;
     flex-direction: row;
     overflow-y: auto;
-    padding-right: 15px;
     flex-wrap: wrap;
     font-family: "mmsRegular" !important;
     /* width */
     /* Track */
     /* Handle */ }
-    .cust-card .deal-products::-webkit-scrollbar {
+    .cust-card .popular-products::-webkit-scrollbar {
       width: 5px;
       cursor: pointer; }
-    .cust-card .deal-products::-webkit-scrollbar-track {
+    .cust-card .popular-products::-webkit-scrollbar-track {
       background: #e3f0fb; }
-    .cust-card .deal-products::-webkit-scrollbar-thumb {
+    .cust-card .popular-products::-webkit-scrollbar-thumb {
       border-radius: 10px;
       opacity: 0.5;
-      background: #1D70B7; }
-    .cust-card .deal-products .card {
-      width: calc(50% - 20px);
+      background: #1D70B7;
+      border: 1px solid #e3f0fb;
+      background-clip: padding-box; }
+    .cust-card .popular-products .card {
       margin: .75rem; }
-    .cust-card .deal-products .card-title {
+      .cust-card .popular-products .card:not(:last-child) {
+        margin-bottom: 0; }
+    .cust-card .popular-products .card-body {
+      padding: unset; }
+    .cust-card .popular-products .card-title {
       font-weight: bold;
       color: #1D70B7;
       font-size: .875rem;
-      font-family: "mmsRegular", sans-serif; }
-    .cust-card .deal-products .card-text .offer-price {
+      font-family: "mmsRegular", sans-serif;
+      margin-bottom: 0; }
+    .cust-card .popular-products .card-text .offer-price {
       color: #E7422C;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-right: 5px; }
-    .cust-card .deal-products .card-text .regular-price {
+    .cust-card .popular-products .card-text .regular-price {
       text-decoration: line-through;
       color: rgba(0, 0, 0, 0.5); }
   .cust-card .accordion {
@@ -324,5 +329,75 @@
     top: 200px;
     right: -5px;
     z-index: 1; }
+
+/* -------------------------------------------- */
+/*               add to cart modal              */
+/* -------------------------------------------- */
+#AddToCartModal .modal-dialog {
+  max-width: 1024px; }
+#AddToCartModal .product-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: start; }
+  #AddToCartModal .product-wrapper .info {
+    flex-grow: 1;
+    padding: 12px; }
+    #AddToCartModal .product-wrapper .info h4 {
+      font-family: "mmmsRegular", sans-serif;
+      color: #1D70B7; }
+    #AddToCartModal .product-wrapper .info .review-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      #AddToCartModal .product-wrapper .info .review-wrapper .count {
+        margin-left: 5px;
+        color: rgba(0, 0, 0, 0.5); }
+    #AddToCartModal .product-wrapper .info .stock {
+      font-size: 14px; }
+    #AddToCartModal .product-wrapper .info .title {
+      flex-basis: 10%;
+      color: #1D70B7;
+      flex-shrink: 0; }
+    #AddToCartModal .product-wrapper .info .data.price .price-tag {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1D70B7; }
+    #AddToCartModal .product-wrapper .info .data.size-options {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      #AddToCartModal .product-wrapper .info .data.size-options .form-check-input {
+        display: none; }
+      #AddToCartModal .product-wrapper .info .data.size-options .size-option-wrapper {
+        margin: .5rem 0; }
+        #AddToCartModal .product-wrapper .info .data.size-options .size-option-wrapper:not(:last-child) {
+          margin-right: 1rem; }
+      #AddToCartModal .product-wrapper .info .data.size-options .form-check-input:checked + .form-check .form-check-label {
+        border-color: #1D70B7;
+        color: #e3f0fb;
+        font-weight: normal;
+        background: #1D70B7; }
+      #AddToCartModal .product-wrapper .info .data.size-options .form-check-label {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 1rem 1.5rem;
+        border-radius: .25rem;
+        font-size: 1rem;
+        transition: 0.3s all; }
+    #AddToCartModal .product-wrapper .info .data.quantity .btn:nth-child(1) {
+      border-radius: 100px 0 0 100px; }
+    #AddToCartModal .product-wrapper .info .data.quantity .btn:nth-child(3) {
+      border-radius: 0 100px 100px 0; }
+    #AddToCartModal .product-wrapper .info .data.quantity .btn:focus {
+      box-shadow: unset; }
+    #AddToCartModal .product-wrapper .info .data.quantity .form-control {
+      text-align: center;
+      width: 50px; }
+      #AddToCartModal .product-wrapper .info .data.quantity .form-control:focus {
+        box-shadow: unset; }
+  #AddToCartModal .product-wrapper .product-image {
+    flex-shrink: 0;
+    margin: 12px;
+    overflow: hidden;
+    border-radius: .875rem; }
 
 /*# sourceMappingURL=index.css.map */
