@@ -125,12 +125,21 @@ p {
       width: 100%; }
       .bottom-header .main-header .search-input .form-control {
         font-size: 14px;
-        border-radius: 100px;
-        padding: 5px 20px; }
+        border-radius: 100px !important;
+        padding: 10px 20px;
+        position: relative; }
         .bottom-header .main-header .search-input .form-control:focus {
           box-shadow: unset; }
       .bottom-header .main-header .search-input .btn {
-        border-radius: 100px; }
+        border-radius: 100px !important;
+        position: absolute;
+        right: 10px;
+        padding: unset;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3; }
       .bottom-header .main-header .search-input .btn-primary:focus {
         box-shadow: unset; }
     .bottom-header .main-header .comp-wish-cart {

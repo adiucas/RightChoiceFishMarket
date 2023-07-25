@@ -24,8 +24,9 @@
 
             .form-control {
                 font-size: 14px;
-                border-radius: 100px;
-                padding: 5px 20px;
+                border-radius: 100px !important;
+                padding: 10px 20px;
+                position: relative;
 
                 &:focus {
                     box-shadow: unset;
@@ -33,7 +34,15 @@
             }
 
             .btn {
-                border-radius: 100px;
+                border-radius: 100px !important;
+                position: absolute;
+                right: 10px;
+                padding: unset;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 3;
             }
 
             .btn-primary {

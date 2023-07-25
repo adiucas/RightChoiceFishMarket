@@ -1,0 +1,38 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.track-order {
+    min-height: calc(100vh - 439px);
+
+    .check-order-status {
+        padding: .75rem;
+
+        .form-control {
+            border-radius: 100px;
+        }
+
+        .btn {
+            margin-top: .75rem;
+        }
+    }
+
+    .order-summary {
+        padding: .75rem;
+
+        .wrapper {
+            @include flex(row, null, start);
+            font-size: 1rem;
+            flex-wrap: wrap;
+
+            div {
+                flex-basis: 50%;
+            }
+
+            .label {
+                flex-shrink: 0;
+                padding-right: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}

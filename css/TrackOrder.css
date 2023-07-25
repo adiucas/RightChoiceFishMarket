@@ -1,0 +1,24 @@
+.track-order {
+  min-height: calc(100vh - 439px); }
+  .track-order .check-order-status {
+    padding: .75rem; }
+    .track-order .check-order-status .form-control {
+      border-radius: 100px; }
+    .track-order .check-order-status .btn {
+      margin-top: .75rem; }
+  .track-order .order-summary {
+    padding: .75rem; }
+    .track-order .order-summary .wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      font-size: 1rem;
+      flex-wrap: wrap; }
+      .track-order .order-summary .wrapper div {
+        flex-basis: 50%; }
+      .track-order .order-summary .wrapper .label {
+        flex-shrink: 0;
+        padding-right: 15px;
+        font-weight: bold; }
+
+/*# sourceMappingURL=TrackOrder.css.map */
