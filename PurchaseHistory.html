@@ -39,7 +39,6 @@
 	=            header            =
 	=============================-->
 	<header data-include="header" class="sticky-top bottom-header"></header>
-	<header data-include="navigationMenu" class="navigation-menu"></header>
 	<section data-include="mobileNav" class="mobile-nav"></section>
 
 
@@ -56,52 +55,326 @@
 					<div class="table">
 						<div class="thead">
 							<div class="tr">
-								<div class="th">#</div>
-								<div class="th">product name</div>
-								<div class="th">quantity</div>
-								<div class="th">price</div>
+								<div class="th">code</div>
+								<div class="th">date</div>
+								<div class="th">amount</div>
+								<div class="th">delivery status</div>
+								<div class="th">payment status</div>
+								<div class="th options">options</div>
 							</div>
 						</div>
 						<div class="tbody">
 							<div class="tr">
 								<div class="td">
-									<span class="th-sm">serial</span>
-									<span>01</span>
+									<span class="th-sm">code</span>
+									<span>CLOOOOSQQ</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">product name</span>
-									<span>মিঠা পানির ইলিশ - Hilsha</span>
+									<span class="th-sm">date</span>
+									<span>17.07.2023</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">quantity</span>
-									<span>01</span>
+									<span class="th-sm">amount</span>
+									<span>3290৳</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">price</span>
-									<span>540৳</span>
-								</div>
-							</div>
-							<div class="tr">
-								<div class="td">
-									<span class="th-sm">serial</span>
-									<span>01</span>
+									<span class="th-sm">delivery status</span>
+									<span>pending</span>
 								</div>
 								<div class="td">
-									<span class="th-sm">product name</span>
-									<span>মিঠা পানির ইলিশ - Hilsha</span>
+									<span class="th-sm">payment status</span>
+									<span class="badge bg-danger">unpaid</span>
 								</div>
-								<div class="td">
-									<span class="th-sm">quantity</span>
-									<span>01</span>
-								</div>
-								<div class="td">
-									<span class="th-sm">price</span>
-									<span>540৳</span>
+								<div class="td options">
+									<span class="th-sm">options</span>
+									<div class="options-btn">
+										<button class="btn btn-danger" data-bs-toggle="tooltip" data-placement="top"
+											title="remove"><i class="fa-regular fa-trash-can"></i></button>
+										<button class="btn btn-primary" data-bs-tooltip="tooltip" data-placement="top"
+											title="show details" data-bs-toggle="modal" data-bs-target="#OrderModal"><i
+												class="fa-regular fa-eye"></i></button>
+										<button class="btn btn-warning" data-bs-toggle="tooltip" data-placement="top"
+											title="download invoice"><i class="fa-solid fa-download"></i></button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ----------------------------------------- -->
+	<!--            order status modal             -->
+	<!-- ----------------------------------------- -->
+	<div class="modal fade" id="OrderModal" tabindex="-1" aria-labelledby="OrderModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="OrderModalLabel">Order Id: CL0000612</h5>
+					<button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i
+							class="fa-solid fa-xmark"></i></button>
+				</div>
+				<div class="modal-body">
+					<div class="content-container">
+						<div class="order-steps">
+							<div class="step complete">
+								<div class="wrapper">
+									<div class="icon">
+										<i class="bi bi-file-earmark-text"></i>
+									</div>
+									<div class="label">
+										order placed
+									</div>
+								</div>
+							</div>
+							<div class="step">
+								<div class="wrapper">
+									<div class="icon">
+										<i class="bi bi-file-earmark-medical"></i>
+									</div>
+									<div class="label">
+										confirmed
+									</div>
+								</div>
+							</div>
+							<div class="step">
+								<div class="wrapper">
+									<div class="icon">
+										<i class="bi bi-truck"></i>
+									</div>
+									<div class="label">
+										on delivery
+									</div>
+								</div>
+							</div>
+							<div class="step">
+								<div class="wrapper">
+									<div class="icon">
+										<i class="bi bi-clipboard-check"></i>
+									</div>
+									<div class="label">
+										delivered
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-container order-summary mt-3">
+						<div class="sec-title2">
+							<div class="wrapper">
+								<span>order summary</span>
+							</div>
+						</div>
+						<div class="order-summary-data">
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Order Code</div>
+											<div class="data">CL0000602</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Order Date</div>
+											<div class="data">17-07-2023 13:14 PM</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Order Status</div>
+											<div class="data">Pending</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Name</div>
+											<div class="data">Adi</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Email</div>
+											<div class="data">adi@ucasbd.com</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Total order amount</div>
+											<div class="data">8000৳</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Shipping Address</div>
+											<div class="data">Saiham Skyview Tower, Inside Dhaka, Bangladesh</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Shipping</div>
+											<div class="data">Flat shipping rate</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="wrapper">
+										<div class="d-flex justify-content-between align-items-top">
+											<div class="label">Payment Method</div>
+											<div class="data">Cash On Delivery</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row pt-3 gy-3">
+						<div class="col-lg-9 order-details">
+							<div class="content-container">
+								<div class="order-details">
+									<div class="sec-title2">
+										<div class="wrapper"><span>order details</span></div>
+									</div>
+									<div class="table">
+										<div class="thead">
+											<div class="tr">
+												<div class="th">product</div>
+												<div class="th variation">variation</div>
+												<div class="th">quantity</div>
+												<div class="th">delivery type</div>
+												<div class="th price">price</div>
+											</div>
+										</div>
+										<div class="tbody">
+											<div class="tr">
+												<div class="td">
+													<span class="th-sm">product</span>
+													<span>নদীর আইড়-Ayer</span>
+												</div>
+												<div class="td variation">
+													<span class="th-sm">variation</span>
+													<span>1kg+—'WholeFishUntouch ed</span>
+												</div>
+												<div class="td">
+													<span class="th-sm">quantity</span>
+													<span>1</span>
+												</div>
+												<div class="td">
+													<span class="th-sm">delivery type</span>
+													<span>Home Delivery</span>
+												</div>
+												<div class="td price">
+													<span class="th-sm">price</span>
+													<span>990৳</span>
+												</div>
+											</div>
+											<div class="tr">
+												<div class="td">
+													<span class="th-sm">product</span>
+													<span>দেশী রুই</span>
+												</div>
+												<div class="td variation">
+													<span class="th-sm">variation</span>
+													<span>1kg+ Clean & Cut (P/kg) 15tk.</span>
+												</div>
+												<div class="td">
+													<span class="th-sm">quantity</span>
+													<span>1</span>
+												</div>
+												<div class="td">
+													<span class="th-sm">delivery type</span>
+													<span>Home Delivery</span>
+												</div>
+												<div class="td price">
+													<span class="th-sm">price</span>
+													<span>495৳</span>
+												</div>
+											</div>
+											<div class="tr">
+												<div class="td">
+													<span class="th-sm">product</span>
+													<span>দেশী রুই</span>
+												</div>
+												<div class="td variation">
+													<span class="th-sm">variation</span>
+													<span>1kg+ Clean & Cut (P/kg) 15tk.</span>
+												</div>
+												<div class="td">
+													<span class="th-sm">quantity</span>
+													<span>1</span>
+												</div>
+												<div class="td">
+													<span class="th-sm">delivery type</span>
+													<span>Home Delivery</span>
+												</div>
+												<div class="td price">
+													<span class="th-sm">price</span>
+													<span>495৳</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 order-amount">
+							<div class="content-container">
+								<div class="sec-title2">
+									<div class="wrapper">
+										<span>order amount</span>
+									</div>
+								</div>
+								<div class="grand-total">
+									<div class="wrapper">
+										<div class="label-data">
+											<div class="wrapper">
+												<label>sub total</label>
+												<span>8000৳</span>
+											</div>
+										</div>
+										<div class="label-data">
+											<div class="wrapper">
+												<label>shipping</label>
+												<span>120৳</span>
+											</div>
+										</div>
+										<div class="label-data">
+											<div class="wrapper">
+												<label>coupon discount</label>
+												<span>0৳</span>
+											</div>
+										</div>
+										<div class="label-data">
+											<div class="wrapper">
+												<label>grand total</label>
+												<span>8120৳</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-primary w-100 mt-3">make payment</button>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-primary">Make Payment</button>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -117,6 +390,11 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+	var myModal = new bootstrap.Modal(document.getElementById('OrderModal'), {
+		keyboard: false
+	});
+
+	myModal.show();
 	document.querySelectorAll('.tn-slider').forEach(slider => {
 		tns({
 			container: slider,
@@ -139,6 +417,11 @@
 			}
 		});
 	});
+
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-tooltip="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
 </script>
 
 </html>

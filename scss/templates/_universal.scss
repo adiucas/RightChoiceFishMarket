@@ -12,6 +12,7 @@ body {
 	@include para;
 	font-size: 0.875rem;
 	position: relative;
+	padding-right: unset !important;
 }
 
 a,

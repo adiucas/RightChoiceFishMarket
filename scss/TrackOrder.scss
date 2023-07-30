@@ -35,4 +35,25 @@
             }
         }
     }
+
+    .order-info {
+        .table {
+
+            .thead,
+            .tbody {
+                .tr {
+
+                    .th,
+                    .td {
+                        flex-basis: (100%/3);
+                    }
+
+                    &:hover {
+                        cursor: unset;
+                        background: unset;
+                    }
+                }
+            }
+        }
+    }
 }

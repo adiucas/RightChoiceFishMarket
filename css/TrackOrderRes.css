@@ -1,0 +1,13 @@
+@media (max-width: 992px) {
+  .track-order .order-info .table .thead .tr,
+  .track-order .order-info .table .tbody .tr {
+    flex-wrap: wrap; }
+    .track-order .order-info .table .thead .tr .th,
+    .track-order .order-info .table .thead .tr .td,
+    .track-order .order-info .table .tbody .tr .th,
+    .track-order .order-info .table .tbody .tr .td {
+      text-align: center;
+      margin: unset;
+      flex-basis: 50%; } }
+
+/*# sourceMappingURL=TrackOrderRes.css.map */

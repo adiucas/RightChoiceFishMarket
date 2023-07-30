@@ -20,5 +20,14 @@
         flex-shrink: 0;
         padding-right: 15px;
         font-weight: bold; }
+  .track-order .order-info .table .thead .tr .th,
+  .track-order .order-info .table .thead .tr .td,
+  .track-order .order-info .table .tbody .tr .th,
+  .track-order .order-info .table .tbody .tr .td {
+    flex-basis: 33.3333333333%; }
+  .track-order .order-info .table .thead .tr:hover,
+  .track-order .order-info .table .tbody .tr:hover {
+    cursor: unset;
+    background: unset; }
 
 /*# sourceMappingURL=TrackOrder.css.map */

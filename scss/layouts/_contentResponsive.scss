@@ -1,4 +1,8 @@
 @media(max-width:992px) {
+    .tooltip {
+        display: none;
+    }
+
     body {
         padding-bottom: 60px;
 
@@ -59,9 +63,15 @@
             }
 
             .tr {
+                flex-wrap: wrap;
+                align-items: start;
 
                 .td {
                     @include flex(col, center, center);
+                    flex-basis: 50%;
+                    margin: unset;
+                    text-align: center;
+                    font-size: 12px;
 
                     .th-sm {
                         @include head();
@@ -75,17 +85,29 @@
     /* -------------------------------------------- */
     /*                 cart progress                */
     /* -------------------------------------------- */
-    @media(max-width:992px) {
-        .cart-steps {
-            .icon-name {
-                .label {
-                    display: none;
-                }
 
-                &:not(:first-child) {
-                    &::before {
-                        left: -100%;
-                    }
+    .cart-steps {
+        .icon-name {
+            .label {
+                display: none;
+            }
+
+            &:not(:first-child) {
+                &::before {
+                    left: -15px;
+                }
+            }
+        }
+    }
+
+    /* -------------------------------------------- */
+    /*                  order steps                 */
+    /* -------------------------------------------- */
+    .order-steps {
+        .step {
+            .wrapper {
+                .label {
+                    font-size: 11px !important;
                 }
             }
         }

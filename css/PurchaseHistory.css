@@ -5,10 +5,93 @@
     background: #E7422C;
     color: #fff; }
 
-.table .thead .tr .th,
-.table .thead .tr .td,
-.table .tbody .tr .th,
-.table .tbody .tr .td {
-  flex-basis: 25%; }
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center; }
+
+.options-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .options-btn .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: unset;
+    width: 35px;
+    height: 35px; }
+    .options-btn .btn:not(:last-child) {
+      margin-right: 10px; }
+
+#OrderModal .modal-dialog {
+  max-width: 992px; }
+#OrderModal .order-summary .order-summary-data {
+  padding: 0 .75rem; }
+  #OrderModal .order-summary .order-summary-data .wrapper .d-flex div {
+    flex-basis: 100%;
+    padding: .5rem 0;
+    font-size: 1rem; }
+    #OrderModal .order-summary .order-summary-data .wrapper .d-flex div.label {
+      font-weight: bold; }
+  #OrderModal .order-summary .order-summary-data .wrapper::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgba(29, 112, 183, 0.25); }
+#OrderModal .order-details .sec-title {
+  padding: 0 .75rem 0; }
+#OrderModal .order-details .table {
+  padding-top: 0; }
+  #OrderModal .order-details .table .thead::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #1D70B7;
+    margin-bottom: 5px; }
+  #OrderModal .order-details .table .thead .tr .price,
+  #OrderModal .order-details .table .tbody .tr .price {
+    text-align: right; }
+  #OrderModal .order-details .table .thead .tr .variation,
+  #OrderModal .order-details .table .tbody .tr .variation {
+    word-break: break-all;
+    flex-basis: 150%; }
+  #OrderModal .order-details .table .thead .tr:hover,
+  #OrderModal .order-details .table .tbody .tr:hover {
+    cursor: unset;
+    background: unset; }
+#OrderModal .order-amount .sec-title2 {
+  padding-bottom: 0; }
+#OrderModal .order-amount .grand-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0 .75rem 0; }
+  #OrderModal .order-amount .grand-total .wrapper {
+    width: 100%; }
+    #OrderModal .order-amount .grand-total .wrapper .label-data {
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-transform: capitalize; }
+      #OrderModal .order-amount .grand-total .wrapper .label-data .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: unset;
+        padding: .5rem 0; }
+      #OrderModal .order-amount .grand-total .wrapper .label-data:not(:first-child):before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(29, 112, 183, 0.25); }
 
 /*# sourceMappingURL=PurchaseHistory.css.map */

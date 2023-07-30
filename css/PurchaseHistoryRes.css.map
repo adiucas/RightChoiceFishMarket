@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGA,yBAAwB;EAKZ;mBAAI;IACA,SAAS,EAAE,IAAI;IAEf;;;yBACI;MACA,UAAU,EAAE,MAAM;MAClB,MAAM,EAAE,KAAK;MACb,UAAU,EAAE,GAAG",
+"mappings": "AAGA,yBAAwB;EAKZ;mBAAI;IACA,SAAS,EAAE,IAAI;IAEf;;;yBACI;MACA,UAAU,EAAE,MAAM;MAClB,MAAM,EAAE,KAAK;MACb,UAAU,EAAE,cAAc",
 "sources": ["../scss/PurchaseHistoryRes.scss"],
 "names": [],
 "file": "PurchaseHistoryRes.css"

@@ -23,19 +23,63 @@
     font-size: 1.25rem; }
   .confirmation .thank-you p {
     color: rgba(0, 0, 0, 0.75); }
-.confirmation .order-summary-data {
+.confirmation .order-summary .sec-title {
+  padding: 0 .75rem .75rem; }
+.confirmation .order-summary .order-summary-data {
   padding: .75rem; }
-  .confirmation .order-summary-data .wrapper .d-flex div {
+  .confirmation .order-summary .order-summary-data .wrapper .d-flex div {
     flex-basis: 100%;
     padding: .5rem 0;
     font-size: 1rem; }
-    .confirmation .order-summary-data .wrapper .d-flex div.label {
+    .confirmation .order-summary .order-summary-data .wrapper .d-flex div.label {
       font-weight: bold; }
-  .confirmation .order-summary-data .wrapper::before {
+  .confirmation .order-summary .order-summary-data .wrapper::before {
     content: "";
     display: block;
     height: 1px;
     width: 100%;
     background: rgba(29, 112, 183, 0.25); }
+.confirmation .order-details .sec-title {
+  padding: 0 .75rem 0; }
+.confirmation .order-details .table .thead::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #1D70B7;
+  margin-bottom: 5px; }
+.confirmation .order-details .table .thead .tr .price,
+.confirmation .order-details .table .tbody .tr .price {
+  text-align: right; }
+.confirmation .order-details .table .thead .tr:hover,
+.confirmation .order-details .table .tbody .tr:hover {
+  cursor: unset;
+  background: unset; }
+.confirmation .order-details .grand-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0.75rem 1.5rem 0.75rem; }
+  .confirmation .order-details .grand-total .wrapper {
+    width: 30%; }
+    .confirmation .order-details .grand-total .wrapper .label-data {
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-transform: capitalize; }
+      .confirmation .order-details .grand-total .wrapper .label-data .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: unset;
+        padding: .5rem 0; }
+      .confirmation .order-details .grand-total .wrapper .label-data:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(29, 112, 183, 0.25); }
 
 /*# sourceMappingURL=Confirmation.css.map */

@@ -1,0 +1,15 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+
+@media(max-width:992px) {
+    .confirmation {
+        .order-details {
+            .grand-total {
+                .wrapper {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

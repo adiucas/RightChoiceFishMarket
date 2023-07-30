@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,yBAAwB;EAOJ;4CAAI;IACA,SAAS,EAAE,IAAI;IAEf;;;kDACI;MACA,UAAU,EAAE,MAAM;MAClB,MAAM,EAAE,KAAK;MACb,UAAU,EAAE,GAAG",
+"sources": ["../scss/TrackOrderRes.scss"],
+"names": [],
+"file": "TrackOrderRes.css"
+}
