@@ -305,6 +305,7 @@
 	.modal-content {
 		border-radius: 1.5rem;
 		border-color: rgba($color: $lpCol, $alpha: .50);
+		overflow: hidden;
 
 		.modal-header {
 			background-color: $primCol;

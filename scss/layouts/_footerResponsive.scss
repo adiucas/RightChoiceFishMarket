@@ -1,21 +1,26 @@
 @media(max-width:992px) {
-    .footer {
-        .quick-link {
-            .label {
-                text-align: center;
+    .footer-wrapper {
+        height: 780px;
+        margin-bottom: -120px;
+
+        .footer {
+            .quick-link {
+                .label {
+                    text-align: center;
+                }
+
+                .links {
+                    text-align: center;
+                }
             }
 
-            .links {
-                text-align: center;
+            .followUs {
+                @include flex(row, center, center);
             }
-        }
 
-        .followUs {
-            @include flex(row, center, center);
-        }
-
-        .payment-platforms {
-            @include flex(row, center, center);
+            .payment-platforms {
+                @include flex(row, center, center);
+            }
         }
     }
 }

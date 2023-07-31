@@ -988,7 +988,7 @@
 	<!--============================
 	=            footer            =
 	=============================-->
-	<div data-include="footer"></div>
+	<div data-include="footer" class="footer-wrapper"></div>
 </body>
 <!-- scripts -->
 <script src="js/jquery-3.6.1.min.js"></script>
@@ -1012,6 +1012,11 @@
 		strokeWidth: 0,
 		readOnly: true
 	});
+
+	if ($(window).width() > 575) {
+		$(".product-image img").attr("width", "450");
+		$(".product-image img").attr("height", "450");
+	}
 
 	document.querySelectorAll('.tn-slider').forEach(slider => {
 		tns({
