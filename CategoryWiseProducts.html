@@ -29,6 +29,7 @@
 	<!-- css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/easyzoom.css">
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/CategoryWiseProducts.css">
@@ -225,6 +226,145 @@
 		</div>
 	</div>
 
+	<!-- ----------------------------------------- -->
+	<!--             add to cart modal             -->
+	<!-- ----------------------------------------- -->
+	<div class="modal fade" id="AddToCartModal" tabindex="-1" aria-labelledby="AddToCartModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="AddToCartModalLabel">Add To Cart</h5>
+					<button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i
+							class="fa-solid fa-xmark"></i></button>
+				</div>
+				<div class="modal-body">
+					<div class="product-wrapper">
+						<div class="info">
+							<div class="d-flex justify-content-between">
+								<div>
+									<h4>মিঠা পানির ইলিশ - Hilsha</h4>
+									<div class="review-wrapper">
+										<div class="review jq-stars"></div>
+										<div class="count">(0) Reviews</div>
+									</div>
+								</div>
+								<div>
+									<div class="stock stock-in">
+										In-Stock
+									</div>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Price</div>
+								<div class="data price">
+									<span class="price-tag">540৳</span>
+									<span class="product-unit">/KG</span>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Club Point:</div>
+								<div class="data">500</div>
+							</div>
+							<div class="divider mt-3 mb-2"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Size:</div>
+								<div class="data size-options">
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption">
+												(15-20) Pcs kg/500gm
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption2">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption2">
+												(15-20) Pcs kg/1kg
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption3">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption3">
+												(8-10) Pcs kg/500gm
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption4">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption4">
+												(8-10) Pcs kg/1 kg
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption5">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption5">
+												(4-5) Pcs kg/500gm
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption6">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption6">
+												(4-5) Pcs kg/1kg
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="divider mt-2 mb-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title mb-1 mb-lg-0">Quantity:</div>
+								<div class="data quantity">
+									<div class="input-group">
+										<button class="btn btn-primary" type="button" id="button-addon1"><i
+												class="fa-solid fa-minus"></i></button>
+										<input type="text" class="form-control" placeholder=""
+											aria-label="Example text with button addon" aria-describedby="button-addon1"
+											value="1">
+										<button class="btn btn-primary" type="button" id="button-addon1"><i
+												class="fa-solid fa-plus"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Total Price</div>
+								<div class="data price">
+									<span class="price-tag">540৳</span>
+									<span class="product-unit">/KG</span>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start">
+								<button class="btn btn-lg btn-primary">
+									<i class="fa-solid fa-bag-shopping me-1"></i>
+									<span>Add to Cart</span>
+								</button>
+							</div>
+						</div>
+						<div class="product-image">
+							<div class="easyzoom easyzoom--overlay">
+								<a href="images/products/ilish.jpg">
+									<img src="images/products/ilish.jpg" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!--============================
 	=            footer            =
 	=============================-->
@@ -232,6 +372,7 @@
 </body>
 <!-- scripts -->
 <script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/easyzoom.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -271,6 +412,12 @@
 			$("#filter").removeClass("show");
 		}
 	});
+
+	var $easyzoom = $('.easyzoom').easyZoom();
+	if ($(window).width() > 575) {
+		$(".product-image img").attr("width", "450");
+		$(".product-image img").attr("height", "450");
+	}
 </script>
 
 </html>

@@ -121,33 +121,8 @@
 </body>
 <!-- scripts -->
 <script src="js/jquery-3.6.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	document.querySelectorAll('.tn-slider').forEach(slider => {
-		tns({
-			container: slider,
-			items: 5,
-			nav: false,
-			controlsText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
-			responsive: {
-				0: {
-					"items": 2,
-				},
-				576: {
-					"items": 3,
-				},
-				768: {
-					"items": 4,
-				},
-				1100: {
-					"items": 5,
-				}
-			}
-		});
-	});
-</script>
 
 </html>

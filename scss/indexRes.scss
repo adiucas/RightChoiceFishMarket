@@ -31,6 +31,10 @@
     .featured-products .product .wrapper .desc .price-stock .price {
         font-size: 15px;
     }
+
+    .featured-products .product .wrapper .image .comp-wish-cart {
+        display: none;
+    }
 }
 
 @media(max-width:576px) {

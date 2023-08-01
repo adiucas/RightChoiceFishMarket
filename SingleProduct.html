@@ -29,7 +29,6 @@
 	<!-- css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<link rel="stylesheet" href="css/easyzoom.css">
 	<link rel="stylesheet" href="css/star-rating-svg.css">
 	<link rel="stylesheet" href="css/common.css">
@@ -556,7 +555,6 @@
 </body>
 <!-- scripts -->
 <script src="js/jquery-3.6.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/easyzoom.js"></script>
@@ -580,29 +578,6 @@
 		starSize: 10,
 		strokeWidth: 0,
 		readOnly: true
-	});
-
-	document.querySelectorAll('.tn-slider').forEach(slider => {
-		tns({
-			container: slider,
-			items: 5,
-			nav: false,
-			controlsText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
-			responsive: {
-				0: {
-					"items": 2,
-				},
-				576: {
-					"items": 2,
-				},
-				768: {
-					"items": 3,
-				},
-				1100: {
-					"items": 4,
-				}
-			}
-		});
 	});
 </script>
 
