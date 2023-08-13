@@ -83,6 +83,7 @@
                         border-radius: 100px;
                         padding: 5px 10px;
                         transition: 0.3s all;
+                        cursor: pointer;
                     }
 
                     .icon {
@@ -111,6 +112,18 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        .delivery-time {
+            @extend .delivery-type;
+
+            .label-check {
+                .check-icon {
+                    &:not(:last-child) {
+                        margin-right: 1rem;
                     }
                 }
             }

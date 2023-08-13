@@ -27,27 +27,28 @@
       color: #1D70B7;
       font-family: "mmsBold", sans-serif;
       font-size: 1rem; }
-.product-list .table .delivery-type .label-check {
+.product-list .table .delivery-type .label-check, .product-list .table .delivery-time .label-check {
   margin-top: 5px;
   padding: 0 .75rem;
   display: flex;
   flex-direction: row;
   align-items: center; }
-  .product-list .table .delivery-type .label-check .label {
+  .product-list .table .delivery-type .label-check .label, .product-list .table .delivery-time .label-check .label {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 1rem;
     color: #1D70B7;
     margin-right: 10px; }
-  .product-list .table .delivery-type .label-check .check-icon label {
+  .product-list .table .delivery-type .label-check .check-icon label, .product-list .table .delivery-time .label-check .check-icon label {
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 100px;
     padding: 5px 10px;
-    transition: 0.3s all; }
-  .product-list .table .delivery-type .label-check .check-icon .icon {
+    transition: 0.3s all;
+    cursor: pointer; }
+  .product-list .table .delivery-type .label-check .check-icon .icon, .product-list .table .delivery-time .label-check .check-icon .icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,13 +62,15 @@
     color: #1D70B7;
     font-size: 0;
     transition: 0.3s all; }
-  .product-list .table .delivery-type .label-check .check-icon .form-check-input {
+  .product-list .table .delivery-type .label-check .check-icon .form-check-input, .product-list .table .delivery-time .label-check .check-icon .form-check-input {
     display: none; }
-    .product-list .table .delivery-type .label-check .check-icon .form-check-input:checked + label {
+    .product-list .table .delivery-type .label-check .check-icon .form-check-input:checked + label, .product-list .table .delivery-time .label-check .check-icon .form-check-input:checked + label {
       border: 1px solid #1d70b7; }
-      .product-list .table .delivery-type .label-check .check-icon .form-check-input:checked + label .icon {
+      .product-list .table .delivery-type .label-check .check-icon .form-check-input:checked + label .icon, .product-list .table .delivery-time .label-check .check-icon .form-check-input:checked + label .icon {
         border: unset;
         font-size: 12px; }
+.product-list .table .delivery-time .label-check .check-icon:not(:last-child) {
+  margin-right: 1rem; }
 .product-list .table .buttons {
   display: flex;
   flex-direction: row;
