@@ -28,7 +28,7 @@
     border: 1px solid rgba(29, 112, 183, 0.25); }
   .cwp .filter .price-range .price-slider .ui-state-default,
   .cwp .filter .price-range .price-slider .ui-widget-content .ui-state-default {
-    border: 1px solid #e3f0fb;
+    border: 1px solid #daebf9;
     background: #E7422C;
     font-weight: normal;
     color: #454545;
@@ -96,7 +96,7 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          background: #e3f0fb;
+          background: #daebf9;
           border-radius: 100px;
           overflow: hidden;
           color: #1D70B7;

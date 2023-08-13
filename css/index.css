@@ -45,7 +45,7 @@
 /*           categories & popular products           */
 /* -------------------------------------------- */
 .cust-card {
-  background: #e3f0fb;
+  background: #daebf9;
   padding: 15px 12px;
   width: 100%;
   border-radius: 15px; }
@@ -95,12 +95,12 @@
       width: 5px;
       cursor: pointer; }
     .cust-card .popular-products::-webkit-scrollbar-track {
-      background: #e3f0fb; }
+      background: #daebf9; }
     .cust-card .popular-products::-webkit-scrollbar-thumb {
       border-radius: 10px;
       opacity: 0.5;
       background: #1D70B7;
-      border: 1px solid #e3f0fb;
+      border: 1px solid #daebf9;
       background-clip: padding-box; }
     .cust-card .popular-products .card {
       margin: .75rem; }
@@ -132,7 +132,7 @@
       width: 5px;
       cursor: pointer; }
     .cust-card .accordion::-webkit-scrollbar-track {
-      background: #e3f0fb; }
+      background: #daebf9; }
     .cust-card .accordion::-webkit-scrollbar-thumb {
       border-radius: 10px;
       opacity: 0.5;
@@ -251,7 +251,7 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          background: #e3f0fb;
+          background: #daebf9;
           border-radius: 100px;
           overflow: hidden;
           color: #1D70B7;
@@ -308,7 +308,7 @@
   .featured-products .tns-controls button {
     outline: none;
     border: 1px solid #1D70B7;
-    background: #e3f0fb;
+    background: #daebf9;
     width: 45px;
     height: 45px;
     border-radius: 45px;
@@ -316,7 +316,7 @@
     .featured-products .tns-controls button:hover {
       background: #1D70B7; }
       .featured-products .tns-controls button:hover i {
-        color: #e3f0fb; }
+        color: #daebf9; }
     .featured-products .tns-controls button i {
       color: #1D70B7; }
   .featured-products .tns-controls button[data-controls="prev"] {

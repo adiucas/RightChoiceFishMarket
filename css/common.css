@@ -110,7 +110,7 @@ p {
 /*                 header                */
 /* -------------------------------------------- */
 .bottom-header {
-  background: #e3f0fb;
+  background: #daebf9;
   position: sticky;
   top: 0;
   z-index: 3; }
@@ -207,7 +207,7 @@ p {
               justify-content: space-between;
               align-items: center;
               padding: .75rem;
-              background: #e3f0fb;
+              background: #daebf9;
               border-radius: .75rem;
               margin: .75rem 0; }
               .bottom-header .main-header .comp-wish-cart .cart .cart-details .products .product .image-name-price {
@@ -287,7 +287,7 @@ p {
         height: 45px;
         border-radius: 50px;
         color: #E7422C;
-        background: #e3f0fb;
+        background: #daebf9;
         flex-shrink: 0; }
         .bottom-header .main-header .hotline .icon i {
           font-size: 20px; }
@@ -315,7 +315,7 @@ p {
         width: 100%;
         height: 3px;
         border-radius: 2px;
-        background: #e3f0fb;
+        background: #daebf9;
         display: block;
         transition: 0.3s all; }
         .bottom-header .main-header .navbar-toggler .navbar-toggler-custom-icon .bar:not(:last-child) {
@@ -349,7 +349,7 @@ p {
   .navigation-menu .animate__animated {
     animation-duration: 0.5s; }
   .navigation-menu .dropdown-menu {
-    background: #e3f0fb;
+    background: #daebf9;
     border: 1px solid rgba(29, 112, 183, 0.25); }
   .navigation-menu .dropdown-label {
     color: #1D70B7;
@@ -370,7 +370,7 @@ p {
       color: #fff; }
 
 .mobileNavMenu {
-  border-top: 1px solid rgba(227, 240, 251, 0.25); }
+  border-top: 1px solid rgba(218, 235, 249, 0.25); }
 
 #categoryModal .modal-body {
   padding: unset; }
@@ -463,7 +463,7 @@ p {
       align-items: center;
       width: 20px;
       height: 20px;
-      background: #e3f0fb;
+      background: #daebf9;
       border-radius: 30px;
       color: #E7422C; }
     .bottom-header .hotline-mobile .text {
@@ -512,7 +512,7 @@ p {
 /*                mobile nav menu               */
 /* -------------------------------------------- */
 .mobile-nav {
-  background: #e3f0fb;
+  background: #daebf9;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -615,7 +615,7 @@ p {
   box-shadow: 0 0 0 0.2rem rgba(29, 112, 183, 0.25); }
 
 .accordion.shortcuts .accordion-body {
-  background: #e3f0fb;
+  background: #daebf9;
   padding: unset;
   overflow: hidden; }
 .accordion.shortcuts .shortcutMenu {
@@ -642,7 +642,7 @@ p {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E"); }
 
 .accordion-body {
-  background-color: #e3f0fb; }
+  background-color: #daebf9; }
 
 .accordion-item,
 .accordion-button {
@@ -700,7 +700,7 @@ p {
   text-align: justify !important; }
 
 .content-container {
-  background: #e3f0fb;
+  background: #daebf9;
   border-radius: 15px;
   padding: .75rem; }
   .content-container .sec-title, .content-container .sec-title2 {
@@ -784,7 +784,7 @@ p {
   padding-right: unset !important; }
   .modal .modal-content {
     border-radius: 1.5rem;
-    border-color: rgba(227, 240, 251, 0.5);
+    border-color: rgba(218, 235, 249, 0.5);
     overflow: hidden; }
     .modal .modal-content .modal-header {
       background-color: #1D70B7;
@@ -796,15 +796,15 @@ p {
         align-items: center;
         width: 2rem;
         height: 2rem;
-        border: 1px solid #e3f0fb;
+        border: 1px solid #daebf9;
         border-radius: 1rem;
         background: transparent;
-        color: #e3f0fb;
+        color: #daebf9;
         opacity: .5; }
         .modal .modal-content .modal-header .btn-close-custom:hover {
           opacity: 1; }
       .modal .modal-content .modal-header .modal-title {
-        color: #e3f0fb; }
+        color: #daebf9; }
 
 /* -------------------------------------------- */
 /*                mobile sidebar                */
@@ -1071,7 +1071,7 @@ p {
           margin-right: 1rem; }
       #AddToCartModal .product-wrapper .info .data.size-options .form-check-input:checked + .form-check .form-check-label {
         border-color: #1D70B7;
-        color: #e3f0fb;
+        color: #daebf9;
         font-weight: normal;
         background: #1D70B7; }
       #AddToCartModal .product-wrapper .info .data.size-options .form-check-label {
@@ -1234,12 +1234,12 @@ p {
           display: block;
           width: 100%;
           height: 1px;
-          background: rgba(227, 240, 251, 0.5);
+          background: rgba(218, 235, 249, 0.5);
           margin-top: 2.5px; }
       .footer-wrapper .footer .quick-link .links li {
         margin: 5px 0; }
     .footer-wrapper .footer .cust-border {
-      border: 1px solid rgba(227, 240, 251, 0.25); }
+      border: 1px solid rgba(218, 235, 249, 0.25); }
     .footer-wrapper .footer .followUs {
       display: flex;
       flex-direction: row;
@@ -1251,9 +1251,9 @@ p {
         align-items: center;
         width: 30px;
         height: 30px;
-        border: 2px solid #e3f0fb;
+        border: 2px solid #daebf9;
         border-radius: 30px;
-        background: #e3f0fb;
+        background: #daebf9;
         color: #1D70B7;
         font-size: 15px;
         transition: 0.3s all; }
@@ -1261,7 +1261,7 @@ p {
           margin-right: 10px; }
         .footer-wrapper .footer .followUs a:hover {
           background: transparent;
-          color: #e3f0fb;
+          color: #daebf9;
           transform: scale(0.9); }
     .footer-wrapper .footer .payment-platforms {
       display: flex;

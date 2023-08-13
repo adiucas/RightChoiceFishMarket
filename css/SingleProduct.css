@@ -36,7 +36,7 @@
           margin-right: 1rem; }
       .content-container .product-wrapper .info .data.size-options .form-check-input:checked + .form-check .form-check-label {
         border-color: #1D70B7;
-        color: #e3f0fb;
+        color: #daebf9;
         font-weight: normal;
         background: #1D70B7; }
       .content-container .product-wrapper .info .data.size-options .form-check-label {
@@ -141,7 +141,7 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          background: #e3f0fb;
+          background: #daebf9;
           border-radius: 100px;
           overflow: hidden;
           color: #1D70B7;
@@ -198,7 +198,7 @@
   .related-products .tns-controls button {
     outline: none;
     border: 1px solid #1D70B7;
-    background: #e3f0fb;
+    background: #daebf9;
     width: 45px;
     height: 45px;
     border-radius: 45px;
@@ -206,7 +206,7 @@
     .related-products .tns-controls button:hover {
       background: #1D70B7; }
       .related-products .tns-controls button:hover i {
-        color: #e3f0fb; }
+        color: #daebf9; }
     .related-products .tns-controls button i {
       color: #1D70B7; }
   .related-products .tns-controls button[data-controls="prev"] {
