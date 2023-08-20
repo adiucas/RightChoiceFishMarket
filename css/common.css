@@ -123,6 +123,9 @@ p {
       margin-right: 15px; }
       .bottom-header .main-header .logo img {
         max-height: 70px; }
+    .bottom-header .main-header .delivery-in-dhaka {
+      max-height: 70px;
+      margin-right: 1rem; }
     .bottom-header .main-header .search-input {
       width: 100%; }
       .bottom-header .main-header .search-input .form-control {
@@ -345,7 +348,8 @@ p {
   .navigation-menu .navbar-nav .show > .nav-link {
     color: #fff; }
   .navigation-menu .nav-link {
-    color: #fff; }
+    color: #fff;
+    font-size: 1.125rem; }
   .navigation-menu .animate__animated {
     animation-duration: 0.5s; }
   .navigation-menu .dropdown-menu {
@@ -851,6 +855,16 @@ p {
 /* -------------------------------------------- */
 /*                messenger icon                */
 /* -------------------------------------------- */
+@keyframes fb-icon-blink {
+  0% {
+    opacity: 0.5;
+    background: #1D70B7; }
+  50% {
+    opacity: 1;
+    background: #E7422C; }
+  100% {
+    opacity: 0.5;
+    background: #1D70B7; } }
 .messenger-floating-icon {
   display: flex;
   flex-direction: row;
@@ -864,14 +878,16 @@ p {
   height: 50px;
   border-radius: 50px;
   background: #1D70B7;
-  margin: 15px;
+  margin: 20px;
   font-size: 25px;
   opacity: 0.5;
-  transition: 0.3s all; }
-  .messenger-floating-icon:hover {
+  transition: 0.3s all;
+  animation: fb-icon-blink 2s ease 0s infinite normal none; }
+  .messenger-floating-icon:hover, .messenger-floating-icon:focus {
     opacity: 1;
     color: #fff;
-    background: #E7422C; }
+    background: #E7422C;
+    animation: 0; }
 
 /* -------------------------------------------- */
 /*               responsive table               */

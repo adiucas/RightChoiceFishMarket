@@ -394,6 +394,23 @@
 /* -------------------------------------------- */
 /*                messenger icon                */
 /* -------------------------------------------- */
+@keyframes fb-icon-blink {
+	0% {
+		opacity: 0.5;
+		background: $primCol;
+	}
+
+	50% {
+		opacity: 1;
+		background: $secCol;
+	}
+
+	100% {
+		opacity: 0.5;
+		background: $primCol;
+	}
+}
+
 .messenger-floating-icon {
 	@include flex(row, center, center);
 	color: #fff;
@@ -404,15 +421,18 @@
 	height: 50px;
 	border-radius: 50px;
 	background: $primCol;
-	margin: 15px;
+	margin: 20px;
 	font-size: 25px;
 	opacity: 0.5;
 	transition: 0.3s all;
+	animation: fb-icon-blink 2s ease 0s infinite normal none;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		opacity: 1;
 		color: #fff;
 		background: $secCol;
+		animation: 0;
 	}
 }
 

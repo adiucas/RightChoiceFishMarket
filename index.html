@@ -126,9 +126,13 @@
 					</div>
 				</div>
 				<div class="banner-vid mt-3" id="banner-vid">
-					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+					<!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 						<source src="images/demo.mp4" type="video/mp4">
-					</video>
+					</video> -->
+					<iframe src="https://www.youtube.com/embed/Gh6ueknkLws?autoplay=1&mute=1"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
 				</div>
 			</div>
 			<!-- ----------------------------------------- -->
@@ -138,7 +142,7 @@
 				<div class="cust-card">
 					<div class="title">
 						<div class="d-flex align-items-center">
-							<span>Popular Products</span>
+							<span>Ready to Cook</span>
 							<div class="icon">
 								<i class="fa-solid fa-certificate">
 									<i class="fa-solid fa-percent"></i>
@@ -270,41 +274,54 @@
 	<!-- ----------------------------------------- -->
 	<div class="container-xxl mt-3 featured-category">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<div class="sf-category haor">
-					<div class="fish-image">
+					<!-- <div class="fish-image">
 						<img src="https://www.bhorerkagoj.com/wp-content/uploads/2023/03/1168.jpg" class="img-fluid">
-					</div>
+					</div> -->
 					<img src="https://www.jugantor.com/assets/news_photos/2022/01/23/image-512004-1642932411.jpg"
 						class="img-fluid category-img">
 					<div class="category-name">
-						হাওড়
+						হাওড়ের <br> মাছ
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<div class="sf-category haor">
-					<div class="fish-image">
+					<!-- <div class="fish-image">
 						<img src="https://riverfish.com.bd/cdn/shop/products/RIverFish_77de8e8e-213b-4d40-841c-739fa5a5e8c9.jpg?v=1679510495"
 							class="img-fluid" alt="">
-					</div>
+					</div> -->
 					<img src="https://vromonguide.com/wp-content/uploads/Brahmaputra-River-Mymensingh-770x420.jpg"
 						class="img-fluid category-img">
 					<div class="category-name">
-						নদী
+						নদীর <br> মাছ
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<div class="sf-category haor">
-					<div class="fish-image">
+					<!-- <div class="fish-image">
+						<img src="https://riverfish.com.bd/cdn/shop/products/RIverFish_77de8e8e-213b-4d40-841c-739fa5a5e8c9.jpg?v=1679510495"
+							class="img-fluid" alt="">
+					</div> -->
+					<img src="https://www.bangladesherkhabor.net/resources/img/article/202206/85493_129.jpg"
+						class="img-fluid category-img">
+					<div class="category-name">
+						ঘেরের <br> মাছ
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="sf-category haor">
+					<!-- <div class="fish-image">
 						<img src="https://backoffice.daily-bangladesh.com/media/imgAll/2020June/fresh-fishes-2102240516.jpg"
 							class="img-fluid">
-					</div>
+					</div> -->
 					<img src="https://www.jugantor.com/assets/news_photos/2020/01/02/image-262301-1577926431.jpg"
 						class="img-fluid category-img">
 					<div class="category-name">
-						সমুদ্র
+						সমুদ্রের <br> মাছ
 					</div>
 				</div>
 			</div>
@@ -1046,10 +1063,10 @@
 	var bannerHeight = document.getElementById("banner-vid").clientHeight;
 	var flashHeight = document.getElementById("flash-ad").clientHeight;
 
-	finalHeight = bannerHeight + flashHeight - 3;
+	finalHeight = bannerHeight + flashHeight - 45;
 
 	if ($(window).width() > 575) {
-		$("#categories").css("max-height", finalHeight);
+		// $("#categories").css("max-height", finalHeight);
 		$("#dealProducts").css("max-height", finalHeight);
 	}
 </script>
