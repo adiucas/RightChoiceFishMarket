@@ -1188,7 +1188,14 @@ p {
   /*                  order steps                 */
   /* -------------------------------------------- */
   .order-steps .step .wrapper .label {
-    font-size: 11px !important; } }
+    font-size: 11px !important; }
+
+  /* -------------------------------------------- */
+  /*                  home popup                  */
+  /* -------------------------------------------- */
+  #cboxClose {
+    right: 0;
+    top: -30px; } }
 @media (min-width: 992px) {
   .sidebar-container {
     display: none; }

@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<link rel="stylesheet" href="css/easyzoom.css">
 	<link rel="stylesheet" href="css/star-rating-svg.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -39,6 +40,13 @@
 </head>
 
 <body>
+	<!-- ----------------------------------------- -->
+	<!--                   popup                   -->
+	<!-- ----------------------------------------- -->
+	<div class="d-none">
+		<a class='gallery' href='images/popup/364103781_181964304888732_3211138819261326155_n.jpg'></a>
+	</div>
+
 	<!--============================
 	=            header            =
 	=============================-->
@@ -273,7 +281,7 @@
 	<!--             featured category             -->
 	<!-- ----------------------------------------- -->
 	<div class="container-xxl mt-3 featured-category">
-		<div class="row">
+		<div class="row gy-3">
 			<div class="col-lg-3">
 				<div class="sf-category haor">
 					<!-- <div class="fish-image">
@@ -1015,9 +1023,31 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/easyzoom.js"></script>
 <script src="js/jquery-star-rating-svg.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
 <script src="js/main.js"></script>
 <script>
 	var $easyzoom = $('.easyzoom').easyZoom();
+
+	var windowWidth = window.innerWidth;
+	// alert(windowWidth);
+	$("a.gallery").colorbox({
+		rel: 'gallery',
+		slideshow: true,
+		open: true,
+		transition: 'fade',
+		slideshowSpeed: 5000,
+		width: (windowWidth <= 568 ? "90%" : "500px"),
+		onComplete: function (e) {
+			if ($(e.el).data('url')) {
+				$('#cboxLoadedContent').prop("onclick", null).unbind('click').click(function () {
+					window.location = $(e.el).data('url');
+				});
+			}
+		}
+	});
+	$(window).scroll(function () {
+		$.colorbox.close();
+	});
 
 	$(".review").starRating({
 		starSize: 20,
