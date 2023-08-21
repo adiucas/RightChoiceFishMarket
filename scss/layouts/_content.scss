@@ -765,5 +765,12 @@
 	}
 }
 
+/* -------------------------------------------- */
+/*                  home popup                  */
+/* -------------------------------------------- */
+#cboxNext,
+#cboxPrevious {
+	display: none !important;
+}
 
 @import "contentResponsive";

@@ -1113,6 +1113,13 @@ p {
     overflow: hidden;
     border-radius: .875rem; }
 
+/* -------------------------------------------- */
+/*                  home popup                  */
+/* -------------------------------------------- */
+#cboxNext,
+#cboxPrevious {
+  display: none !important; }
+
 @media (max-width: 992px) {
   .tooltip {
     display: none; }
