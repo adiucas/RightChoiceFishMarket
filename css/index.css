@@ -166,7 +166,8 @@
     overflow: hidden;
     border-radius: 15px;
     margin-top: 15px;
-    border: 1px solid rgba(29, 112, 183, 0.25); }
+    border: 1px solid rgba(29, 112, 183, 0.25);
+    cursor: pointer; }
     .cust-card .left-ad img {
       width: 100%; }
     .cust-card .left-ad .hot-deal {

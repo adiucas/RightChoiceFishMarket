@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hot Deal | Right Choice Fish Market</title>
+
+	<meta name="title" content="Hot Deal | Right Choice Fish Market">
+	<meta name="description" content="">
+
+	<!-- opengraph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Hot Deal | Right Choice Fish Market">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/easyzoom.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/HotDeal.css">
+	<link rel="stylesheet" href="css/HotDealRes.css">
+</head>
+
+<body>
+	<!--============================
+	=            header            =
+	=============================-->
+	<header data-include="header" class="sticky-top bottom-header"></header>
+	<div data-include="CategoryModalMobile"></div>
+	<section data-include="mobileNav" class="mobile-nav"></section>
+	<div class="content-container sidebar-container" data-include="sidebar" id="sidebar"></div>
+
+	<!-- ----------------------------------------- -->
+	<!--          Hot Deal           -->
+	<!-- ----------------------------------------- -->
+	<div class="container-xxl cwp mt-4">
+		<div class="row gy-4">
+			<div class="col-lg-3 filter" id="filter">
+				<div class="d-grid gap-3">
+					<div class="content-container price-range">
+						<div class="sec-title2">
+							<div class="wrapper">
+								<span>Price Range</span>
+							</div>
+						</div>
+						<div class="price-slider">
+							<div class="slider-wrapper">
+								<div id="slider-range"></div>
+							</div>
+							<div class="slider-inputs">
+								<input type="text" id="amountMin" class="form-control">
+								<input type="text" id="amountMax" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="content-container filter-by-option">
+						<div class="sec-title2">
+							<div class="wrapper">
+								<span>Filter by Size</span>
+							</div>
+						</div>
+						<div class="options">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="filterBySize1">
+								<label class="form-check-label" for="filterBySize1">
+									(4-5 Pcs kg) 1kg
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="content-container filter-by-option">
+						<div class="sec-title2">
+							<div class="wrapper">
+								<span>Filter by Additional Service</span>
+							</div>
+						</div>
+						<div class="options">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="filterByService1">
+								<label class="form-check-label" for="filterByService1">
+									Whole Fish Untouched
+								</label>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="col-lg-9 category-products">
+				<div class="content-container mobile-title d-lg-none d-block">
+					<div class="sec-title2">
+						<div class="wrapper">
+							<span>Hot Deal</span>
+						</div>
+					</div>
+				</div>
+				<div class="content-container">
+					<div class="sec-title2">
+						<div class="wrapper">
+							<span class="d-none d-lg-block">Hot Deal</span>
+							<button class="btn btn-primary filter-btn-mobile d-block d-lg-none" id="filterBtn"
+								onclick="showFilter()"><i class="bi bi-filter me-1"></i>Filter</button>
+							<div class="other-filter-options">
+								<select class="form-select">
+									<option class="first-option">Sort By</option>
+									<option value="1">Newest</option>
+									<option value="2">Oldest</option>
+									<option value="3">Price Low to Hight</option>
+									<option value="4">Price High to Low</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="products">
+						<div class="row row-cols-2 row-cols-sm-3 row-cols-xl-4 gy-3">
+							<div class="col">
+								<div class="wrapper">
+									<div class="image">
+										<img src="images/products/CHASH/1000x1000-web.right-fish-bagda-chingri-chas.jpg"
+											alt="">
+										<div class="comp-wish-cart">
+											<div class="icon-text">
+												<i class="fa-regular fa-heart me-1"></i>
+												<span>Add to Wishlist</span>
+											</div>
+											<div class="icon-text" data-bs-toggle="modal"
+												data-bs-target="#AddToCartModal">
+												<i class="bi bi-cart2 me-1"></i>
+												<span>Add to Cart</span>
+											</div>
+											<div class="icon-text">
+												<i class="fa-solid fa-newspaper me-1"></i>
+												<span>Blog</span>
+											</div>
+										</div>
+									</div>
+									<div class="desc">
+										<div class="price-stock">
+											<div class="price">
+												<span class="offer-price">540৳</span>
+												<span class="regular-price">1040৳</span>
+											</div>
+											<div class="stock stock-in">In Stock</div>
+										</div>
+										<div class="product-name">নদীর চিংড়ি (গলদা)</div>
+										<a href="javascript:void(0)"
+											class="btn btn-primary d-lg-none d-block w-100 mt-2"><i
+												class="bi bi-cart2 me-1"></i>Add
+											to
+											Cart</a>
+										<a href="javascript:void(0)"
+											class="btn btn-primary d-lg-none d-block w-100 mt-2"><i
+												class="fa-regular fa-heart me-1"></i>
+											Wishlist</a>
+										<a href="javascript:void(0)"
+											class="btn btn-primary d-lg-none d-block w-100 mt-2"><i
+												class="fa-solid fa-newspaper me-1"></i>
+											Blog</a>
+										<!-- <div class="club-point">
+											<label>Club Point:</label>
+											<div class="point-data">500</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="wrapper">
+									<div class="image">
+										<img src="images/products/CHASH/1000x1000-web.right-fish-golda-chingri-chash.jpg"
+											alt="">
+										<div class="comp-wish-cart">
+											<div class="icon-text">
+												<i class="fa-regular fa-heart me-1"></i>
+												<span>Add to Wishlist</span>
+											</div>
+											<div class="icon-text" data-bs-toggle="modal"
+												data-bs-target="#AddToCartModal">
+												<i class="bi bi-cart2 me-1"></i>
+												<span>Add to Cart</span>
+											</div>
+											<div class="icon-text">
+												<i class="fa-solid fa-newspaper me-1"></i>
+												<span>Blog</span>
+											</div>
+										</div>
+									</div>
+									<div class="desc">
+										<div class="price-stock">
+											<div class="price">
+												<span class="offer-price">540৳</span>
+												<span class="regular-price">1040৳</span>
+											</div>
+											<div class="stock stock-in">In Stock</div>
+										</div>
+										<div class="product-name">নদীর চিংড়ি (গলদা)</div>
+										<a href="javascript:void(0)"
+											class="btn btn-primary d-lg-none d-block w-100 mt-2"><i
+												class="bi bi-cart2 me-1"></i>Add
+											to
+											Cart</a>
+										<a href="javascript:void(0)"
+											class="btn btn-primary d-lg-none d-block w-100 mt-2"><i
+												class="fa-regular fa-heart me-1"></i>
+											Wishlist</a>
+										<a href="javascript:void(0)"
+											class="btn btn-primary d-lg-none d-block w-100 mt-2"><i
+												class="fa-solid fa-newspaper me-1"></i>
+											Blog</a>
+										<!-- <div class="club-point">
+											<label>Club Point:</label>
+											<div class="point-data">500</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------------------------------------- -->
+	<!--             add to cart modal             -->
+	<!-- ----------------------------------------- -->
+	<div class="modal fade" id="AddToCartModal" tabindex="-1" aria-labelledby="AddToCartModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="AddToCartModalLabel">Add To Cart</h5>
+					<button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i
+							class="fa-solid fa-xmark"></i></button>
+				</div>
+				<div class="modal-body">
+					<div class="product-wrapper">
+						<div class="info">
+							<div class="d-flex justify-content-between">
+								<div>
+									<h4>মিঠা পানির ইলিশ - Hilsha</h4>
+									<div class="review-wrapper">
+										<div class="review jq-stars"></div>
+										<div class="count">(0) Reviews</div>
+									</div>
+								</div>
+								<div>
+									<div class="stock stock-in">
+										In-Stock
+									</div>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Price</div>
+								<div class="data price">
+									<span class="price-tag">540৳</span>
+									<span class="product-unit">/KG</span>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Club Point:</div>
+								<div class="data">500</div>
+							</div>
+							<div class="divider mt-3 mb-2"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Size:</div>
+								<div class="data size-options">
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption">
+												(15-20) Pcs kg/500gm
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption2">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption2">
+												(15-20) Pcs kg/1kg
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption3">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption3">
+												(8-10) Pcs kg/500gm
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption4">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption4">
+												(8-10) Pcs kg/1 kg
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption5">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption5">
+												(4-5) Pcs kg/500gm
+											</label>
+										</div>
+									</div>
+									<div class="size-option-wrapper">
+										<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption6">
+										<div class="form-check">
+											<label class="form-check-label" for="sizeOption6">
+												(4-5) Pcs kg/1kg
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="divider mt-2 mb-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title mb-1 mb-lg-0">Quantity:</div>
+								<div class="data quantity">
+									<div class="input-group">
+										<button class="btn btn-primary" type="button" id="button-addon1"><i
+												class="fa-solid fa-minus"></i></button>
+										<input type="text" class="form-control" placeholder=""
+											aria-label="Example text with button addon" aria-describedby="button-addon1"
+											value="1">
+										<button class="btn btn-primary" type="button" id="button-addon1"><i
+												class="fa-solid fa-plus"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
+								<div class="title">Total Price</div>
+								<div class="data price">
+									<span class="price-tag">540৳</span>
+									<span class="product-unit">/KG</span>
+								</div>
+							</div>
+							<div class="divider my-3"></div>
+							<div class="d-flex align-items-lg-center align-items-start">
+								<button class="btn btn-lg btn-primary">
+									<i class="fa-solid fa-bag-shopping me-1"></i>
+									<span>Add to Cart</span>
+								</button>
+							</div>
+						</div>
+						<div class="product-image">
+							<div class="easyzoom easyzoom--overlay">
+								<a href="images/products/ilish.jpg">
+									<img src="images/products/ilish.jpg" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--============================
+	=            footer            =
+	=============================-->
+	<div data-include="footer" class="footer-wrapper"></div>
+</body>
+<!-- scripts -->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/easyzoom.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	$(function () {
+		$("#slider-range").slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [0, 500],
+			slide: function (event, ui) {
+				$("#amountMin").val(ui.values[0]);
+				$("#amountMax").val(ui.values[1]);
+			}
+		});
+		$("#amountMin").val($("#slider-range").slider("values", 0));
+		$("#amountMax").val($("#slider-range").slider("values", 1));
+
+		$("#amountMin").change(function () {
+			$("#slider-range").slider('values', 0, $(this).val());
+		});
+		$("#amountMax").change(function () {
+			$("#slider-range").slider('values', 1, $(this).val());
+		});
+	});
+
+	function showFilter() {
+		$("body").toggleClass("filter-overlay");
+		$("#filter").toggleClass("show");
+	}
+
+	document.addEventListener('click', function (e) {
+		if (!document.getElementById('filter').contains(e.target) && !document.getElementById('filterBtn').contains(e.target)) {
+			$("body").removeClass("filter-overlay");
+			$("#filter").removeClass("show");
+		}
+	});
+
+	var $easyzoom = $('.easyzoom').easyZoom();
+	if ($(window).width() > 575) {
+		$(".product-image img").attr("width", "450");
+		$(".product-image img").attr("height", "450");
+	}
+</script>
+
+</html>

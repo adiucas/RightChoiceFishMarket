@@ -164,10 +164,69 @@ p {
           top: 0;
           border-radius: 100px;
           background: #E7422C; }
-      .bottom-header .main-header .comp-wish-cart .noti i {
-        line-height: 1.5; }
-      .bottom-header .main-header .comp-wish-cart .noti .btn {
-        border-radius: 100px; }
+      .bottom-header .main-header .comp-wish-cart .noti {
+        position: relative; }
+        .bottom-header .main-header .comp-wish-cart .noti i {
+          line-height: 1.5; }
+        .bottom-header .main-header .comp-wish-cart .noti .btn {
+          border-radius: 100px; }
+        .bottom-header .main-header .comp-wish-cart .noti .all-notifications {
+          width: 300px;
+          position: absolute;
+          background: #fff;
+          z-index: 3;
+          right: 0;
+          margin-top: 10px;
+          border-radius: .75rem;
+          padding: 0.75rem 1.5rem;
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+          display: none;
+          transition: 0.3s all; }
+          .bottom-header .main-header .comp-wish-cart .noti .all-notifications.show {
+            display: block; }
+          .bottom-header .main-header .comp-wish-cart .noti .all-notifications .title {
+            color: #E7422C;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: capitalize; }
+          .bottom-header .main-header .comp-wish-cart .noti .all-notifications .single-notification {
+            height: 300px;
+            overflow-y: auto;
+            /* width */
+            /* Track */
+            /* Handle */ }
+            .bottom-header .main-header .comp-wish-cart .noti .all-notifications .single-notification::-webkit-scrollbar {
+              width: 20px; }
+            .bottom-header .main-header .comp-wish-cart .noti .all-notifications .single-notification::-webkit-scrollbar-track {
+              background: #fff; }
+            .bottom-header .main-header .comp-wish-cart .noti .all-notifications .single-notification::-webkit-scrollbar-thumb {
+              opacity: 0.5;
+              background: #1D70B7;
+              border-left: 15px white solid;
+              background-clip: padding-box; }
+            .bottom-header .main-header .comp-wish-cart .noti .all-notifications .single-notification .text-remove {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              padding: .75rem;
+              background: #daebf9;
+              border-radius: .75rem;
+              margin: .75rem 0; }
+              .bottom-header .main-header .comp-wish-cart .noti .all-notifications .single-notification .text-remove .remove-icon {
+                font-size: 1.5rem;
+                color: red;
+                margin-left: 1rem; }
+          .bottom-header .main-header .comp-wish-cart .noti .all-notifications .view-all-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: .75rem;
+            margin-top: .75rem; }
+            .bottom-header .main-header .comp-wish-cart .noti .all-notifications .view-all-btn .btn {
+              border-radius: 100px;
+              text-transform: capitalize; }
       .bottom-header .main-header .comp-wish-cart .cart {
         position: relative; }
         .bottom-header .main-header .comp-wish-cart .cart .cart-details {
@@ -280,7 +339,8 @@ p {
       background: #E7422C;
       padding: 5px;
       border-radius: 100px;
-      margin-left: 15px; }
+      margin-left: 15px;
+      flex-shrink: 0; }
       .bottom-header .main-header .hotline .icon {
         display: flex;
         flex-direction: row;
@@ -290,15 +350,14 @@ p {
         height: 45px;
         border-radius: 50px;
         color: #E7422C;
-        background: #daebf9;
-        flex-shrink: 0; }
+        background: #daebf9; }
         .bottom-header .main-header .hotline .icon i {
           font-size: 20px; }
       .bottom-header .main-header .hotline .text {
         display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
         color: #fff;
         margin-left: 10px;
         margin-right: 15px;
@@ -306,7 +365,7 @@ p {
         .bottom-header .main-header .hotline .text .call-us {
           margin-bottom: -5px; }
         .bottom-header .main-header .hotline .text .hotline-number {
-          font-size: 20px; }
+          font-size: 1.25rem; }
     .bottom-header .main-header .navbar-toggler {
       width: 45px;
       height: 45px;
