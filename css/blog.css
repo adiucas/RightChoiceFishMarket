@@ -2,21 +2,23 @@
   display: flex; }
 .blog .blog-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: .75rem;
   background: #daebf9;
   width: 100%; }
   .blog .blog-card .image {
     border-radius: 1rem;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: .75rem; }
     .blog .blog-card .image img {
-      width: 100%; }
+      width: 100%;
+      max-width: 400px; }
   .blog .blog-card .title-date {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin-top: .5rem; }
+    padding: .75rem; }
     .blog .blog-card .title-date .title {
       font-family: "mmsBold";
       color: #1D70B7;

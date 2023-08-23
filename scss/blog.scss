@@ -7,24 +7,26 @@
     }
 
     .blog-card {
-        @include flex(col);
+        @include flex(row);
         border-radius: 1rem;
-        padding: 1rem;
+        padding: .75rem;
         background: $lpCol;
         width: 100%;
 
         .image {
             border-radius: 1rem;
             overflow: hidden;
+            margin: .75rem;
 
             img {
                 width: 100%;
+                max-width: 400px;
             }
         }
 
         .title-date {
             @include flex(row, null, start);
-            margin-top: .5rem;
+            padding: .75rem;
 
             .title {
                 font-family: "mmsBold";
