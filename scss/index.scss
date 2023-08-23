@@ -156,7 +156,7 @@
         .card-title {
             font-weight: bold;
             color: $primCol;
-            font-size: .875rem;
+            font-size: 1rem;
             font-family: "mmsRegular", sans-serif;
             margin-bottom: 0;
         }
@@ -202,7 +202,7 @@
         &#categories {
             .accordion-button {
                 span {
-                    font-family: "mmsRegular", sans-serif;
+                    font-family: "mmsRegular";
                     line-height: 0;
                 }
             }
@@ -416,6 +416,7 @@
                     margin-top: 5px;
                     padding-top: 5px;
                     font-family: "mmsRegular", sans-serif;
+                    font-size: 1rem;
                 }
 
                 .club-point {

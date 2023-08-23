@@ -114,7 +114,7 @@
     .cust-card .popular-products .card-title {
       font-weight: bold;
       color: #1D70B7;
-      font-size: .875rem;
+      font-size: 1rem;
       font-family: "mmsRegular", sans-serif;
       margin-bottom: 0; }
     .cust-card .popular-products .card-text .offer-price {
@@ -141,7 +141,7 @@
       opacity: 0.5;
       background: #1D70B7; }
     .cust-card .accordion#categories .accordion-button span {
-      font-family: "mmsRegular", sans-serif;
+      font-family: "mmsRegular";
       line-height: 0; }
     .cust-card .accordion#categories .accordion-body {
       background: #fff;
@@ -293,7 +293,8 @@
         border-top: 1px solid rgba(29, 112, 183, 0.25);
         margin-top: 5px;
         padding-top: 5px;
-        font-family: "mmsRegular", sans-serif; }
+        font-family: "mmsRegular", sans-serif;
+        font-size: 1rem; }
       .featured-products .product .wrapper .desc .club-point {
         display: flex;
         flex-direction: row;

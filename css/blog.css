@@ -1,0 +1,35 @@
+.blog .col {
+  display: flex; }
+.blog .blog-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #daebf9;
+  width: 100%; }
+  .blog .blog-card .image {
+    border-radius: 1rem;
+    overflow: hidden; }
+    .blog .blog-card .image img {
+      width: 100%; }
+  .blog .blog-card .title-date {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: .5rem; }
+    .blog .blog-card .title-date .title {
+      font-family: "mmsBold";
+      color: #1D70B7;
+      padding-right: .75rem; }
+    .blog .blog-card .title-date .time-date {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background: #fff;
+      padding: .25rem .5rem;
+      border-radius: .5rem;
+      border: 1px solid rgba(29, 112, 183, 0.25); }
+
+/*# sourceMappingURL=blog.css.map */
