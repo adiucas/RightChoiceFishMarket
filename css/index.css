@@ -217,11 +217,12 @@
     font-weight: bold;
     font-size: 42px;
     position: absolute;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 #0c2d49, 0 2px #0c2d49, 2px 0 #0c2d49, 0 -2px #0c2d49;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
-    line-height: 1.2; }
+    line-height: 1.2;
+    width: min-content; }
   .featured-category .sf-category:hover {
     box-shadow: 0 10px 25px #e7422c; }
     .featured-category .sf-category:hover .category-img {
