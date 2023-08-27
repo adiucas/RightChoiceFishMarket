@@ -37,7 +37,9 @@
         }
 
         .delivery-in-dhaka {
-            max-height: 70px;
+            @include flex(col, start, start);
+            min-width: 120px;
+            height: 55px;
             margin-right: 1rem;
             font-family: "Montserrat", sans-serif;
             line-height: 1;
