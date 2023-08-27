@@ -332,6 +332,9 @@ p {
         flex-shrink: 0;
         width: 31.9px;
         height: 31.9px; }
+      .bottom-header .main-header .login-reg .afterLogin .btn {
+        width: unset;
+        height: unset; }
     .bottom-header .main-header .hotline {
       display: flex;
       flex-direction: row;
@@ -1310,9 +1313,17 @@ p {
       height: 100%;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      position: relative; }
       .footer-wrapper .footer .mapWrapper iframe {
-        width: 100%; }
+        width: 100%;
+        position: relative; }
+      .footer-wrapper .footer .mapWrapper .location-link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
     .footer-wrapper .footer .quick-link {
       color: #fff; }
       .footer-wrapper .footer .quick-link .label {

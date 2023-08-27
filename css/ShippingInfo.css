@@ -29,6 +29,8 @@
   color: #1D70B7; }
 .cart-steps .icon-name.shipping-info {
   opacity: 1; }
+  .cart-steps .icon-name.shipping-info i {
+    color: #E7422C; }
   .cart-steps .icon-name.shipping-info div {
     color: #E7422C; }
 
@@ -55,6 +57,8 @@
   margin: .25rem .75rem; }
 .addresses .address-cards {
   padding: .75rem; }
+  .addresses .address-cards .col {
+    display: flex; }
   .addresses .address-cards .address-card {
     display: flex;
     flex-direction: row;
@@ -85,7 +89,8 @@
       font-weight: bold;
       text-transform: capitalize;
       padding-right: 10px;
-      vertical-align: top; }
+      vertical-align: top;
+      white-space: nowrap; }
     .addresses .address-cards .address-card .action {
       display: flex;
       flex-direction: column;

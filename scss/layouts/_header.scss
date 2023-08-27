@@ -295,6 +295,13 @@
                 width: 31.9px;
                 height: 31.9px;
             }
+
+            .afterLogin {
+                .btn {
+                    width: unset;
+                    height: unset;
+                }
+            }
         }
 
         .hotline {

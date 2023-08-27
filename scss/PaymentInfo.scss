@@ -14,6 +14,10 @@
         &.payment-info {
             opacity: 1;
 
+            i {
+                color: $secCol;
+            }
+
             div {
                 color: $secCol;
             }

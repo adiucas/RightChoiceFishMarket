@@ -78,6 +78,10 @@
                     }
                 }
 
+                &.sizes {
+                    border-radius: 100px;
+                }
+
                 &.quantity {
                     .btn {
                         &:nth-child(1) {
@@ -143,6 +147,50 @@
     .tab-content {
         padding-top: .5rem;
     }
+
+    .buttons {
+        .btn {
+            text-transform: capitalize;
+
+            &:not(:last-child) {
+                margin-right: .75rem;
+            }
+        }
+    }
+
+    .description {
+        .title {
+            @include head();
+            color: $primCol;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+    }
+
+    .reviews {
+        .title {
+            @include head();
+            color: $primCol;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+
+        .review-wrapper {
+            .single-review {
+                padding: .75rem 0;
+
+                .customer-name-date {
+                    margin-top: .5rem;
+                    color: rgba($color: #000000, $alpha: .5);
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba($color: $primCol, $alpha: .25);
+                }
+            }
+        }
+    }
+
 }
 
 .pop-product {

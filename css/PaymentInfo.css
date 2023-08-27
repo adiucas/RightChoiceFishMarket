@@ -3,6 +3,8 @@
   color: #1D70B7; }
 .cart-steps .icon-name.payment-info {
   opacity: 1; }
+  .cart-steps .icon-name.payment-info i {
+    color: #E7422C; }
   .cart-steps .icon-name.payment-info div {
     color: #E7422C; }
 

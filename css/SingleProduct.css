@@ -45,6 +45,8 @@
         border-radius: .25rem;
         font-size: 1rem;
         transition: 0.3s all; }
+    .content-container .product-wrapper .info .data.sizes {
+      border-radius: 100px; }
     .content-container .product-wrapper .info .data.quantity .btn:nth-child(1) {
       border-radius: 100px 0 0 100px; }
     .content-container .product-wrapper .info .data.quantity .btn:nth-child(3) {
@@ -78,6 +80,29 @@
     border: 1px solid #E7422C; }
   .description-review .tab-content {
     padding-top: .5rem; }
+  .description-review .buttons .btn {
+    text-transform: capitalize; }
+    .description-review .buttons .btn:not(:last-child) {
+      margin-right: .75rem; }
+  .description-review .description .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #1D70B7;
+    text-transform: capitalize;
+    font-size: 1.2rem; }
+  .description-review .reviews .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #1D70B7;
+    text-transform: capitalize;
+    font-size: 1.2rem; }
+  .description-review .reviews .review-wrapper .single-review {
+    padding: .75rem 0; }
+    .description-review .reviews .review-wrapper .single-review .customer-name-date {
+      margin-top: .5rem;
+      color: rgba(0, 0, 0, 0.5); }
+    .description-review .reviews .review-wrapper .single-review:not(:last-child) {
+      border-bottom: 1px solid rgba(29, 112, 183, 0.25); }
 
 .pop-product .sec-title {
   text-align: left;

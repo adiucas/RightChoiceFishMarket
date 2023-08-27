@@ -13,6 +13,10 @@
         &.delivery-info {
             opacity: 1;
 
+            i {
+                color: $secCol;
+            }
+
             div {
                 color: $secCol;
             }
@@ -129,9 +133,26 @@
             }
         }
 
+        .cutting-charge {
+
+            .form-check {
+                margin-top: 5px;
+                margin-left: 20px;
+
+                .form-check-input {
+                    border-radius: 30px;
+                }
+
+                .form-check-input:checked {
+                    background-color: $primCol;
+                    border-color: $primCol;
+                }
+            }
+        }
+
         .buttons {
             @include flex(row, $sb, center);
-            margin-top: 15px;
+            margin-top: 32px;
             margin-bottom: .75rem;
         }
     }

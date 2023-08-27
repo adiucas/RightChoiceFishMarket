@@ -58,7 +58,8 @@ body,
       font-weight: bold;
       text-transform: capitalize;
       padding-right: 10px;
-      vertical-align: top; }
+      vertical-align: top;
+      white-space: nowrap; }
     .manage-profile-content .addresses .address-cards .address-card .action-default {
       display: flex;
       flex-direction: column;

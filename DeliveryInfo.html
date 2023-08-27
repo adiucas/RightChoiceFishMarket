@@ -81,6 +81,13 @@
 								<span>Home Delivery</span>
 							</label>
 						</div>
+						<div class="check-icon ms-2">
+							<input class="form-check-input" type="radio" name="deliveryType" id="deliveryType2" checked>
+							<label for="deliveryType2">
+								<div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+								<span>Store Pickup</span>
+							</label>
+						</div>
 					</div>
 				</div>
 				<div class="delivery-time">
@@ -110,10 +117,21 @@
 						</div>
 					</div>
 				</div>
+				<div class="cutting-charge">
+					<div class="divider mt-3"></div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="cuttingCharge">
+						<label class="form-check-label" for="cuttingCharge">
+							Add Cutting Charge
+						</label>
+					</div>
+				</div>
 				<div class="buttons">
-					<button class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left me-2"></i>Return to
+					<button onclick="window.location.href='index.html'" class="btn btn-outline-primary"><i
+							class="fa-solid fa-arrow-left me-2"></i>Return to
 						Shop</button>
-					<button class="btn btn-primary">Continue to Shipping</button>
+					<button onclick="window.location.href='PaymentInfo.html'" class="btn btn-primary">Continue to
+						Payment</button>
 				</div>
 			</div>
 		</div>

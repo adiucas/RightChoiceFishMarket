@@ -3,6 +3,8 @@
   color: #1D70B7; }
 .cart-steps .icon-name.delivery-info {
   opacity: 1; }
+  .cart-steps .icon-name.delivery-info i {
+    color: #E7422C; }
   .cart-steps .icon-name.delivery-info div {
     color: #E7422C; }
 
@@ -71,12 +73,20 @@
         font-size: 12px; }
 .product-list .table .delivery-time .label-check .check-icon:not(:last-child) {
   margin-right: 1rem; }
+.product-list .table .cutting-charge .form-check {
+  margin-top: 5px;
+  margin-left: 20px; }
+  .product-list .table .cutting-charge .form-check .form-check-input {
+    border-radius: 30px; }
+  .product-list .table .cutting-charge .form-check .form-check-input:checked {
+    background-color: #1D70B7;
+    border-color: #1D70B7; }
 .product-list .table .buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 32px;
   margin-bottom: .75rem; }
 
 /*# sourceMappingURL=DeliveryInfo.css.map */

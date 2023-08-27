@@ -3,6 +3,8 @@
   color: #1D70B7; }
 .cart-steps .icon-name.confirmation {
   opacity: 1; }
+  .cart-steps .icon-name.confirmation i {
+    color: #E7422C; }
   .cart-steps .icon-name.confirmation div {
     color: #E7422C; }
 
