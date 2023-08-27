@@ -123,9 +123,33 @@ p {
       margin-right: 15px; }
       .bottom-header .main-header .logo img {
         max-height: 70px; }
+@keyframes did {
+  0% {
+    background: #E7422C;
+    transform: scale(1); }
+  50% {
+    background: #1D70B7;
+    transform: scale(0.9); }
+  100% {
+    background: #E7422C;
+    transform: scale(1); } }
     .bottom-header .main-header .delivery-in-dhaka {
       max-height: 70px;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1;
+      background: #E7422C;
+      color: #fff;
+      padding: .5rem .75rem;
+      border-radius: .5rem;
+      animation: did 2s ease 0s infinite normal none; }
+      .bottom-header .main-header .delivery-in-dhaka .delivery-in {
+        font-size: 1.25rem; }
+      .bottom-header .main-header .delivery-in-dhaka .dhaka {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700; }
     .bottom-header .main-header .search-input {
       width: 100%; }
       .bottom-header .main-header .search-input .form-control {

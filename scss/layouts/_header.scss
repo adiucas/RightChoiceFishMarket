@@ -19,9 +19,43 @@
             }
         }
 
+        @keyframes did {
+            0% {
+                background: $secCol;
+                transform: scale(1);
+            }
+
+            50% {
+                background: $primCol;
+                transform: scale(0.9);
+            }
+
+            100% {
+                background: $secCol;
+                transform: scale(1);
+            }
+        }
+
         .delivery-in-dhaka {
             max-height: 70px;
             margin-right: 1rem;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1;
+            background: $secCol;
+            color: #fff;
+            padding: .5rem .75rem;
+            border-radius: .5rem;
+            animation: did 2s ease 0s infinite normal none;
+
+            .delivery-in {
+                font-size: 1.25rem;
+            }
+
+            .dhaka {
+                text-transform: uppercase;
+                font-size: 2rem;
+                @include head();
+            }
         }
 
         .search-input {
