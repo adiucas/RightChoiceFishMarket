@@ -43,6 +43,7 @@
 	<header data-include="header" class="sticky-top bottom-header"></header>
 	<div data-include="CategoryModalMobile"></div>
 	<section data-include="mobileNav" class="mobile-nav"></section>
+	<div class="content-container sidebar-container" data-include="sidebar" id="sidebar"></div>
 
 	<!-- ----------------------------------------- -->
 	<!--                   body                    -->
@@ -50,6 +51,8 @@
 	<div class="container-xxl mt-4">
 		<div class="content-container">
 			<div class="product-wrapper">
+				<button class="btn btn-primary cartToggleBtn" id="cartToggleBtn" onclick="cartHandler()"><span
+						class="text"></span></button>
 				<div class="info">
 					<div class="d-flex justify-content-between">
 						<div>
@@ -78,10 +81,9 @@
 						<div class="title">Club Point:</div>
 						<div class="data">500</div>
 					</div> -->
-					<div class="divider mt-3 mb-2"></div>
 					<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
 						<div class="title">Size:</div>
-						<!-- <div class="data size-options">
+						<div class="data size-options">
 							<div class="size-option-wrapper">
 								<input class="form-check-input" type="radio" name="sizeOption" id="sizeOption">
 								<div class="form-check">
@@ -130,13 +132,7 @@
 									</label>
 								</div>
 							</div>
-						</div> -->
-						<select class="data form-control sizes">
-							<option class="first-option">Please Select</option>
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-						</select>
+						</div>
 					</div>
 					<div class="divider mt-2 mb-3"></div>
 					<div class="d-flex align-items-lg-center align-items-start flex-column flex-lg-row">
@@ -178,6 +174,82 @@
 						<a href="images/ready-to-cook/1000x1000--Ready-to-cook-gulsha.jpg">
 							<img src="images/ready-to-cook/1000x1000--Ready-to-cook-gulsha.jpg" />
 						</a>
+					</div>
+				</div>
+				<div class="cart-info">
+					<div class="cart-details">
+						<div class="title">cart items</div>
+						<div class="divider"></div>
+						<div class="products">
+							<div class="product">
+								<div class="image-name-price">
+									<div class="image">
+										<img src="images/products/air.jpg">
+									</div>
+									<div class="name-price">
+										<div class="name">নদীর আইড়-Ayer</div>
+										<div class="qty-price">1x990৳</div>
+									</div>
+								</div>
+								<a href="#" class="remove-icon" data-bs-toggle="tooltip" data-bs-placement="right"
+									title="Remove from Cart List">
+									<i class="fa-regular fa-circle-xmark"></i>
+								</a>
+							</div>
+							<div class="product">
+								<div class="image-name-price">
+									<div class="image">
+										<img src="images/products/air.jpg">
+									</div>
+									<div class="name-price">
+										<div class="name">নদীর আইড়-Ayer</div>
+										<div class="qty-price">1x990৳</div>
+									</div>
+								</div>
+								<a href="#" class="remove-icon" data-bs-toggle="tooltip" data-bs-placement="right"
+									title="Remove from Cart List">
+									<i class="fa-regular fa-circle-xmark"></i>
+								</a>
+							</div>
+							<div class="product">
+								<div class="image-name-price">
+									<div class="image">
+										<img src="images/products/air.jpg">
+									</div>
+									<div class="name-price">
+										<div class="name">নদীর আইড়-Ayer</div>
+										<div class="qty-price">1x990৳</div>
+									</div>
+								</div>
+								<a href="#" class="remove-icon" data-bs-toggle="tooltip" data-bs-placement="right"
+									title="Remove from Cart List">
+									<i class="fa-regular fa-circle-xmark"></i>
+								</a>
+							</div>
+							<div class="product">
+								<div class="image-name-price">
+									<div class="image">
+										<img src="images/products/air.jpg">
+									</div>
+									<div class="name-price">
+										<div class="name">নদীর আইড়-Ayer</div>
+										<div class="qty-price">1x990৳</div>
+									</div>
+								</div>
+								<a href="#" class="remove-icon" data-bs-toggle="tooltip" data-bs-placement="right"
+									title="Remove from Cart List">
+									<i class="fa-regular fa-circle-xmark"></i>
+								</a>
+							</div>
+						</div>
+						<div class="subtotal">
+							<div class="text">Subtotal</div>
+							<div class="amount">4000৳</div>
+						</div>
+						<div class="cart-checkout-btn">
+							<a href="MyCart.html" class="btn btn-outline-primary me-3">view cart</a>
+							<a href="ShippingInfo.html" class="btn btn-primary">checkout</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -646,8 +718,8 @@
 	var $easyzoom = $('.easyzoom').easyZoom();
 
 	if ($(window).width() > 575) {
-		$(".product-image img").attr("width", "450");
-		$(".product-image img").attr("height", "450");
+		$(".product-image img").attr("width", "500");
+		$(".product-image img").attr("height", "500");
 	}
 
 	$(".review").starRating({
@@ -676,6 +748,11 @@
 		$('html, body').animate({ scrollTop: target }, 0);
 		event.preventDefault();
 	});
+
+	function cartHandler() {
+		$(".cartToggleBtn").toggleClass("closed");
+		$(".cart-info").toggleClass("closed");
+	}
 </script>
 
 </html>

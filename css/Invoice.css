@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  border-bottom-width: 1px; }
+
+.invoice {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  font-size: .687rem; }
+  .invoice .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .invoice .header .logo {
+      width: 150px; }
+    .invoice .header h3 {
+      margin-top: 1rem; }
+  .invoice .table {
+    margin-top: 2rem;
+    border: 1px solid #1D70B7; }
+    .invoice .table thead tr {
+      border-bottom: 2px solid #1D70B7; }
+      .invoice .table thead tr th {
+        text-align: center;
+        text-transform: capitalize;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        white-space: nowrap; }
+    .invoice .table tbody .title {
+      font-weight: bold;
+      white-space: nowrap; }
+    .invoice .table tbody .price::after {
+      content: "৳";
+      font-size: 1rem; }
+    .invoice .table.order-details thead tr .sub-th {
+      font-size: 1rem;
+      white-space: normal;
+      vertical-align: middle; }
+    .invoice .table.order-details tbody tr td:nth-child(1), .invoice .table.order-details tbody tr td:nth-child(4) {
+      text-align: center; }
+    .invoice .table.order-details tbody tr td:nth-child(5), .invoice .table.order-details tbody tr td:nth-child(6) {
+      text-align: right; }
+
+/*# sourceMappingURL=Invoice.css.map */

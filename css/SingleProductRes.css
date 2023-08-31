@@ -9,6 +9,12 @@
     padding: .5rem .75rem; }
 
   /* -------------------------------------------- */
+  /*                  cart items                  */
+  /* -------------------------------------------- */
+  .content-container .product-wrapper .cart-info {
+    display: none; }
+
+  /* -------------------------------------------- */
   /*               related products               */
   /* -------------------------------------------- */
   .content-container {
@@ -35,7 +41,7 @@
     flex-direction: row; } }
 @media (min-width: 992px) {
   .content-container .product-wrapper .product-image {
-    width: 450px;
-    height: 450px; } }
+    width: 500px;
+    height: 500px; } }
 
 /*# sourceMappingURL=SingleProductRes.css.map */

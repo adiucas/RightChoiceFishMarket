@@ -773,4 +773,162 @@
 	display: none !important;
 }
 
+
+/* -------------------------------------------- */
+/*                modal cart info               */
+/* -------------------------------------------- */
+.modal {
+
+	.cartToggleBtn {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		font-size: 11px;
+		height: 20px;
+		padding: 5px 10px;
+		line-height: 0;
+		z-index: 3;
+
+
+		.text {
+			&:after {
+				content: "close cart";
+			}
+		}
+
+		&.closed {
+			.text {
+				&:after {
+					content: "open cart";
+				}
+			}
+		}
+	}
+
+	.cart-info {
+		padding: 12px;
+
+		.cart-details {
+			background: #fff;
+			border-radius: .75rem;
+			width: max-content;
+			width: 250px;
+			overflow-x: hidden;
+
+			&.show {
+				display: block;
+			}
+
+			.title {
+				@include head();
+				color: $secCol;
+				font-weight: bold;
+				font-size: 1.2rem;
+				text-transform: capitalize;
+			}
+
+			.products {
+				height: 300px;
+				overflow-y: auto;
+
+				/* width */
+				&::-webkit-scrollbar {
+					width: 20px;
+				}
+
+
+				/* Track */
+				&::-webkit-scrollbar-track {
+					background: #fff;
+				}
+
+				/* Handle */
+				&::-webkit-scrollbar-thumb {
+					opacity: 0.5;
+					background: $primCol;
+					border-left: 15px white solid;
+					background-clip: padding-box;
+				}
+
+				.product {
+					@include flex(row, $sb, center);
+					padding: .75rem;
+					background: $lpCol;
+					border-radius: .75rem;
+					margin: .75rem 0;
+
+					.image-name-price {
+						@include flex(row, null, center);
+
+						.image {
+							overflow: hidden;
+							border-radius: .5rem;
+							flex-shrink: 0;
+
+							img {
+								width: 100%;
+								max-width: 70px;
+							}
+						}
+
+						.name-price {
+							flex-shrink: 0;
+							margin-left: 10px;
+
+							.name {
+								font-weight: bold;
+								color: $primCol;
+								font-family: "mmsBold", sans-serif;
+								font-size: 1rem;
+							}
+						}
+					}
+
+					.remove-icon {
+						font-size: 1.5rem;
+						color: red;
+						margin-left: 1rem;
+					}
+				}
+			}
+
+			.subtotal {
+				@include flex(row, $sb, center);
+				border: 1px solid rgba($primCol, 25%);
+				border-radius: 100px;
+				padding: .75rem 2*.75rem;
+				margin: .75rem 0;
+				font-size: 1rem;
+
+				.text {
+					color: $primCol;
+				}
+
+				.amount {
+					font-weight: bold;
+					color: $secCol;
+				}
+			}
+
+			.cart-checkout-btn {
+				@include flex(row, center, center);
+
+				.btn {
+					border-radius: 100px;
+					text-transform: capitalize;
+				}
+			}
+		}
+
+		&.closed {
+			padding: 0;
+
+			.cart-details {
+				padding: 0;
+				width: 0;
+			}
+		}
+	}
+}
+
 @import "contentResponsive";

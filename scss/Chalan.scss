@@ -1,0 +1,96 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    border-bottom-width: 1px;
+}
+
+.chalan {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-size: .687rem;
+
+    .header {
+        @include flex(col, center, center);
+
+        .logo {
+            width: 150px;
+        }
+
+        h3 {
+            margin-top: 1rem;
+        }
+    }
+
+    .table {
+        margin-top: 2rem;
+        border: 1px solid $primCol;
+
+
+        thead {
+            tr {
+                border-bottom: 2px solid $primCol;
+
+                th {
+                    text-align: center;
+                    text-transform: capitalize;
+                    padding: .5rem .5rem;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        tbody {
+            .title {
+                font-weight: bold;
+                white-space: nowrap;
+                text-transform: capitalize;
+            }
+
+            .price {
+                &::after {
+                    content: "৳";
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &.order-details {
+            thead {
+                tr {
+                    .sub-th {
+                        font-size: 1rem;
+                        white-space: normal;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+
+                        &:nth-child(1),
+                        &:nth-child(4) {
+                            text-align: center;
+                        }
+
+                        &:nth-child(5),
+                        &:nth-child(6) {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .aiw {
+        text-align: left;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

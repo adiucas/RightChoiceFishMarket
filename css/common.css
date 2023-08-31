@@ -1211,6 +1211,115 @@ p {
 #cboxPrevious {
   display: none !important; }
 
+/* -------------------------------------------- */
+/*                modal cart info               */
+/* -------------------------------------------- */
+.modal .cartToggleBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 11px;
+  height: 20px;
+  padding: 5px 10px;
+  line-height: 0;
+  z-index: 3; }
+  .modal .cartToggleBtn .text:after {
+    content: "close cart"; }
+  .modal .cartToggleBtn.closed .text:after {
+    content: "open cart"; }
+.modal .cart-info {
+  padding: 12px; }
+  .modal .cart-info .cart-details {
+    background: #fff;
+    border-radius: .75rem;
+    width: max-content;
+    width: 250px;
+    overflow-x: hidden; }
+    .modal .cart-info .cart-details.show {
+      display: block; }
+    .modal .cart-info .cart-details .title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: #E7422C;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: capitalize; }
+    .modal .cart-info .cart-details .products {
+      height: 300px;
+      overflow-y: auto;
+      /* width */
+      /* Track */
+      /* Handle */ }
+      .modal .cart-info .cart-details .products::-webkit-scrollbar {
+        width: 20px; }
+      .modal .cart-info .cart-details .products::-webkit-scrollbar-track {
+        background: #fff; }
+      .modal .cart-info .cart-details .products::-webkit-scrollbar-thumb {
+        opacity: 0.5;
+        background: #1D70B7;
+        border-left: 15px white solid;
+        background-clip: padding-box; }
+      .modal .cart-info .cart-details .products .product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .75rem;
+        background: #daebf9;
+        border-radius: .75rem;
+        margin: .75rem 0; }
+        .modal .cart-info .cart-details .products .product .image-name-price {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .modal .cart-info .cart-details .products .product .image-name-price .image {
+            overflow: hidden;
+            border-radius: .5rem;
+            flex-shrink: 0; }
+            .modal .cart-info .cart-details .products .product .image-name-price .image img {
+              width: 100%;
+              max-width: 70px; }
+          .modal .cart-info .cart-details .products .product .image-name-price .name-price {
+            flex-shrink: 0;
+            margin-left: 10px; }
+            .modal .cart-info .cart-details .products .product .image-name-price .name-price .name {
+              font-weight: bold;
+              color: #1D70B7;
+              font-family: "mmsBold", sans-serif;
+              font-size: 1rem; }
+        .modal .cart-info .cart-details .products .product .remove-icon {
+          font-size: 1.5rem;
+          color: red;
+          margin-left: 1rem; }
+    .modal .cart-info .cart-details .subtotal {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid rgba(29, 112, 183, 0.25);
+      border-radius: 100px;
+      padding: 0.75rem 1.5rem;
+      margin: .75rem 0;
+      font-size: 1rem; }
+      .modal .cart-info .cart-details .subtotal .text {
+        color: #1D70B7; }
+      .modal .cart-info .cart-details .subtotal .amount {
+        font-weight: bold;
+        color: #E7422C; }
+    .modal .cart-info .cart-details .cart-checkout-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .modal .cart-info .cart-details .cart-checkout-btn .btn {
+        border-radius: 100px;
+        text-transform: capitalize; }
+  .modal .cart-info.closed {
+    padding: 0; }
+    .modal .cart-info.closed .cart-details {
+      padding: 0;
+      width: 0; }
+
 @media (max-width: 992px) {
   .tooltip {
     display: none; }
@@ -1315,7 +1424,7 @@ p {
     bottom: 0; }
     .footer-wrapper .footer .footer-logo {
       width: 100%;
-      max-width: 300px; }
+      max-width: 150px; }
     .footer-wrapper .footer .contact-info {
       margin-top: 15px;
       color: #fff; }

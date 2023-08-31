@@ -6,10 +6,8 @@
 
 	/* 'Shrink-wrap' the element */
 	display: inline-block;
-	*
-	display: inline;
-	*
-	zoom: 1;
+	* display: inline;
+	* zoom: 1;
 }
 
 .easyzoom img {
@@ -43,7 +41,7 @@
 
 .easyzoom-flyout {
 	position: absolute;
-	z-index: 100;
+	z-index: 2;
 	overflow: hidden;
 	background: #FFF;
 }

@@ -143,7 +143,7 @@
 					<!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 						<source src="images/demo.mp4" type="video/mp4">
 					</video> -->
-					<iframe src="https://www.youtube.com/embed/Gh6ueknkLws?autoplay=1&mute=1"
+					<iframe src="https://www.youtube.com/embed/TWt3IM8KNp0?autoplay=1&mute=1"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowfullscreen></iframe>
@@ -913,6 +913,8 @@
 				</div>
 				<div class="modal-body">
 					<div class="product-wrapper">
+						<button class="btn btn-primary cartToggleBtn" id="cartToggleBtn"
+							onclick="ModalCartHandler()"><span class="text"></span></button>
 						<div class="info">
 							<div class="d-flex justify-content-between">
 								<div>
@@ -1028,9 +1030,85 @@
 						</div>
 						<div class="product-image">
 							<div class="easyzoom easyzoom--overlay">
-								<a href="images/products/ilish.jpg">
-									<img src="images/products/ilish.jpg" />
+								<a href="images/products/CHASH/1000x1000-web.jpg-gulsha-chash.jpg">
+									<img src="images/products/CHASH/1000x1000-web.jpg-gulsha-chash.jpg" />
 								</a>
+							</div>
+						</div>
+						<div class="cart-info">
+							<div class="cart-details">
+								<div class="title">cart items</div>
+								<div class="divider"></div>
+								<div class="products">
+									<div class="product">
+										<div class="image-name-price">
+											<div class="image">
+												<img src="images/products/CHASH/1000x1000-web.jpg-gulsha-chash.jpg">
+											</div>
+											<div class="name-price">
+												<div class="name">নদীর আইড়-Ayer</div>
+												<div class="qty-price">1x990৳</div>
+											</div>
+										</div>
+										<a href="#" class="remove-icon" data-bs-toggle="tooltip"
+											data-bs-placement="right" title="Remove from Cart List">
+											<i class="fa-regular fa-circle-xmark"></i>
+										</a>
+									</div>
+									<div class="product">
+										<div class="image-name-price">
+											<div class="image">
+												<img src="images/products/air.jpg">
+											</div>
+											<div class="name-price">
+												<div class="name">নদীর আইড়-Ayer</div>
+												<div class="qty-price">1x990৳</div>
+											</div>
+										</div>
+										<a href="#" class="remove-icon" data-bs-toggle="tooltip"
+											data-bs-placement="right" title="Remove from Cart List">
+											<i class="fa-regular fa-circle-xmark"></i>
+										</a>
+									</div>
+									<div class="product">
+										<div class="image-name-price">
+											<div class="image">
+												<img src="images/products/air.jpg">
+											</div>
+											<div class="name-price">
+												<div class="name">নদীর আইড়-Ayer</div>
+												<div class="qty-price">1x990৳</div>
+											</div>
+										</div>
+										<a href="#" class="remove-icon" data-bs-toggle="tooltip"
+											data-bs-placement="right" title="Remove from Cart List">
+											<i class="fa-regular fa-circle-xmark"></i>
+										</a>
+									</div>
+									<div class="product">
+										<div class="image-name-price">
+											<div class="image">
+												<img src="images/products/air.jpg">
+											</div>
+											<div class="name-price">
+												<div class="name">নদীর আইড়-Ayer</div>
+												<div class="qty-price">1x990৳</div>
+											</div>
+										</div>
+										<a href="#" class="remove-icon" data-bs-toggle="tooltip"
+											data-bs-placement="right" title="Remove from Cart List">
+											<i class="fa-regular fa-circle-xmark"></i>
+										</a>
+									</div>
+								</div>
+								<div class="subtotal">
+									<div class="text">Subtotal</div>
+									<div class="amount">4000৳</div>
+								</div>
+								<div class="cart-checkout-btn">
+									<a href="MyCart.html" class="btn btn-outline-primary me-3">view cart</a>
+									<a href="ShippingInfo.html" class="btn btn-primary">checkout</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1072,6 +1150,7 @@
 			}
 		}
 	});
+
 	$(window).scroll(function () {
 		$.colorbox.close();
 	});
@@ -1088,10 +1167,6 @@
 		readOnly: true
 	});
 
-	if ($(window).width() > 575) {
-		$(".product-image img").attr("width", "450");
-		$(".product-image img").attr("height", "450");
-	}
 
 	document.querySelectorAll('.tn-slider').forEach(slider => {
 		tns({

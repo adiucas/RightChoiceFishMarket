@@ -32,3 +32,13 @@ document.addEventListener('click', function (e) {
     $("body").removeClass("overlay-active");
   }
 });
+
+if ($(window).width() > 575) {
+  $(".modal .product-image img").attr("width", "300");
+  $(".modal .product-image img").attr("height", "300");
+}
+
+function ModalCartHandler() {
+  $(".cartToggleBtn").toggleClass("closed");
+  $(".cart-info").toggleClass("closed");
+}
